@@ -1,0 +1,979 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: NERP_demo_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "NERP_demo_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "NERP_demo_top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : NERP_demo_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\152\Desktop\NERP_demo\update_joy.v" into library work
+Parsing module <update_joy>.
+Analyzing Verilog file "C:\Users\152\Desktop\NERP_demo\joy_interface.v" into library work
+Parsing module <joy_interface>.
+Analyzing Verilog file "C:\Users\152\Desktop\NERP_demo\joy_control.v" into library work
+Parsing module <joy_control>.
+WARNING:HDLCompiler:751 - "C:\Users\152\Desktop\NERP_demo\joy_control.v" Line 12: Redeclaration of ansi port SS is not allowed
+Analyzing Verilog file "C:\Users\152\Desktop\NERP_demo\vga640x480.v" into library work
+Parsing module <vga640x480>.
+Analyzing Verilog file "C:\Users\152\Desktop\NERP_demo\segdisplay.v" into library work
+Parsing module <segdisplay>.
+Analyzing Verilog file "C:\Users\152\Desktop\NERP_demo\joy.v" into library work
+Parsing module <joy>.
+Analyzing Verilog file "C:\Users\152\Desktop\NERP_demo\clockdiv.v" into library work
+Parsing module <clockdiv>.
+Analyzing Verilog file "C:\Users\152\Desktop\NERP_demo\bounce.v" into library work
+Parsing module <bounce>.
+Analyzing Verilog file "C:\Users\152\Desktop\NERP_demo\NERP_demo_top.v" into library work
+Parsing module <NERP_demo_top>.
+WARNING:HDLCompiler:751 - "C:\Users\152\Desktop\NERP_demo\NERP_demo_top.v" Line 100: Redeclaration of ansi port SS is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\152\Desktop\NERP_demo\NERP_demo_top.v" Line 101: Redeclaration of ansi port MOSI is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\152\Desktop\NERP_demo\NERP_demo_top.v" Line 102: Redeclaration of ansi port SCLK is not allowed
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "C:\Users\152\Desktop\NERP_demo\NERP_demo_top.v" Line 126: Port dot_x is not connected to this instance
+
+Elaborating module <NERP_demo_top>.
+
+Elaborating module <bounce>.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\bounce.v" Line 55: Result of 2-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <clockdiv>.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\clockdiv.v" Line 41: Result of 19-bit expression is truncated to fit in 18-bit target.
+
+Elaborating module <segdisplay>.
+
+Elaborating module <joy>.
+
+Elaborating module <joy_control>.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\joy_control.v" Line 26: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\joy_control.v" Line 36: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\joy_control.v" Line 47: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\joy_control.v" Line 55: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\joy_control.v" Line 63: Result of 32-bit expression is truncated to fit in 3-bit target.
+
+Elaborating module <joy_interface>.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\joy_interface.v" Line 36: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\joy_interface.v" Line 50: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\joy_interface.v" Line 52: Result of 32-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <vga640x480>.
+
+Elaborating module <update_joy>.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\update_joy.v" Line 46: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\update_joy.v" Line 47: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\update_joy.v" Line 48: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\update_joy.v" Line 49: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\update_joy.v" Line 54: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\update_joy.v" Line 55: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\update_joy.v" Line 56: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\update_joy.v" Line 57: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\vga640x480.v" Line 96: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\vga640x480.v" Line 105: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\vga640x480.v" Line 135: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\NERP_demo\vga640x480.v" Line 136: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <NERP_demo_top>.
+    Related source file is "C:\Users\152\Desktop\NERP_demo\NERP_demo_top.v".
+INFO:Xst:3210 - "C:\Users\152\Desktop\NERP_demo\NERP_demo_top.v" line 126: Output port <dot_x> of the instance <U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\152\Desktop\NERP_demo\NERP_demo_top.v" line 126: Output port <dot_y> of the instance <U3> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <NERP_demo_top> synthesized.
+
+Synthesizing Unit <bounce>.
+    Related source file is "C:\Users\152\Desktop\NERP_demo\bounce.v".
+    Found 1-bit register for signal <button_first_press>.
+    Found 32-bit register for signal <counter>.
+    Found 1-bit register for signal <button_state_reg<0>>.
+    Found 32-bit adder for signal <counter[31]_GND_2_o_add_1_OUT> created at line 37.
+    Found 32-bit comparator greater for signal <GND_2_o_INV_1_o> created at line 38
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <bounce> synthesized.
+
+Synthesizing Unit <clockdiv>.
+    Related source file is "C:\Users\152\Desktop\NERP_demo\clockdiv.v".
+    Found 18-bit register for signal <q>.
+    Found 18-bit adder for signal <q[17]_GND_3_o_add_1_OUT> created at line 41.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+Unit <clockdiv> synthesized.
+
+Synthesizing Unit <segdisplay>.
+    Related source file is "C:\Users\152\Desktop\NERP_demo\segdisplay.v".
+        N = 7'b1001000
+        E = 7'b0000110
+        R = 7'b1001100
+        P = 7'b0001100
+        left = 2'b00
+        midleft = 2'b01
+        midright = 2'b10
+        right = 2'b11
+    Found 4-bit register for signal <an>.
+    Found 7-bit register for signal <seg>.
+    Found 2-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 8                                              |
+    | Clock              | segclk (rising_edge)                           |
+    | Reset              | clr (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <segdisplay> synthesized.
+
+Synthesizing Unit <joy>.
+    Related source file is "C:\Users\152\Desktop\NERP_demo\joy.v".
+    Found 1-bit register for signal <clk_joy>.
+    Found 32-bit register for signal <counter_joy>.
+    Found 32-bit adder for signal <counter_joy[31]_GND_6_o_add_2_OUT> created at line 20.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+Unit <joy> synthesized.
+
+Synthesizing Unit <joy_control>.
+    Related source file is "C:\Users\152\Desktop\NERP_demo\joy_control.v".
+    Found 1-bit register for signal <getByte>.
+    Found 40-bit register for signal <DOUT>.
+    Found 3-bit register for signal <pState>.
+    Found 40-bit register for signal <tmpSR>.
+    Found 3-bit register for signal <byteCnt>.
+    Found 1-bit register for signal <SS>.
+    Found 3-bit adder for signal <byteCnt[2]_GND_7_o_add_2_OUT> created at line 36.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  88 D-type flip-flop(s).
+	inferred  10 Multiplexer(s).
+Unit <joy_control> synthesized.
+
+Synthesizing Unit <joy_interface>.
+    Related source file is "C:\Users\152\Desktop\NERP_demo\joy_interface.v".
+    Found 1-bit register for signal <CE>.
+    Found 1-bit register for signal <BUSY>.
+    Found 5-bit register for signal <bitCount>.
+    Found 2-bit register for signal <pState>.
+    Found 8-bit register for signal <rSR>.
+    Found 5-bit adder for signal <bitCount[4]_GND_8_o_add_8_OUT> created at line 50.
+    Found 4x1-bit Read Only RAM for signal <pState[1]_PWR_7_o_Mux_13_o>
+    Found 2-bit 4-to-1 multiplexer for signal <pState[1]_GND_8_o_wide_mux_15_OUT> created at line 30.
+    Found 5-bit comparator greater for signal <bitCount[4]_GND_8_o_LessThan_10_o> created at line 51
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <joy_interface> synthesized.
+
+Synthesizing Unit <vga640x480>.
+    Related source file is "C:\Users\152\Desktop\NERP_demo\vga640x480.v".
+        hpixels = 800
+        vlines = 521
+        hpulse = 96
+        vpulse = 2
+        hbp = 144
+        hfp = 784
+        vbp = 31
+        vfp = 511
+WARNING:Xst:647 - Input <move_right> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <move_left> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <move_up> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <move_down> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <clk_cursor>.
+    Found 10-bit register for signal <hc>.
+    Found 10-bit register for signal <vc>.
+    Found 1-bit register for signal <prev_dclk>.
+    Found 1-bit register for signal <prev_clk_cursor>.
+    Found 32-bit register for signal <counter_cursor>.
+    Found 11-bit subtractor for signal <GND_9_o_GND_9_o_sub_30_OUT> created at line 140.
+    Found 11-bit subtractor for signal <GND_9_o_GND_9_o_sub_33_OUT> created at line 140.
+    Found 32-bit adder for signal <counter_cursor[31]_GND_9_o_add_4_OUT> created at line 80.
+    Found 10-bit adder for signal <hc[9]_GND_9_o_add_12_OUT> created at line 96.
+    Found 10-bit adder for signal <vc[9]_GND_9_o_add_14_OUT> created at line 105.
+    Found 32-bit adder for signal <GND_9_o_GND_9_o_add_35_OUT> created at line 140.
+    Found 32x32-bit multiplier for signal <n0064> created at line 140.
+    Found 32x32-bit multiplier for signal <n0066> created at line 140.
+    Found 10-bit comparator greater for signal <hc[9]_PWR_8_o_LessThan_12_o> created at line 95
+    Found 10-bit comparator greater for signal <vc[9]_PWR_8_o_LessThan_14_o> created at line 104
+    Found 10-bit comparator greater for signal <hc[9]_GND_9_o_LessThan_26_o> created at line 135
+    Found 10-bit comparator greater for signal <vc[9]_GND_9_o_LessThan_28_o> created at line 136
+    Found 32-bit comparator greater for signal <GND_9_o_GND_9_o_LessThan_37_o> created at line 140
+    Summary:
+	inferred   2 Multiplier(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred  55 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <vga640x480> synthesized.
+
+Synthesizing Unit <update_joy>.
+    Related source file is "C:\Users\152\Desktop\NERP_demo\update_joy.v".
+        hbp = 144
+        hfp = 784
+        vbp = 31
+        vfp = 511
+    Found 10-bit register for signal <dot_y>.
+    Found 10-bit register for signal <dot_x>.
+    Found 10-bit adder for signal <dot_x[9]_GND_10_o_add_8_OUT> created at line 46.
+    Found 10-bit adder for signal <dot_x[9]_GND_10_o_add_10_OUT> created at line 47.
+    Found 10-bit adder for signal <dot_y[9]_GND_10_o_add_31_OUT> created at line 56.
+    Found 10-bit adder for signal <dot_y[9]_GND_10_o_add_33_OUT> created at line 57.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_16_OUT<9:0>> created at line 48.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_19_OUT<9:0>> created at line 49.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_26_OUT<9:0>> created at line 54.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_28_OUT<9:0>> created at line 55.
+    Found 10-bit comparator greater for signal <GND_10_o_dot_x[9]_LessThan_6_o> created at line 44
+    Found 10-bit comparator greater for signal <dot_x[9]_PWR_9_o_LessThan_7_o> created at line 44
+    Found 10-bit comparator greater for signal <joy_x[9]_GND_10_o_LessThan_8_o> created at line 46
+    Found 10-bit comparator greater for signal <joy_x[9]_GND_10_o_LessThan_10_o> created at line 47
+    Found 10-bit comparator greater for signal <PWR_9_o_joy_x[9]_LessThan_14_o> created at line 48
+    Found 10-bit comparator greater for signal <GND_10_o_dot_x[9]_LessThan_15_o> created at line 48
+    Found 10-bit comparator greater for signal <PWR_9_o_joy_x[9]_LessThan_17_o> created at line 49
+    Found 10-bit comparator greater for signal <GND_10_o_dot_x[9]_LessThan_18_o> created at line 49
+    Found 10-bit comparator greater for signal <GND_10_o_dot_y[9]_LessThan_23_o> created at line 52
+    Found 10-bit comparator greater for signal <dot_y[9]_GND_10_o_LessThan_24_o> created at line 52
+    Found 10-bit comparator greater for signal <joy_y[9]_GND_10_o_LessThan_25_o> created at line 54
+    Found 10-bit comparator greater for signal <joy_y[9]_GND_10_o_LessThan_27_o> created at line 55
+    Found 10-bit comparator greater for signal <PWR_9_o_joy_y[9]_LessThan_31_o> created at line 56
+    Found 10-bit comparator greater for signal <PWR_9_o_joy_y[9]_LessThan_33_o> created at line 57
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred  14 Comparator(s).
+	inferred  22 Multiplexer(s).
+Unit <update_joy> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x1-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 2
+ 32x32-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 16
+ 10-bit adder                                          : 2
+ 10-bit addsub                                         : 2
+ 11-bit subtractor                                     : 2
+ 18-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 7
+ 5-bit adder                                           : 1
+# Registers                                            : 36
+ 1-bit register                                        : 16
+ 10-bit register                                       : 4
+ 18-bit register                                       : 1
+ 2-bit register                                        : 1
+ 3-bit register                                        : 2
+ 32-bit register                                       : 6
+ 4-bit register                                        : 1
+ 40-bit register                                       : 2
+ 5-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 24
+ 10-bit comparator greater                             : 18
+ 32-bit comparator greater                             : 5
+ 5-bit comparator greater                              : 1
+# Multiplexers                                         : 36
+ 1-bit 2-to-1 multiplexer                              : 7
+ 10-bit 2-to-1 multiplexer                             : 22
+ 2-bit 4-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 5
+ 40-bit 2-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <seg_0> in Unit <U2> is equivalent to the following 2 FFs/Latches, which will be removed : <seg_4> <seg_5> 
+WARNING:Xst:2677 - Node <DOUT_0> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_1> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_2> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_3> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_4> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_5> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_6> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_7> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_10> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_11> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_12> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_13> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_14> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_15> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_26> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_27> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_28> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_29> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_30> of sequential type is unconnected in block <jc>.
+WARNING:Xst:2677 - Node <DOUT_31> of sequential type is unconnected in block <jc>.
+
+Synthesizing (advanced) Unit <bounce>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <bounce> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clockdiv>.
+The following registers are absorbed into counter <q>: 1 register on signal <q>.
+Unit <clockdiv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <joy>.
+The following registers are absorbed into counter <counter_joy>: 1 register on signal <counter_joy>.
+Unit <joy> synthesized (advanced).
+
+Synthesizing (advanced) Unit <joy_control>.
+The following registers are absorbed into counter <byteCnt>: 1 register on signal <byteCnt>.
+Unit <joy_control> synthesized (advanced).
+
+Synthesizing (advanced) Unit <joy_interface>.
+The following registers are absorbed into counter <bitCount>: 1 register on signal <bitCount>.
+INFO:Xst:3231 - The small RAM <Mram_pState[1]_PWR_7_o_Mux_13_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <pState>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <joy_interface> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga640x480>.
+The following registers are absorbed into counter <hc>: 1 register on signal <hc>.
+The following registers are absorbed into counter <vc>: 1 register on signal <vc>.
+The following registers are absorbed into counter <counter_cursor>: 1 register on signal <counter_cursor>.
+	Multiplier <Mmult_n0064> in block <vga640x480> and adder/subtractor <Madd_GND_9_o_GND_9_o_add_35_OUT> in block <vga640x480> are combined into a MAC<Maddsub_n0064>.
+Unit <vga640x480> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x1-bit single-port distributed Read Only RAM         : 1
+# MACs                                                 : 1
+ 11x11-to-32-bit MAC                                   : 1
+# Multipliers                                          : 1
+ 11x11-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 4
+ 10-bit addsub                                         : 2
+ 11-bit subtractor                                     : 2
+# Counters                                             : 11
+ 10-bit up counter                                     : 2
+ 18-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 6
+ 5-bit up counter                                      : 1
+# Registers                                            : 140
+ Flip-Flops                                            : 140
+# Comparators                                          : 24
+ 10-bit comparator greater                             : 18
+ 32-bit comparator greater                             : 5
+ 5-bit comparator greater                              : 1
+# Multiplexers                                         : 33
+ 1-bit 2-to-1 multiplexer                              : 7
+ 10-bit 2-to-1 multiplexer                             : 20
+ 2-bit 4-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 4
+ 40-bit 2-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <seg_0> in Unit <segdisplay> is equivalent to the following 2 FFs/Latches, which will be removed : <seg_4> <seg_5> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <U2/FSM_0> on signal <state[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 0001
+ 01    | 0010
+ 10    | 0100
+ 11    | 1000
+-------------------
+INFO:Xst:2261 - The FF/Latch <an_3> in Unit <segdisplay> is equivalent to the following FF/Latch, which will be removed : <seg_2> 
+INFO:Xst:2261 - The FF/Latch <an_2> in Unit <segdisplay> is equivalent to the following FF/Latch, which will be removed : <seg_3> 
+
+Optimizing unit <NERP_demo_top> ...
+
+Optimizing unit <bounce> ...
+
+Optimizing unit <joy_control> ...
+
+Optimizing unit <joy_interface> ...
+
+Optimizing unit <vga640x480> ...
+
+Optimizing unit <update_joy> ...
+
+Optimizing unit <segdisplay> ...
+WARNING:Xst:2677 - Node <joy/jc/DOUT_31> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_30> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_29> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_28> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_27> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_26> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_15> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_14> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_13> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_12> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_11> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_10> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_7> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_6> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_5> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_4> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_3> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_2> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_1> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:2677 - Node <joy/jc/DOUT_0> of sequential type is unconnected in block <NERP_demo_top>.
+WARNING:Xst:1710 - FF/Latch <U3/ball1/dot_x_0> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R/counter_25> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R/counter_26> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R/counter_27> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R/counter_28> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R/counter_29> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R/counter_30> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R/counter_31> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L/counter_25> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L/counter_26> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L/counter_27> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L/counter_28> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L/counter_29> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L/counter_30> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <L/counter_31> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U/counter_25> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U/counter_26> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U/counter_27> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U/counter_28> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U/counter_29> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U/counter_30> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U/counter_31> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <D/counter_25> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <D/counter_26> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <D/counter_27> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <D/counter_28> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <D/counter_29> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <D/counter_30> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <D/counter_31> has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block NERP_demo_top, actual ratio is 6.
+FlipFlop U2/seg_0 has been replicated 2 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 331
+ Flip-Flops                                            : 331
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : NERP_demo_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1042
+#      GND                         : 1
+#      INV                         : 14
+#      LUT1                        : 179
+#      LUT2                        : 119
+#      LUT3                        : 43
+#      LUT4                        : 42
+#      LUT5                        : 51
+#      LUT6                        : 82
+#      MUXCY                       : 264
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 243
+# FlipFlops/Latches                : 331
+#      FD                          : 44
+#      FD_1                        : 4
+#      FDC                         : 21
+#      FDE                         : 30
+#      FDE_1                       : 65
+#      FDP                         : 10
+#      FDR                         : 5
+#      FDRE                        : 152
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 43
+#      IBUF                        : 6
+#      OBUF                        : 37
+# DSPs                             : 2
+#      DSP48A1                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             328  out of  18224     1%  
+ Number of Slice LUTs:                  530  out of   9112     5%  
+    Number used as Logic:               530  out of   9112     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    547
+   Number with an unused Flip Flop:     219  out of    547    40%  
+   Number with an unused LUT:            17  out of    547     3%  
+   Number of fully used LUT-FF pairs:   311  out of    547    56%  
+   Number of unique control sets:        19
+
+IO Utilization: 
+ Number of IOs:                          44
+ Number of bonded IOBs:                  44  out of    232    18%  
+    IOB Flip Flops/Latches:               3
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of DSP48A1s:                      2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 233   |
+joy/clk_joy                        | BUFG                   | 85    |
+U1/q_17                            | NONE(U2/state_FSM_FFd4)| 13    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.245ns (Maximum Frequency: 190.672MHz)
+   Minimum input arrival time before clock: 4.811ns
+   Maximum output required time after clock: 15.436ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.219ns (frequency: 191.611MHz)
+  Total number of paths / destination ports: 12087 / 436
+-------------------------------------------------------------------------
+Delay:               5.219ns (Levels of Logic = 13)
+  Source:            U3/ball1/dot_x_2 (FF)
+  Destination:       U3/ball1/dot_x_9 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: U3/ball1/dot_x_2 to U3/ball1/dot_x_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             10   0.447   0.857  U3/ball1/dot_x_2 (U3/ball1/dot_x_2)
+     LUT6:I5->O            1   0.205   0.000  U3/ball1/PWR_9_o_GND_10_o_AND_4_o11_SW2_F (N97)
+     MUXF7:I0->O           4   0.131   0.788  U3/ball1/PWR_9_o_GND_10_o_AND_4_o11_SW2 (N41)
+     LUT6:I4->O            8   0.203   1.031  U3/ball1/PWR_9_o_GND_10_o_AND_4_o (U3/ball1/PWR_9_o_GND_10_o_AND_4_o)
+     LUT6:I3->O            1   0.205   0.000  U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_lut<2> (U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_cy<2> (U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_cy<3> (U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_cy<4> (U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_cy<5> (U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_cy<6> (U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_cy<7> (U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_cy<7>)
+     MUXCY:CI->O           0   0.019   0.000  U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_cy<8> (U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_cy<8>)
+     XORCY:CI->O           1   0.180   0.580  U3/ball1/Mmux_dot_x[9]_GND_10_o_mux_20_OUT_rs_xor<9> (U3/ball1/dot_x[9]_GND_10_o_mux_20_OUT<9>)
+     LUT4:I3->O            1   0.205   0.000  U3/ball1/Mmux_dot_x[9]_dot_x[9]_mux_37_OUT101 (U3/ball1/dot_x[9]_dot_x[9]_mux_37_OUT<9>)
+     FDE:D                     0.102          U3/ball1/dot_x_9
+    ----------------------------------------
+    Total                      5.219ns (1.964ns logic, 3.255ns route)
+                                       (37.6% logic, 62.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'joy/clk_joy'
+  Clock period: 5.245ns (frequency: 190.672MHz)
+  Total number of paths / destination ports: 411 / 165
+-------------------------------------------------------------------------
+Delay:               2.622ns (Levels of Logic = 1)
+  Source:            joy/ji/pState_1 (FF)
+  Destination:       joy/ji/rSR_7 (FF)
+  Source Clock:      joy/clk_joy falling
+  Destination Clock: joy/clk_joy rising
+
+  Data Path: joy/ji/pState_1 to joy/ji/rSR_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             6   0.447   0.849  joy/ji/pState_1 (joy/ji/pState_1)
+     LUT3:I1->O            8   0.203   0.802  joy/ji/GND_8_o_CE_AND_1_o1 (joy/ji/GND_8_o_CE_AND_1_o)
+     FDE:CE                    0.322          joy/ji/rSR_0
+    ----------------------------------------
+    Total                      2.622ns (0.972ns logic, 1.650ns route)
+                                       (37.1% logic, 62.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/q_17'
+  Clock period: 1.984ns (frequency: 504.007MHz)
+  Total number of paths / destination ports: 11 / 10
+-------------------------------------------------------------------------
+Delay:               1.984ns (Levels of Logic = 1)
+  Source:            U2/state_FSM_FFd4 (FF)
+  Destination:       U2/an_3 (FF)
+  Source Clock:      U1/q_17 rising
+  Destination Clock: U1/q_17 rising
+
+  Data Path: U2/state_FSM_FFd4 to U2/an_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              3   0.447   0.650  U2/state_FSM_FFd4 (U2/state_FSM_FFd3-In)
+     INV:I->O              1   0.206   0.579  U2/_n0021<10>1_INV_0 (U2/_n0021<10>)
+     FDP:D                     0.102          U2/an_3
+    ----------------------------------------
+    Total                      1.984ns (0.755ns logic, 1.229ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 385 / 285
+-------------------------------------------------------------------------
+Offset:              4.811ns (Levels of Logic = 3)
+  Source:            btnD (PAD)
+  Destination:       D/counter_24 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btnD to D/counter_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            29   1.222   1.354  btnD_IBUF (btnD_IBUF)
+     LUT2:I0->O            1   0.203   0.000  D/_n00321_lut (D/_n00321_lut)
+     MUXCY:S->O           25   0.411   1.192  D/_n00321_cy1 (D/_n0032)
+     FDRE:R                    0.430          D/counter_0
+    ----------------------------------------
+    Total                      4.811ns (2.266ns logic, 2.545ns route)
+                                       (47.1% logic, 52.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'joy/clk_joy'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.903ns (Levels of Logic = 1)
+  Source:            MISO (PAD)
+  Destination:       joy/ji/rSR_0 (FF)
+  Destination Clock: joy/clk_joy rising
+
+  Data Path: MISO to joy/ji/rSR_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  MISO_IBUF (MISO_IBUF)
+     FDE:D                     0.102          joy/ji/rSR_0
+    ----------------------------------------
+    Total                      1.903ns (1.324ns logic, 0.579ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/q_17'
+  Total number of paths / destination ports: 13 / 13
+-------------------------------------------------------------------------
+Offset:              3.232ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       U2/state_FSM_FFd4 (FF)
+  Destination Clock: U1/q_17 rising
+
+  Data Path: clr to U2/state_FSM_FFd4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            55   1.222   1.580  clr_IBUF (clr_IBUF)
+     FDP:PRE                   0.430          U2/an_0
+    ----------------------------------------
+    Total                      3.232ns (1.652ns logic, 1.580ns route)
+                                       (51.1% logic, 48.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/q_17'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            U2/an_2 (FF)
+  Destination:       seg<3> (PAD)
+  Source Clock:      U1/q_17 rising
+
+  Data Path: U2/an_2 to seg<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              2   0.447   0.616  U2/an_2 (U2/an_2)
+     OBUF:I->O                 2.571          seg_3_OBUF (seg<3>)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 15779011 / 15
+-------------------------------------------------------------------------
+Offset:              15.436ns (Levels of Logic = 19)
+  Source:            U3/vc_3 (FF)
+  Destination:       red<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: U3/vc_3 to red<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             5   0.447   0.819  U3/vc_3 (U3/vc_3)
+     LUT2:I0->O            1   0.203   0.000  U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_lut<3> (U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_lut<3>)
+     MUXCY:S->O            1   0.172   0.000  U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_cy<3> (U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_cy<4> (U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_cy<5> (U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_cy<6> (U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_cy<7> (U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_cy<8> (U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_cy<8>)
+     MUXCY:CI->O           0   0.019   0.000  U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_cy<9> (U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_cy<9>)
+     XORCY:CI->O          16   0.180   1.004  U3/Msub_GND_9_o_GND_9_o_sub_33_OUT_xor<10> (U3/GND_9_o_GND_9_o_sub_33_OUT<10>)
+     DSP48A1:A10->PCOUT47    1   4.469   0.000  U3/Mmult_n0066 (U3/Mmult_n0066_PCOUT_to_Maddsub_n0064_PCIN_47)
+     DSP48A1:PCIN47->P6    2   2.264   0.961  U3/Maddsub_n0064 (U3/GND_9_o_GND_9_o_add_35_OUT<6>)
+     LUT5:I0->O            1   0.203   0.000  U3/Mcompar_GND_9_o_GND_9_o_LessThan_37_o_lut<0> (U3/Mcompar_GND_9_o_GND_9_o_LessThan_37_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  U3/Mcompar_GND_9_o_GND_9_o_LessThan_37_o_cy<0> (U3/Mcompar_GND_9_o_GND_9_o_LessThan_37_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_9_o_GND_9_o_LessThan_37_o_cy<1> (U3/Mcompar_GND_9_o_GND_9_o_LessThan_37_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_9_o_GND_9_o_LessThan_37_o_cy<2> (U3/Mcompar_GND_9_o_GND_9_o_LessThan_37_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_9_o_GND_9_o_LessThan_37_o_cy<3> (U3/Mcompar_GND_9_o_GND_9_o_LessThan_37_o_cy<3>)
+     MUXCY:CI->O           1   0.213   0.580  U3/Mcompar_GND_9_o_GND_9_o_LessThan_37_o_cy<4> (U3/Mcompar_GND_9_o_GND_9_o_LessThan_37_o_cy<4>)
+     LUT3:I2->O            8   0.205   0.802  U3/Mcompar_GND_9_o_GND_9_o_LessThan_37_o_cy<5>_inv1 (blue_0_OBUF)
+     OBUF:I->O                 2.571          red_2_OBUF (red<2>)
+    ----------------------------------------
+    Total                     15.436ns (11.270ns logic, 4.166ns route)
+                                       (73.0% logic, 27.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'joy/clk_joy'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              4.521ns (Levels of Logic = 2)
+  Source:            joy/ji/CE (FF)
+  Destination:       SCLK (PAD)
+  Source Clock:      joy/clk_joy falling
+
+  Data Path: joy/ji/CE to SCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             2   0.447   0.721  joy/ji/CE (joy/ji/CE)
+     LUT2:I0->O            1   0.203   0.579  joy/ji/Mmux_SCLK11 (SCLK_OBUF)
+     OBUF:I->O                 2.571          SCLK_OBUF (SCLK)
+    ----------------------------------------
+    Total                      4.521ns (3.221ns logic, 1.300ns route)
+                                       (71.2% logic, 28.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock U1/q_17
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/q_17        |    1.984|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.219|         |         |         |
+joy/clk_joy    |         |    8.631|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock joy/clk_joy
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.557|         |
+joy/clk_joy    |    1.165|    2.622|    3.913|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.76 secs
+ 
+--> 
+
+Total memory usage is 266040 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  100 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+
