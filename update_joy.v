@@ -23,7 +23,7 @@ module update_joy(
     input wire clr,
     input wire prev_clk_cursor,
     input wire clk_cursor,
-    input wire [9:0] joy_x,
+    input wire [9:0]   joy_x,
     input wire [9:0] joy_y,
     output reg [9:0] dot_x,
     output reg [9:0] dot_y
@@ -41,23 +41,32 @@ begin
         dot_y <= (vbp + vfp)/2;
     end
     if (prev_clk_cursor == 0 && clk_cursor == 1) begin
-    if (dot_x>hbp && dot_x<hfp)
+    
+        if (dot_x<hfp)
         begin
             if (joy_x < 150) dot_x <= dot_x + 20;
             else if ( joy_x < 400) dot_x <= dot_x + 10;
+        end
+        if (dot_x>hbp)
+        begin
             if (joy_x > 850 && dot_x > 2) dot_x <= dot_x - 20;
             else if (joy_x > 600 && dot_x > 1) dot_x <= dot_x - 10;
         end
         
-        if (dot_y>vbp && dot_y<vfp)
+        if (dot_y>vbp)
         begin
             if (joy_y < 150) dot_y <= dot_y - 20;
             else if (joy_y < 400) dot_y <= dot_y - 10;
+        end
+        if(dot_y<vfp)
+        begin
             if (joy_y > 850) dot_y <= dot_y + 20;
             else if (joy_y > 600) dot_y <= dot_y + 10;
+        end
     end
+    
     end
 
-end
+
 
 endmodule

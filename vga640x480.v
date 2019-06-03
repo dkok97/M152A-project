@@ -39,6 +39,9 @@ module vga640x480(
     output wire [9:0] dot_y_1,
     output wire [9:0] dot_x_2,
     output wire [9:0] dot_y_2,
+    
+    output wire [9:0] puck_x,
+    output wire [9:0] puck_y
     );
 
 // video structure constants
@@ -57,6 +60,9 @@ parameter vfp = 511;    // beginning of vertical front porch
 reg [9:0] hc;
 reg [9:0] vc;
 
+reg [7:0] lines;
+reg [7:0] cur_line;
+
 //reg [9:0] init_dot_x;
 //reg [9:0] init_dot_y;
 
@@ -65,6 +71,21 @@ reg clk_cursor = 0; // Ticks at 30 Hz
 
 reg prev_dclk = 0;
 reg prev_clk_cursor = 0;
+
+reg [2:0] r_b1 = 3'b111;
+reg [2:0] g_b1 = 3'b111;
+reg [2:0] b_b1 = 2'b11;
+
+reg [2:0] r_b2 = 3'b111;
+reg [2:0] g_b2 = 3'b111;
+reg [2:0] b_b2 = 2'b11;
+
+parameter W = 256;
+parameter H = 256;
+
+reg [3:0] speed_x = 4'b0111;
+reg [3:0] speed_y = 4'b0011;  
+
 
 update_joy ball1 (
     .clk(clk),
@@ -87,6 +108,45 @@ update_joy ball2 (
     .dot_x(dot_x_2),
     .dot_y(dot_y_2)
     );
+    
+mover puck (
+    .clk(clk),
+    .clr(clr),
+    .dot_x(puck_x),
+    .dot_y(puck_y),
+    .prev_clk_cursor(prev_clk_cursor),
+    .clk_cursor(clk_cursor),
+    .delta_x(speed_x),
+    .delta_y(speed_y)
+);
+
+
+//---------------------------------------------------------------
+   
+   reg write_enable = 0;
+   parameter RAM_WIDTH = 8;
+   parameter RAM_ADDR_BITS = 16;
+
+   (* RAM_STYLE="{AUTO | BLOCK |  BLOCK_POWER1 | BLOCK_POWER2}" *)
+   reg [RAM_WIDTH-1:0] ram_name [(2**RAM_ADDR_BITS)-1:0];
+   reg [RAM_WIDTH-1:0] output_data;   
+
+   reg [RAM_ADDR_BITS-1:0] read_address, write_address=0;
+   reg [RAM_WIDTH-1:0] input_data=0;
+
+   //  The forllowing code is only necessary if you wish to initialize the RAM 
+   //  contents via an external file (use $readmemb for binary data)
+   initial
+      $readmemh("image2.txt", ram_name, 0, 256*256-1);
+
+   always @(posedge clk) begin
+      if (write_enable)
+         ram_name[write_address] <= input_data;
+      output_data <= ram_name[read_address];
+   end
+                        
+always@* read_address = {hc[7:0],vc[7:0]};
+//-----------------------------------------------------------------
 
 always @(posedge clk)
 begin
@@ -103,6 +163,7 @@ begin
         begin
             hc <= 0;
             vc <= 0;
+            //$readmemb("color.txt", lines);
         end
         else
         begin
@@ -136,19 +197,56 @@ begin
     red = 0;
     green = 0;
     blue = 0;
+    
+    if (((dot_x_1 - dot_x_2) * (dot_x_1 - dot_x_2) + (dot_y_1 - dot_y_2) * (dot_y_1 - dot_y_2)) < 225) 
+    begin
+        r_b1 = 3'b010;
+        g_b1 = 3'b101;
+        b_b1 = 2'b00;
+    end
+    else 
+    begin
+        r_b1 = 3'b111;
+        g_b1 = 3'b111;
+        b_b1 = 2'b11;
+    end
+    
+    if (((hc-puck_x) * (hc-puck_x) + (vc-puck_y)*(vc-puck_y)) < 100) begin
+        red = 3'b100;
+        green = 3'b010;
+        blue = 2'b11;
+    end
+        
+    
 
     if (((hc-dot_x_1) * (hc-dot_x_1) + (vc-dot_y_1)*(vc-dot_y_1)) < 225) begin
-        red = 3'b111;
-        green = 3'b111;
-        blue = 2'b11;
+        red = r_b1;
+        green = g_b1;
+        blue = b_b1;
     end
 
     if (((hc-dot_x_2) * (hc-dot_x_2) + (vc-dot_y_2)*(vc-dot_y_2)) < 225) begin
-        red = 3'b111;
-        green = 3'b111;
-        blue = 2'b11;
+        red = r_b2;
+        green = g_b2;
+        blue = b_b2;
     end
-
+    
+    if ((hc>=hbp) && (hc<hbp+W) && (vc>=vbp) && (vc<vbp+H))
+    begin
+        red = output_data[2:0];
+        green = output_data[5:3];
+        blue = output_data[7:6];
+    end
+    
+    
+    
+//    if (hc>=hbp && hc<=211 && vc>=vbp && vc<=81)
+//    begin
+//        cur_line <= lines[hc-hbp+vc-vbp];
+//        red = cur_line[7:5];
+//        green = cur_line[4:2];
+//        blue = cur_line[1:0];
+//    end
     
 end
 

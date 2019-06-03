@@ -1,4 +1,5 @@
 verilog work "update_joy.v"
+verilog work "mover.v"
 verilog work "joy_interface.v"
 verilog work "joy_control.v"
 verilog work "vga640x480.v"
