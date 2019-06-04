@@ -76,22 +76,18 @@ reg [2:0] r_b2 = 3'b111;
 reg [2:0] g_b2 = 3'b111;
 reg [2:0] b_b2 = 2'b11;
 
-parameter W = 256;
-parameter H = 256;
+parameter W = 181*3;
+parameter H = 134*3;
 assign board_start_x = 50;
 assign board_start_y = 40;
-
-//restrict dot_1 area
-assign dot1_x_lb = 50;
-assign dot1_x_ub = 210;
-assign dot1_y_lb = 40;
-assign dot1_y_ub = 440;
-
-//restrict dot_2 area
-assign dot2_x_lb = 430;
-assign dot2_x_ub = 590;
-assign dot2_y_lb = 40;
-assign dot2_y_ub = 440;
+assign rom_addr_board = vc - vbp - board_start_y;
+assign rom_pix_board = hc - hbp - board_start_x;
+assign temp_rom_addr_board = rom_addr_board - vc_jump_board;
+assign temp_rom_pix_board = rom_pix_board-hc_jump_board;
+reg [9:0] hc_jump_board;
+reg hc_nojump;
+reg [9:0] vc_jump_board;
+reg vc_nojump;
 
 reg [3:0] speed_x = 4'b0111;
 reg [3:0] speed_y = 4'b0011; 
@@ -132,32 +128,30 @@ mover puck (
     .delta_y(speed_y)
 );
 
-
 //---------------------------------------------------------------
    
    reg write_enable = 0;
    parameter RAM_WIDTH = 8;
-   parameter RAM_ADDR_BITS = 16;
+   parameter RAM_ADDR_BITS = 15;
 
    (* RAM_STYLE="{AUTO | BLOCK |  BLOCK_POWER1 | BLOCK_POWER2}" *)
-   reg [RAM_WIDTH-1:0] ram_name [(2**RAM_ADDR_BITS)-1:0];
-   reg [RAM_WIDTH-1:0] output_data;   
+   reg [RAM_WIDTH-1:0] ram_name_board [(2**RAM_ADDR_BITS)-1:0];
+   reg [RAM_WIDTH-1:0] output_data_board;   
 
-   reg [RAM_ADDR_BITS-1:0] read_address, write_address=0;
+   reg [RAM_ADDR_BITS-1:0] read_address_board, write_address=0;
    reg [RAM_WIDTH-1:0] input_data=0;
 
    //  The forllowing code is only necessary if you wish to initialize the RAM 
    //  contents via an external file (use $readmemb for binary data)
    initial
-      $readmemh("image2.txt", ram_name, 0, 256*256-1);
+      $readmemh("image2.txt", ram_name_board, 0, 181*134-1);
 
    always @(posedge clk) begin
       if (write_enable)
-         ram_name[write_address] <= input_data;
-      output_data <= ram_name[read_address];
+         ram_name_board[write_address] <= input_data;
+      output_data_board <= ram_name_board[read_address_board];
    end
                         
-always@* read_address = {hc[7:0],vc[7:0]};
 //-----------------------------------------------------------------
 always @(posedge clk)
 begin
@@ -173,6 +167,10 @@ begin
 	begin
 		hc <= 0;
 		vc <= 0;
+        hc_jump_board <= 0;
+        vc_jump_board <= 0;
+        hc_nojump <= 1;
+        vc_nojump <= 1;
 		//$readmemb("color.txt", lines);
 	end
 	else
@@ -181,6 +179,12 @@ begin
 		// keep counting until the end of the line
 		if (hc < hpixels - 1)
 			hc <= hc + 1;
+            if (hc_jump_board==0) hc_jump_board <= hc_jump_board + 1;
+            else
+            begin 
+                if (hc_jump_board%2==0) hc_nojump <= ~hc_nojump;
+                if (hc_nojump==0) hc_jump_board <= hc_jump_board + 1;
+            end
 		else
 		// When we hit the end of the line, reset the horizontal
 		// counter and increment the vertical counter.
@@ -192,6 +196,13 @@ begin
 				vc <= vc + 1;
 			else
 				vc <= 0;
+            
+            if (vc_jump_board==0) vc_jump_board <= vc_jump_board + 1;
+            else
+            begin 
+                if (vc_jump_board%2==0) vc_nojump <= ~vc_nojump;
+                if (vc_nojump==0) vc_jump_board <= vc_jump_board + 1;
+            end
 		end
 	end
 end
@@ -201,22 +212,24 @@ assign vsync = (vc < vpulse) ? 0:1;
 
 always @(*)
 begin
+    // read_address_board = {rom_pix_board[7:0],rom_addr_board[7:0]};
+    read_address_board = {temp_rom_pix_board[7:0],temp_rom_addr_board[7:0]};
     red = 0;
     green = 0;
     blue = 0;
 	
-//	if ((hc >= board_start_x + hbp) && (hc < board_start_x + hbp + W) && (vc >= board_start_y + vbp) && (vc < board_start_y + vbp + H))
-//	begin
-//		red = output_data[2:0];
-//		green = output_data[5:3];
-//		blue = output_data[7:6];
-//	end
-//	else
-//	begin
-//		red = red;
-//		green = green;
-//		blue = blue;
-//	end
+	if ((hc >= board_start_x + hbp) && (hc < board_start_x + hbp + W) && (vc >= board_start_y + vbp) && (vc < board_start_y + vbp + H))
+	begin
+		red = output_data_board[2:0];
+		green = output_data_board[5:3];
+		blue = output_data_board[7:6];
+	end
+	else
+	begin
+		red = red;
+		green = green;
+		blue = blue;
+	end
 
 //    if (((dot_x_1 - dot_x_2) * (dot_x_1 - dot_x_2) + (dot_y_1 - dot_y_2) * (dot_y_1 - dot_y_2)) < 225) 
 //    begin
