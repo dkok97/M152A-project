@@ -21,6 +21,8 @@
 module NERP_demo_top(
     input wire clk,         //master clock = 50MHz
     input wire clr,         //right-most pushbutton for reset
+	input wire rst,
+	output wire out_rst,
     output wire [6:0] seg,  //7-segment display LEDs
     output wire [3:0] an,   //7-segment display anode enable
     output wire dp,         //7-segment display decimal point
@@ -29,14 +31,6 @@ module NERP_demo_top(
     output wire [1:0] blue, //blue vga output - 2 bits
     output wire hsync,      //horizontal sync out
     output wire vsync,          //vertical sync out
-    input wire btnR,
-    input wire btnL,
-    input wire btnU,
-    input wire btnD,
-    output wire bright,
-    output wire bleft,
-    output wire bup,
-    output wire bdown,
     input MISO_1,
     output SS_1,
     output MOSI_1,
@@ -59,27 +53,27 @@ assign dp = 1;
 
 bounce R(
     .clk(clk),
-    .button(btnR),
-    .button_state(bright)
+    .button(rst),
+    .button_state(out_rst)
 );
 
-bounce L(
-    .clk(clk),
-    .button(btnL),
-    .button_state(bleft)
-);
-
-bounce U(
-    .clk(clk),
-    .button(btnU),
-    .button_state(bup)
-);
-
-bounce D(
-    .clk(clk),
-    .button(btnD),
-    .button_state(bdown)
-);
+//bounce L(
+//    .clk(clk),
+//    .button(btnL),
+//    .button_state(bleft)
+//);
+//
+//bounce U(
+//    .clk(clk),
+//    .button(btnU),
+//    .button_state(bup)
+//);
+//
+//bounce D(
+//    .clk(clk),
+//    .button(btnD),
+//    .button_state(bdown)
+//);
 
 // generate 7-segment clock & display clock
 clockdiv U1(
@@ -166,14 +160,11 @@ vga640x480 U3(
     .red(red),
     .green(green),
     .blue(blue),
-    .move_right(bright),
-    .move_left(bleft),
-    .move_up(bup),
-    .move_down(bdown),
     .joy_x_1(joystick_x_1),
     .joy_y_1(joystick_y_1),
     .joy_x_2(joystick_x_2),
-    .joy_y_2(joystick_y_2)
+    .joy_y_2(joystick_y_2),
+	.rst(out_rst)
     );
     
   

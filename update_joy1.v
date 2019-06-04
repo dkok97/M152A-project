@@ -18,55 +18,61 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module update_joy(
+module update_joy1(
     input wire clk,
     input wire clr,
     input wire prev_clk_cursor,
     input wire clk_cursor,
-    input wire [9:0]   joy_x,
+    input wire [9:0] joy_x,
     input wire [9:0] joy_y,
     output reg [9:0] dot_x,
-    output reg [9:0] dot_y
+    output reg [9:0] dot_y,
+	input wire rst
     );
     
     parameter hbp = 144;
     parameter hfp = 784;
     parameter vbp = 31;
     parameter vfp = 511;
+	parameter init_x = 204;
+	parameter init_y = 271;
+	parameter x_lb = 224+15;
+	parameter x_ub = 377-15;
+	parameter y_lb = 101+15;
+	parameter y_ub = 441-15;
     
-    always @(posedge clk)
-begin
-    if (clr) begin
-        dot_x <= (hbp + hfp)/2;
-        dot_y <= (vbp + vfp)/2;
+    always @(posedge clk or posedge clr)
+	begin
+    if (clr==1 || rst==1) 
+	begin
+        dot_x <= init_x;
+        dot_y <= init_y;
     end
+	else begin
     if (prev_clk_cursor == 0 && clk_cursor == 1) begin
-    
-        if (dot_x<hfp)
+        if (dot_x<x_ub)
         begin
             if (joy_x < 150) dot_x <= dot_x + 20;
             else if ( joy_x < 400) dot_x <= dot_x + 10;
         end
-        if (dot_x>hbp)
+        if (dot_x>x_lb)
         begin
             if (joy_x > 850 && dot_x > 2) dot_x <= dot_x - 20;
             else if (joy_x > 600 && dot_x > 1) dot_x <= dot_x - 10;
         end
         
-        if (dot_y>vbp)
+        if (dot_y>y_lb)
         begin
             if (joy_y < 150) dot_y <= dot_y - 20;
             else if (joy_y < 400) dot_y <= dot_y - 10;
         end
-        if(dot_y<vfp)
+        if(dot_y<y_ub)
         begin
             if (joy_y > 850) dot_y <= dot_y + 20;
             else if (joy_y > 600) dot_y <= dot_y + 10;
         end
     end
-    
     end
-
-
+    end
 
 endmodule
