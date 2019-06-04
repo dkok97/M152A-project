@@ -76,8 +76,9 @@ reg [2:0] r_b2 = 3'b111;
 reg [2:0] g_b2 = 3'b111;
 reg [2:0] b_b2 = 2'b11;
 
-parameter W_board = 181*3;
-parameter H_board = 134*3;
+wire [10:0] board_start_x, board_start_y, rom_addr_board, rom_pix_board;
+parameter W_board = 256;
+parameter H_board = 256;
 assign board_start_x = 50;
 assign board_start_y = 40;
 assign rom_addr_board = vc - vbp - board_start_y;
@@ -88,17 +89,6 @@ reg [9:0] hc_jump_board;
 reg hc_nojump;
 reg [9:0] vc_jump_board;
 reg vc_nojump;
-
-
-//temp simple board params
-parameter board_x1 = 179;
-parameter board_x2 = 194;
-parameter board_x3 = 734;
-parameter board_x4 = 749;
-parameter board_y1 = 59;
-parameter board_y2 = 71;
-parameter board_y3 = 471;
-parameter board_y4 = 486;
 
 
 reg [3:0] speed_x = 4'b0111;
@@ -144,7 +134,7 @@ mover puck (
    
    reg write_enable = 0;
    parameter RAM_WIDTH = 8;
-   parameter RAM_ADDR_BITS = 15;
+   parameter RAM_ADDR_BITS = 16;
 
    (* RAM_STYLE="{AUTO | BLOCK |  BLOCK_POWER1 | BLOCK_POWER2}" *)
    reg [RAM_WIDTH-1:0] ram_name_board [(2**RAM_ADDR_BITS)-1:0];
@@ -156,7 +146,7 @@ mover puck (
    //  The forllowing code is only necessary if you wish to initialize the RAM 
    //  contents via an external file (use $readmemb for binary data)
    initial
-      $readmemh("image2.txt", ram_name_board, 0, 181*134-1);
+      $readmemh("image2.txt", ram_name_board, 0, 256*256-1);
 
    always @(posedge clk) begin
       if (write_enable)
@@ -191,12 +181,12 @@ begin
 		// keep counting until the end of the line
 		if (hc < hpixels - 1)
 			hc <= hc + 1;
-            if (hc_jump_board==0) hc_jump_board <= hc_jump_board + 1;
-            else
-            begin 
-                if (hc_jump_board%2==0) hc_nojump <= ~hc_nojump;
-                if (hc_nojump==0) hc_jump_board <= hc_jump_board + 1;
-            end
+//            if (hc_jump_board==0) hc_jump_board <= hc_jump_board + 1;
+//            else
+//            begin 
+//                if (hc_jump_board%2==0) hc_nojump <= ~hc_nojump;
+//                if (hc_nojump==0) hc_jump_board <= hc_jump_board + 1;
+//            end
 		else
 		// When we hit the end of the line, reset the horizontal
 		// counter and increment the vertical counter.
@@ -209,12 +199,12 @@ begin
 			else
 				vc <= 0;
             
-            if (vc_jump_board==0) vc_jump_board <= vc_jump_board + 1;
-            else
-            begin 
-                if (vc_jump_board%2==0) vc_nojump <= ~vc_nojump;
-                if (vc_nojump==0) vc_jump_board <= vc_jump_board + 1;
-            end
+//            if (vc_jump_board==0) vc_jump_board <= vc_jump_board + 1;
+//            else
+//            begin 
+//                if (vc_jump_board%2==0) vc_nojump <= ~vc_nojump;
+//                if (vc_nojump==0) vc_jump_board <= vc_jump_board + 1;
+//            end
 		end
 	end
 end
@@ -224,18 +214,21 @@ assign vsync = (vc < vpulse) ? 0:1;
 
 always @(*)
 begin
-    // read_address_board = {rom_pix_board[7:0],rom_addr_board[7:0]};
-    read_address_board = {temp_rom_pix_board[7:0],temp_rom_addr_board[7:0]};
+    read_address_board = {rom_pix_board[7:0],rom_addr_board[7:0]};
+    // read_address_board = {temp_rom_pix_board[7:0],temp_rom_addr_board[7:0]};
     red = 0;
     green = 0;
     blue = 0;
 	
     //---------------------BOARD FROM RAM---------------------------
-	if ((hc >= board_start_x + hbp) && (hc < board_start_x + hbp + temo_W_board) && (vc >= board_start_y + vbp) && (vc < board_start_y + vbp + temp_H_board))
+	if ((hc >= board_start_x + hbp) && (hc < board_start_x + hbp + W_board) && (vc >= board_start_y + vbp) && (vc < board_start_y + vbp + H_board))
 	begin
-		red = output_data_board[2:0];
-		green = output_data_board[5:3];
-		blue = output_data_board[7:6];
+        if (output_data_board[7:0]!=8'b11111111)
+        begin
+            red = output_data_board[2:0];
+            green = output_data_board[5:3];
+            blue = output_data_board[7:6];
+        end
 	end
 	else
 	begin
@@ -243,15 +236,6 @@ begin
 		green = green;
 		blue = blue;
 	end
-    //---------------------------------------------------------------
-
-    //---------------------BOARD BASIC-------------------------------
-    if ((hc >= board_x1 && hc <= board_x4 && vc >= board_y1 && vc <= board_y2) || (hc >= board_x1 && hc <= board_x2 && vc >= board_y1 && vc <= board_y4) || (hc >= board_x1 && hc <= board_x4 && vc >= board_y3 && vc <= board_y4) || (hc >= board_x3 && hc <= board_x4 && vc >= board_y1 && vc <= board_y4))
-    begin
-        red = 3'b010;
-        green = 3'b000;
-        blue = 2'b11;
-    end
     //---------------------------------------------------------------
 
 //    if (((dot_x_1 - dot_x_2) * (dot_x_1 - dot_x_2) + (dot_y_1 - dot_y_2) * (dot_y_1 - dot_y_2)) < 225) 

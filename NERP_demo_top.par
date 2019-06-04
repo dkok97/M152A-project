@@ -1,7 +1,7 @@
 Release 14.6 par P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CS152A-06::  Mon Jun 03 18:08:55 2019
+CS152A-07::  Tue Jun 04 10:25:37 2019
 
 par -w -intstyle ise -ol high -mt off NERP_demo_top_map.ncd NERP_demo_top.ncd
 NERP_demo_top.pcf 
@@ -33,30 +33,30 @@ Device speed data version:  "PRODUCTION 1.23 2013-06-08".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   343 out of  18,224    1%
-    Number used as Flip Flops:                 343
+  Number of Slice Registers:                   344 out of  18,224    1%
+    Number used as Flip Flops:                 344
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        510 out of   9,112    5%
-    Number used as logic:                      497 out of   9,112    5%
-      Number using O6 output only:             255
+  Number of Slice LUTs:                        544 out of   9,112    5%
+    Number used as logic:                      521 out of   9,112    5%
+      Number using O6 output only:             278
       Number using O5 output only:             102
-      Number using O5 and O6:                  140
+      Number using O5 and O6:                  141
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
-    Number used exclusively as route-thrus:     13
-      Number with same-slice register load:      6
+    Number used exclusively as route-thrus:     23
+      Number with same-slice register load:     16
       Number with same-slice carry load:         7
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   171 out of   2,278    7%
+  Number of occupied Slices:                   183 out of   2,278    8%
   Number of MUXCYs used:                       208 out of   4,556    4%
-  Number of LUT Flip Flop pairs used:          546
-    Number with an unused Flip Flop:           275 out of     546   50%
-    Number with an unused LUT:                  36 out of     546    6%
-    Number of fully used LUT-FF pairs:         235 out of     546   43%
+  Number of LUT Flip Flop pairs used:          559
+    Number with an unused Flip Flop:           298 out of     559   53%
+    Number with an unused LUT:                  15 out of     559    2%
+    Number of fully used LUT-FF pairs:         246 out of     559   44%
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
 
@@ -72,7 +72,7 @@ IO Utilization:
     IOB Flip Flops:                              3
 
 Specific Feature Utilization:
-  Number of RAMB16BWERs:                         0 out of      32    0%
+  Number of RAMB16BWERs:                        30 out of      32   93%
   Number of RAMB8BWERs:                          0 out of      64    0%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
@@ -108,13 +108,13 @@ Finished initial Timing Analysis.  REAL time: 4 secs
 Starting Router
 
 
-Phase  1  : 2956 unrouted;      REAL time: 5 secs 
+Phase  1  : 3802 unrouted;      REAL time: 4 secs 
 
-Phase  2  : 2248 unrouted;      REAL time: 5 secs 
+Phase  2  : 2821 unrouted;      REAL time: 5 secs 
 
-Phase  3  : 799 unrouted;      REAL time: 6 secs 
+Phase  3  : 968 unrouted;      REAL time: 6 secs 
 
-Phase  4  : 802 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  4  : 969 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
 Updating file: NERP_demo_top.ncd with current fully routed design.
 
@@ -150,18 +150,17 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     5.051ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.423ns|            |       0|           0
+  Autotimespec constraint for clock net joy | SETUP       |         N/A|     4.934ns|     N/A|           0
+  2/clk_joy_BUFG                            | HOLD        |     0.428ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net joy | SETUP       |         N/A|     5.628ns|     N/A|           0
-  2/clk_joy_BUFG                            | HOLD        |     0.394ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.401ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.424ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net U1/ | SETUP       |         N/A|     3.778ns|     N/A|           0
-  q_1_BUFG                                  | HOLD        |     0.537ns|            |       0|           0
+  Autotimespec constraint for clock net U1/ | SETUP       |         N/A|     1.798ns|     N/A|           0
+  q<17>                                     | HOLD        |     0.324ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net U1/ | SETUP       |         N/A|     1.472ns|     N/A|           0
-  q<17>                                     | HOLD        |     0.462ns|            |       0|           0
-                                            | MINPERIOD   |         N/A|     1.639ns|     N/A|           0
+  Autotimespec constraint for clock net U1/ | SETUP       |         N/A|     3.905ns|     N/A|           0
+  q_1_BUFG                                  | HOLD        |     0.525ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -177,10 +176,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 9 secs 
-Total CPU time to PAR completion: 9 secs 
+Total REAL time to PAR completion: 8 secs 
+Total CPU time to PAR completion: 8 secs 
 
-Peak Memory Usage:  330 MB
+Peak Memory Usage:  338 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

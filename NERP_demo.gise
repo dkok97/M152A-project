@@ -103,7 +103,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1559610511" xil_pn:in_ck="4835780239481360365" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7318899363512025890" xil_pn:start_ts="1559610489">
+    <transform xil_pn:end_ts="1559669114" xil_pn:in_ck="4835780239481360365" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7318899363512025890" xil_pn:start_ts="1559669090">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -125,7 +125,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1559610519" xil_pn:in_ck="-8397749425061078041" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8868506558009315312" xil_pn:start_ts="1559610511">
+    <transform xil_pn:end_ts="1559669122" xil_pn:in_ck="-8397749425061078041" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8868506558009315312" xil_pn:start_ts="1559669114">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="NERP_demo_top.bld"/>
@@ -134,8 +134,9 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1559610534" xil_pn:in_ck="-8396217846075813592" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1559610519">
+    <transform xil_pn:end_ts="1559669136" xil_pn:in_ck="-8396217846075813592" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1559669122">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -149,7 +150,7 @@
       <outfile xil_pn:name="NERP_demo_top_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1559610555" xil_pn:in_ck="5209621825827724417" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1559610534">
+    <transform xil_pn:end_ts="1559669155" xil_pn:in_ck="5209621825827724417" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1559669136">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="NERP_demo_top.ncd"/>
@@ -163,7 +164,7 @@
       <outfile xil_pn:name="NERP_demo_top_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1559610570" xil_pn:in_ck="-2170744736182533714" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="6456494387431822541" xil_pn:start_ts="1559610555">
+    <transform xil_pn:end_ts="1559669171" xil_pn:in_ck="-2170744736182533714" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="6456494387431822541" xil_pn:start_ts="1559669155">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="NERP_demo_top.ut"/>
@@ -175,11 +176,11 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1559610574" xil_pn:in_ck="1020481865429039096" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1559610570">
+    <transform xil_pn:end_ts="1559669184" xil_pn:in_ck="1020481865429039096" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1559669171">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1559610555" xil_pn:in_ck="-8598386272130720860" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1559610546">
+    <transform xil_pn:end_ts="1559669155" xil_pn:in_ck="-8598386272130720860" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1559669148">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="NERP_demo_top.twr"/>

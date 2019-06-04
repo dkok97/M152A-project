@@ -37,8 +37,8 @@ Setup/Hold to clock clk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-clr         |    5.241(R)|      SLOW  |   -0.838(R)|      FAST  |clk_BUFGP         |   0.000|
-rst         |    3.432(R)|      SLOW  |    0.329(R)|      SLOW  |clk_BUFGP         |   0.000|
+clr         |    4.846(R)|      SLOW  |   -1.130(R)|      FAST  |clk_BUFGP         |   0.000|
+rst         |    2.809(R)|      SLOW  |    0.310(R)|      SLOW  |clk_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -46,17 +46,17 @@ Clock clk to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-SCLK_1      |        11.347(R)|      SLOW  |         6.569(R)|      FAST  |clk_BUFGP         |   0.000|
-SCLK_2      |        10.923(R)|      SLOW  |         6.271(R)|      FAST  |clk_BUFGP         |   0.000|
-blue<0>     |        21.983(R)|      SLOW  |         9.192(R)|      FAST  |clk_BUFGP         |   0.000|
-blue<1>     |        21.778(R)|      SLOW  |         9.084(R)|      FAST  |clk_BUFGP         |   0.000|
-green<0>    |        21.529(R)|      SLOW  |         8.920(R)|      FAST  |clk_BUFGP         |   0.000|
-green<1>    |        21.720(R)|      SLOW  |         9.078(R)|      FAST  |clk_BUFGP         |   0.000|
-green<2>    |        21.887(R)|      SLOW  |         9.207(R)|      FAST  |clk_BUFGP         |   0.000|
-out_rst     |         9.100(R)|      SLOW  |         5.031(R)|      FAST  |clk_BUFGP         |   0.000|
-red<0>      |        22.038(R)|      SLOW  |         9.277(R)|      FAST  |clk_BUFGP         |   0.000|
-red<1>      |        21.587(R)|      SLOW  |         8.978(R)|      FAST  |clk_BUFGP         |   0.000|
-red<2>      |        21.780(R)|      SLOW  |         9.095(R)|      FAST  |clk_BUFGP         |   0.000|
+SCLK_1      |        10.207(R)|      SLOW  |         5.858(R)|      FAST  |clk_BUFGP         |   0.000|
+SCLK_2      |        10.255(R)|      SLOW  |         5.844(R)|      FAST  |clk_BUFGP         |   0.000|
+blue<0>     |        22.041(R)|      SLOW  |         6.192(R)|      FAST  |clk_BUFGP         |   0.000|
+blue<1>     |        22.751(R)|      SLOW  |         6.054(R)|      FAST  |clk_BUFGP         |   0.000|
+green<0>    |        22.083(R)|      SLOW  |         6.483(R)|      FAST  |clk_BUFGP         |   0.000|
+green<1>    |        22.306(R)|      SLOW  |         6.606(R)|      FAST  |clk_BUFGP         |   0.000|
+green<2>    |        22.154(R)|      SLOW  |         6.409(R)|      FAST  |clk_BUFGP         |   0.000|
+out_rst     |         8.111(R)|      SLOW  |         4.422(R)|      FAST  |clk_BUFGP         |   0.000|
+red<0>      |        22.358(R)|      SLOW  |         6.204(R)|      FAST  |clk_BUFGP         |   0.000|
+red<1>      |        22.490(R)|      SLOW  |         6.485(R)|      FAST  |clk_BUFGP         |   0.000|
+red<2>      |        22.516(R)|      SLOW  |         5.990(R)|      FAST  |clk_BUFGP         |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -64,18 +64,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.051|         |         |         |
+clk            |    4.401|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Jun 03 18:09:13 2019 
+Analysis completed Tue Jun 04 10:25:54 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 232 MB
+Peak Memory Usage: 236 MB
 
 
 

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.68d on Mon Jun 03 18:08:52 2019
+// Written by: Map P.68d on Tue Jun 04 10:25:34 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -43,6 +43,66 @@ COMP "seg<6>" LOCATE = SITE "L14" LEVEL 1;
 COMP "green<0>" LOCATE = SITE "P8" LEVEL 1;
 COMP "green<1>" LOCATE = SITE "T6" LEVEL 1;
 COMP "green<2>" LOCATE = SITE "V6" LEVEL 1;
+PIN U3_Mram_ram_name_board31_pins<14> = BEL "U3_Mram_ram_name_board31" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board30_pins<14> = BEL "U3_Mram_ram_name_board30" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board28_pins<14> = BEL "U3_Mram_ram_name_board28" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board27_pins<14> = BEL "U3_Mram_ram_name_board27" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board29_pins<14> = BEL "U3_Mram_ram_name_board29" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board25_pins<14> = BEL "U3_Mram_ram_name_board25" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board24_pins<14> = BEL "U3_Mram_ram_name_board24" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board26_pins<14> = BEL "U3_Mram_ram_name_board26" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board22_pins<14> = BEL "U3_Mram_ram_name_board22" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board21_pins<14> = BEL "U3_Mram_ram_name_board21" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board23_pins<14> = BEL "U3_Mram_ram_name_board23" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board20_pins<14> = BEL "U3_Mram_ram_name_board20" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board19_pins<14> = BEL "U3_Mram_ram_name_board19" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board17_pins<14> = BEL "U3_Mram_ram_name_board17" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board16_pins<14> = BEL "U3_Mram_ram_name_board16" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board18_pins<14> = BEL "U3_Mram_ram_name_board18" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board15_pins<14> = BEL "U3_Mram_ram_name_board15" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board14_pins<14> = BEL "U3_Mram_ram_name_board14" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board11_pins<14> = BEL "U3_Mram_ram_name_board11" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board13_pins<14> = BEL "U3_Mram_ram_name_board13" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board10_pins<14> = BEL "U3_Mram_ram_name_board10" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board9_pins<14> = BEL "U3_Mram_ram_name_board9" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board7_pins<14> = BEL "U3_Mram_ram_name_board7" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board6_pins<14> = BEL "U3_Mram_ram_name_board6" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board8_pins<14> = BEL "U3_Mram_ram_name_board8" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board4_pins<14> = BEL "U3_Mram_ram_name_board4" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board3_pins<14> = BEL "U3_Mram_ram_name_board3" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board5_pins<14> = BEL "U3_Mram_ram_name_board5" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board1_pins<14> = BEL "U3_Mram_ram_name_board1" PINNAME
+        CLKA;
+PIN U3_Mram_ram_name_board2_pins<14> = BEL "U3_Mram_ram_name_board2" PINNAME
+        CLKA;
 TIMEGRP sys_clk_pin = BEL "joy1/counter_joy_0" BEL "joy1/counter_joy_1" BEL
         "joy1/counter_joy_2" BEL "joy1/counter_joy_3" BEL "joy1/counter_joy_4"
         BEL "joy1/counter_joy_5" BEL "joy1/counter_joy_6" BEL
@@ -64,23 +124,23 @@ TIMEGRP sys_clk_pin = BEL "joy1/counter_joy_0" BEL "joy1/counter_joy_1" BEL
         "U1/q_16" BEL "U1/q_17" BEL "R/counter_24" BEL "R/counter_23" BEL
         "R/counter_22" BEL "R/counter_21" BEL "U3/prev_clk_cursor" BEL
         "U3/ball1/dot_x_8" BEL "U3/ball1/dot_x_6" BEL "U3/ball1/dot_x_5" BEL
-        "U3/ball1/dot_x_4" BEL "U3/ball1/dot_x_3" BEL "U3/ball1/dot_x_2" BEL
-        "U3/ball1/dot_x_1" BEL "U3/ball1/dot_y_8" BEL "U3/ball1/dot_y_7" BEL
-        "U3/ball1/dot_y_6" BEL "U3/ball1/dot_y_5" BEL "U3/ball1/dot_y_4" BEL
-        "U3/ball1/dot_y_3" BEL "U3/ball1/dot_y_2" BEL "U3/ball1/dot_y_1" BEL
-        "U3/ball2/dot_x_7" BEL "U3/ball2/dot_x_6" BEL "U3/ball2/dot_x_5" BEL
-        "U3/ball2/dot_x_4" BEL "U3/ball2/dot_x_3" BEL "U3/ball2/dot_x_2" BEL
-        "U3/ball2/dot_x_1" BEL "U3/ball2/dot_y_8" BEL "U3/ball2/dot_y_7" BEL
-        "U3/ball2/dot_y_6" BEL "U3/ball2/dot_y_5" BEL "U3/ball2/dot_y_4" BEL
-        "U3/ball2/dot_y_3" BEL "U3/ball2/dot_y_2" BEL "U3/ball2/dot_y_1" BEL
-        "joy2/clk_joy" BEL "R/button_first_press" BEL "U3/clk_cursor" BEL
-        "R/button_state_reg" BEL "R/counter_8" BEL "R/counter_7" BEL
-        "R/counter_6" BEL "R/counter_5" BEL "R/counter_4" BEL "R/counter_3"
-        BEL "R/counter_2" BEL "R/counter_1" BEL "R/counter_0" BEL
-        "R/counter_9" BEL "R/counter_10" BEL "R/counter_11" BEL "R/counter_12"
-        BEL "R/counter_13" BEL "R/counter_14" BEL "R/counter_15" BEL
-        "R/counter_16" BEL "R/counter_17" BEL "R/counter_18" BEL
-        "R/counter_19" BEL "R/counter_20" BEL "U3/counter_cursor_31" BEL
+        "U3/ball1/dot_x_4" BEL "U3/ball1/dot_x_3" BEL "U3/ball1/dot_y_8" BEL
+        "U3/ball1/dot_y_7" BEL "U3/ball1/dot_y_6" BEL "U3/ball1/dot_y_5" BEL
+        "U3/ball1/dot_y_4" BEL "U3/ball1/dot_y_3" BEL "U3/ball1/dot_y_2" BEL
+        "U3/ball1/dot_y_1" BEL "U3/ball2/dot_x_7" BEL "U3/ball2/dot_x_6" BEL
+        "U3/ball2/dot_x_5" BEL "U3/ball2/dot_x_4" BEL "U3/ball2/dot_x_3" BEL
+        "U3/ball2/dot_x_2" BEL "U3/ball2/dot_x_1" BEL "U3/ball2/dot_y_8" BEL
+        "U3/ball2/dot_y_7" BEL "U3/ball2/dot_y_6" BEL "U3/ball2/dot_y_5" BEL
+        "U3/ball2/dot_y_4" BEL "U3/ball2/dot_y_3" BEL "U3/ball2/dot_y_2" BEL
+        "U3/ball2/dot_y_1" BEL "joy2/clk_joy" BEL "R/button_first_press" BEL
+        "U3/clk_cursor" BEL "R/button_state_reg" BEL "R/counter_8" BEL
+        "R/counter_7" BEL "R/counter_6" BEL "R/counter_5" BEL "R/counter_4"
+        BEL "R/counter_3" BEL "R/counter_2" BEL "R/counter_1" BEL
+        "R/counter_0" BEL "R/counter_9" BEL "R/counter_10" BEL "R/counter_11"
+        BEL "R/counter_12" BEL "R/counter_13" BEL "R/counter_14" BEL
+        "U3/ball1/dot_x_2" BEL "R/counter_15" BEL "R/counter_16" BEL
+        "R/counter_17" BEL "R/counter_18" BEL "R/counter_19" BEL
+        "R/counter_20" BEL "U3/ball1/dot_x_1" BEL "U3/counter_cursor_31" BEL
         "U3/counter_cursor_30" BEL "U3/counter_cursor_29" BEL
         "U3/counter_cursor_28" BEL "U3/counter_cursor_27" BEL
         "U3/counter_cursor_26" BEL "U3/counter_cursor_25" BEL
@@ -96,6 +156,36 @@ TIMEGRP sys_clk_pin = BEL "joy1/counter_joy_0" BEL "joy1/counter_joy_1" BEL
         "U3/counter_cursor_6" BEL "U3/counter_cursor_5" BEL
         "U3/counter_cursor_4" BEL "U3/counter_cursor_3" BEL
         "U3/counter_cursor_2" BEL "U3/counter_cursor_1" BEL
-        "U3/counter_cursor_0" BEL "R/button_state_reg_1" BEL "clk_BUFGP/BUFG";
+        "U3/counter_cursor_0" BEL "clk_BUFGP/BUFG" BEL "U3_inst_LPM_FF_0" BEL
+        "U3_inst_LPM_FF_1" PIN "U3_Mram_ram_name_board31_pins<14>" PIN
+        "U3_Mram_ram_name_board30_pins<14>" PIN
+        "U3_Mram_ram_name_board28_pins<14>" PIN
+        "U3_Mram_ram_name_board27_pins<14>" PIN
+        "U3_Mram_ram_name_board29_pins<14>" PIN
+        "U3_Mram_ram_name_board25_pins<14>" PIN
+        "U3_Mram_ram_name_board24_pins<14>" PIN
+        "U3_Mram_ram_name_board26_pins<14>" PIN
+        "U3_Mram_ram_name_board22_pins<14>" PIN
+        "U3_Mram_ram_name_board21_pins<14>" PIN
+        "U3_Mram_ram_name_board23_pins<14>" PIN
+        "U3_Mram_ram_name_board20_pins<14>" PIN
+        "U3_Mram_ram_name_board19_pins<14>" PIN
+        "U3_Mram_ram_name_board17_pins<14>" PIN
+        "U3_Mram_ram_name_board16_pins<14>" PIN
+        "U3_Mram_ram_name_board18_pins<14>" PIN
+        "U3_Mram_ram_name_board15_pins<14>" PIN
+        "U3_Mram_ram_name_board14_pins<14>" PIN
+        "U3_Mram_ram_name_board11_pins<14>" PIN
+        "U3_Mram_ram_name_board13_pins<14>" PIN
+        "U3_Mram_ram_name_board10_pins<14>" PIN
+        "U3_Mram_ram_name_board9_pins<14>" PIN
+        "U3_Mram_ram_name_board7_pins<14>" PIN
+        "U3_Mram_ram_name_board6_pins<14>" PIN
+        "U3_Mram_ram_name_board8_pins<14>" PIN
+        "U3_Mram_ram_name_board4_pins<14>" PIN
+        "U3_Mram_ram_name_board3_pins<14>" PIN
+        "U3_Mram_ram_name_board5_pins<14>" PIN
+        "U3_Mram_ram_name_board1_pins<14>" PIN
+        "U3_Mram_ram_name_board2_pins<14>";
 SCHEMATIC END;
 
