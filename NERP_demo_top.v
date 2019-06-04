@@ -1,28 +1,28 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    20:28:25 03/19/2013 
-// Design Name: 
-// Module Name:    NERP_demo_top 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
+// Company:
+// Engineer:
 //
-// Dependencies: 
+// Create Date:    20:28:25 03/19/2013
+// Design Name:
+// Module Name:    NERP_demo_top
+// Project Name:
+// Target Devices:
+// Tool versions:
+// Description:
 //
-// Revision: 
+// Dependencies:
+//
+// Revision:
 // Revision 0.01 - File Created
-// Additional Comments: 
+// Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
 module NERP_demo_top(
     input wire clk,         //master clock = 50MHz
     input wire clr,         //right-most pushbutton for reset
-	input wire rst,
-	output wire out_rst,
+	  input wire rst,
+	  output wire out_rst,
     output wire [6:0] seg,  //7-segment display LEDs
     output wire [3:0] an,   //7-segment display anode enable
     output wire dp,         //7-segment display decimal point
@@ -39,7 +39,8 @@ module NERP_demo_top(
     output SS_2,
     output MOSI_2,
     output SCLK_2,
-    output wire [7:0] Led
+    output wire [7:0] Led,
+    output wire [1:0] cur_state
     );
 
 // 7-segment clock interconnect
@@ -51,18 +52,24 @@ wire dclk;
 // disable the 7-segment decimal points
 assign dp = 1;
 
+// score
+reg[2:0] score_1 = 0;
+reg[2:0] score_2 = 0;
+
+// go from splash to start game
 bounce R(
     .clk(clk),
     .button(rst),
     .button_state(out_rst)
 );
 
-//bounce L(
-//    .clk(clk),
-//    .button(btnL),
-//    .button_state(bleft)
-//);
-//
+// simulate scoring
+bounce L(
+    .clk(clk),
+    .button(btnL),
+    .button_state(bleft)
+);
+
 //bounce U(
 //    .clk(clk),
 //    .button(btnU),
@@ -75,23 +82,41 @@ bounce R(
 //    .button_state(bdown)
 //);
 
+if(bleft) begin
+  score_1 = score_1 + score_1;
+end
+else begin
+  score_1 = score_1;
+end
+
+state_machine fsm (
+  .clk(clk),
+  .start(out_rst),
+  .score(bleft),
+  .p1(score_1),
+  .p2(score_2),
+  .cur_state(cur_state_2)
+  );
+
 // generate 7-segment clock & display clock
 clockdiv U1(
-    .clk(clk),
-    .clr(clr),
-    .segclk(segclk),
-    .dclk(dclk)
-    );
+  .clk(clk),
+  .clr(clr),
+  .segclk(segclk),
+  .dclk(dclk)
+);
 
 // 7-segment display controller
-segdisplay U2(
-    .segclk(segclk),
-    .clr(clr),
-    .seg(seg),
-    .an(an)
-    );
-    
-/******************************/ 
+score_display score(
+  .segclk(segclk),
+  .clr(clr),
+  .seg(seg),
+  .an(an),
+  .p1(score_1),
+  .p2(score_2)
+);
+
+/******************************/
 /*********Joystick 1***********/
 /******************************/
 
@@ -108,9 +133,9 @@ segdisplay U2(
     wire [9 : 0] joystick_x_1 = {jstkData_1[25:24], jstkData_1[39:32]};
     wire joystick_btn_right_1 = jstkData_1[1];
     wire joystick_btn_left_1 = jstkData_1[2];
-	 
-	 
-    
+
+
+
     joy joy1(
         .CLK(clk),
         .sndRec(dclk),
@@ -121,7 +146,7 @@ segdisplay U2(
     );
 
 
-/******************************/ 
+/******************************/
 /*********Joystick 2***********/
 /******************************/
 
@@ -138,9 +163,9 @@ segdisplay U2(
     wire [9 : 0] joystick_x_2 = {jstkData_2[25:24], jstkData_2[39:32]};
     wire joystick_btn_right_2 = jstkData_2[1];
     wire joystick_btn_left_2= jstkData_2[2];
-	 
+
 	 assign Led = joystick_y_2;
-    
+
     joy joy2(
         .CLK(clk),
         .sndRec(dclk),
@@ -164,9 +189,10 @@ vga640x480 U3(
     .joy_y_1(joystick_y_1),
     .joy_x_2(joystick_x_2),
     .joy_y_2(joystick_y_2),
-	.rst(out_rst)
-    );
-    
-  
+	   .rst(out_rst),
+     .state(cur_state)
+);
+
+
 
 endmodule
