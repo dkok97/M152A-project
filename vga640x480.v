@@ -27,10 +27,6 @@ module vga640x480(
     output reg [2:0] red,   //red vga output
     output reg [2:0] green, //green vga output
     output reg [1:0] blue,  //blue vga output
-    input wire move_right,
-    input wire move_left,
-    input wire move_up,
-    input wire move_down,
     input wire [9:0] joy_x_1,
     input wire [9:0] joy_y_1,
     input wire [9:0] joy_x_2,
@@ -39,9 +35,9 @@ module vga640x480(
     output wire [9:0] dot_y_1,
     output wire [9:0] dot_x_2,
     output wire [9:0] dot_y_2,
-    
     output wire [9:0] puck_x,
-    output wire [9:0] puck_y
+    output wire [9:0] puck_y,
+	input wire rst
     );
 
 // video structure constants
@@ -82,12 +78,26 @@ reg [2:0] b_b2 = 2'b11;
 
 parameter W = 256;
 parameter H = 256;
+assign board_start_x = 50;
+assign board_start_y = 40;
+
+//restrict dot_1 area
+assign dot1_x_lb = 50;
+assign dot1_x_ub = 210;
+assign dot1_y_lb = 40;
+assign dot1_y_ub = 440;
+
+//restrict dot_2 area
+assign dot2_x_lb = 430;
+assign dot2_x_ub = 590;
+assign dot2_y_lb = 40;
+assign dot2_y_ub = 440;
 
 reg [3:0] speed_x = 4'b0111;
-reg [3:0] speed_y = 4'b0011;  
+reg [3:0] speed_y = 4'b0011; 
 
 
-update_joy ball1 (
+update_joy1 ball1 (
     .clk(clk),
     .clr(clr),
     .prev_clk_cursor(prev_clk_cursor),
@@ -95,10 +105,11 @@ update_joy ball1 (
     .joy_x(joy_x_1),
     .joy_y(joy_y_1),
     .dot_x(dot_x_1),
-    .dot_y(dot_y_1)
+    .dot_y(dot_y_1),
+	.rst(rst)
     );
 
-update_joy ball2 (
+update_joy2 ball2 (
     .clk(clk),
     .clr(clr),
     .prev_clk_cursor(prev_clk_cursor),
@@ -106,7 +117,8 @@ update_joy ball2 (
     .joy_x(joy_x_2),
     .joy_y(joy_y_2),
     .dot_x(dot_x_2),
-    .dot_y(dot_y_2)
+    .dot_y(dot_y_2),
+	.rst(rst)
     );
     
 mover puck (
@@ -147,46 +159,41 @@ mover puck (
                         
 always@* read_address = {hc[7:0],vc[7:0]};
 //-----------------------------------------------------------------
-
 always @(posedge clk)
 begin
-    if (prev_dclk==0 && dclk==1)
-    begin
-        counter_cursor <= (counter_cursor == 1666666) ? 0 : counter_cursor + 1;
-        if (counter_cursor == 0) clk_cursor <= ~clk_cursor; 
-        else clk_cursor <= clk_cursor;
-    end
+	counter_cursor <= (counter_cursor == 1666666) ? 0 : counter_cursor + 1;
+	if (counter_cursor == 0) clk_cursor <= ~clk_cursor; 
+	else clk_cursor <= clk_cursor;
+	prev_clk_cursor = clk_cursor;
+end
 
-    if ((prev_dclk==0 && dclk==1) || clr)
-    begin 
-        if (clr == 1)
-        begin
-            hc <= 0;
-            vc <= 0;
-            //$readmemb("color.txt", lines);
-        end
-        else
-        begin
-            // keep counting until the end of the line
-            if (hc < hpixels - 1)
-                hc <= hc + 1;
-            else
-            // When we hit the end of the line, reset the horizontal
-            // counter and increment the vertical counter.
-            // If vertical counter is at the end of the frame, then
-            // reset that one too.
-            begin
-                hc <= 0;
-                if (vc < vlines - 1)
-                    vc <= vc + 1;
-                else
-                    vc <= 0;
-            end
-        end
-    end
-
-    prev_dclk = dclk;
-    prev_clk_cursor = clk_cursor;
+always @(posedge dclk or posedge clr)
+begin
+	if (clr == 1)
+	begin
+		hc <= 0;
+		vc <= 0;
+		//$readmemb("color.txt", lines);
+	end
+	else
+	begin
+		
+		// keep counting until the end of the line
+		if (hc < hpixels - 1)
+			hc <= hc + 1;
+		else
+		// When we hit the end of the line, reset the horizontal
+		// counter and increment the vertical counter.
+		// If vertical counter is at the end of the frame, then
+		// reset that one too.
+		begin
+			hc <= 0;
+			if (vc < vlines - 1)
+				vc <= vc + 1;
+			else
+				vc <= 0;
+		end
+	end
 end
 
 assign hsync = (hc < hpulse) ? 0:1;
@@ -197,47 +204,52 @@ begin
     red = 0;
     green = 0;
     blue = 0;
+	
+//	if ((hc >= board_start_x + hbp) && (hc < board_start_x + hbp + W) && (vc >= board_start_y + vbp) && (vc < board_start_y + vbp + H))
+//	begin
+//		red = output_data[2:0];
+//		green = output_data[5:3];
+//		blue = output_data[7:6];
+//	end
+//	else
+//	begin
+//		red = red;
+//		green = green;
+//		blue = blue;
+//	end
+
+//    if (((dot_x_1 - dot_x_2) * (dot_x_1 - dot_x_2) + (dot_y_1 - dot_y_2) * (dot_y_1 - dot_y_2)) < 225) 
+//    begin
+//        r_b1 = 3'b010;
+//        g_b1 = 3'b101;
+//        b_b1 = 2'b00;
+//    end
+//    else 
+//    begin
+//        r_b1 = 3'b111;
+//        g_b1 = 3'b111;
+//        b_b1 = 2'b11;
+//    end
     
-    if (((dot_x_1 - dot_x_2) * (dot_x_1 - dot_x_2) + (dot_y_1 - dot_y_2) * (dot_y_1 - dot_y_2)) < 225) 
-    begin
-        r_b1 = 3'b010;
-        g_b1 = 3'b101;
-        b_b1 = 2'b00;
-    end
-    else 
-    begin
-        r_b1 = 3'b111;
-        g_b1 = 3'b111;
-        b_b1 = 2'b11;
-    end
-    
-    if (((hc-puck_x) * (hc-puck_x) + (vc-puck_y)*(vc-puck_y)) < 100) begin
-        red = 3'b100;
-        green = 3'b010;
-        blue = 2'b11;
-    end
-        
+//    if (((hc-puck_x) * (hc-puck_x) + (vc-puck_y)*(vc-puck_y)) < 100) begin
+//        red = 3'b100;
+//        green = 3'b010;
+//        blue = 2'b11;
+//    end
+//        
     
 
     if (((hc-dot_x_1) * (hc-dot_x_1) + (vc-dot_y_1)*(vc-dot_y_1)) < 225) begin
-        red = r_b1;
-        green = g_b1;
-        blue = b_b1;
+        red = 3'b111;
+        green = 3'b111;
+        blue = 2'b11;
     end
 
     if (((hc-dot_x_2) * (hc-dot_x_2) + (vc-dot_y_2)*(vc-dot_y_2)) < 225) begin
-        red = r_b2;
-        green = g_b2;
-        blue = b_b2;
-    end
-    
-    if ((hc>=hbp) && (hc<hbp+W) && (vc>=vbp) && (vc<vbp+H))
-    begin
-        red = output_data[2:0];
-        green = output_data[5:3];
-        blue = output_data[7:6];
-    end
-    
+        red = 3'b111;
+        green = 3'b111;
+        blue = 2'b11;
+    end  
     
     
 //    if (hc>=hbp && hc<=211 && vc>=vbp && vc<=81)

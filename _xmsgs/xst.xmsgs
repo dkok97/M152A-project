@@ -5,166 +5,230 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\joy_control.v" Line 12: Redeclaration of ansi port <arg fmt="%s" index="1">SS</arg> is not allowed
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\152\Desktop\m152a-proj\joy_control.v" Line 12: Redeclaration of ansi port <arg fmt="%s" index="1">SS</arg> is not allowed
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\NERP_demo_top.v" Line 104: Redeclaration of ansi port <arg fmt="%s" index="1">SS_1</arg> is not allowed
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\152\Desktop\m152a-proj\NERP_demo_top.v" Line 98: Redeclaration of ansi port <arg fmt="%s" index="1">SS_1</arg> is not allowed
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\NERP_demo_top.v" Line 105: Redeclaration of ansi port <arg fmt="%s" index="1">MOSI_1</arg> is not allowed
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\152\Desktop\m152a-proj\NERP_demo_top.v" Line 99: Redeclaration of ansi port <arg fmt="%s" index="1">MOSI_1</arg> is not allowed
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\NERP_demo_top.v" Line 106: Redeclaration of ansi port <arg fmt="%s" index="1">SCLK_1</arg> is not allowed
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\152\Desktop\m152a-proj\NERP_demo_top.v" Line 100: Redeclaration of ansi port <arg fmt="%s" index="1">SCLK_1</arg> is not allowed
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\NERP_demo_top.v" Line 134: Redeclaration of ansi port <arg fmt="%s" index="1">SS_2</arg> is not allowed
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\152\Desktop\m152a-proj\NERP_demo_top.v" Line 128: Redeclaration of ansi port <arg fmt="%s" index="1">SS_2</arg> is not allowed
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\NERP_demo_top.v" Line 135: Redeclaration of ansi port <arg fmt="%s" index="1">MOSI_2</arg> is not allowed
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\152\Desktop\m152a-proj\NERP_demo_top.v" Line 129: Redeclaration of ansi port <arg fmt="%s" index="1">MOSI_2</arg> is not allowed
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\NERP_demo_top.v" Line 136: Redeclaration of ansi port <arg fmt="%s" index="1">SCLK_2</arg> is not allowed
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\152\Desktop\m152a-proj\NERP_demo_top.v" Line 130: Redeclaration of ansi port <arg fmt="%s" index="1">SCLK_2</arg> is not allowed
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\NERP_demo_top.v" Line 160: Port <arg fmt="%s" index="1">dot_x_1</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\152\Desktop\m152a-proj\NERP_demo_top.v" Line 154: Port <arg fmt="%s" index="1">dot_x_1</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\bounce.v" Line 55: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\bounce.v" Line 55: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\clockdiv.v" Line 41: Result of <arg fmt="%d" index="1">19</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">18</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\clockdiv.v" Line 41: Result of <arg fmt="%d" index="1">19</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">18</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\joy_control.v" Line 26: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\joy_control.v" Line 26: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\joy_control.v" Line 36: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\joy_control.v" Line 36: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\joy_control.v" Line 47: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\joy_control.v" Line 47: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\joy_control.v" Line 55: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\joy_control.v" Line 55: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\joy_control.v" Line 63: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\joy_control.v" Line 63: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\joy_interface.v" Line 36: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\joy_interface.v" Line 36: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\joy_interface.v" Line 50: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\joy_interface.v" Line 50: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\joy_interface.v" Line 52: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\joy_interface.v" Line 52: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\NERP_demo_top.v" Line 148: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\NERP_demo_top.v" Line 142: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\vga640x480.v" Line 79: Using initial value of <arg fmt="%s" index="1">r_b2</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 96: Using initial value of <arg fmt="%s" index="1">speed_x</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\vga640x480.v" Line 80: Using initial value of <arg fmt="%s" index="1">g_b2</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 97: Using initial value of <arg fmt="%s" index="1">speed_y</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\vga640x480.v" Line 81: Using initial value of <arg fmt="%s" index="1">b_b2</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 138: Using initial value of <arg fmt="%s" index="1">write_enable</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\vga640x480.v" Line 86: Using initial value of <arg fmt="%s" index="1">speed_x</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 146: Using initial value of <arg fmt="%s" index="1">write_address</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\vga640x480.v" Line 87: Using initial value of <arg fmt="%s" index="1">speed_y</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 147: Using initial value of <arg fmt="%s" index="1">input_data</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\vga640x480.v" Line 126: Using initial value of <arg fmt="%s" index="1">write_enable</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 81: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\vga640x480.v" Line 134: Using initial value of <arg fmt="%s" index="1">write_address</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 81: Assignment to <arg fmt="%s" index="1">board_start_x</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\vga640x480.v" Line 135: Using initial value of <arg fmt="%s" index="1">input_data</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 82: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\update_joy.v" Line 47: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 82: Assignment to <arg fmt="%s" index="1">board_start_y</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\update_joy.v" Line 48: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 85: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\update_joy.v" Line 52: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 85: Assignment to <arg fmt="%s" index="1">dot1_x_lb</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\update_joy.v" Line 53: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 86: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\update_joy.v" Line 58: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 86: Assignment to <arg fmt="%s" index="1">dot1_x_ub</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\update_joy.v" Line 59: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 87: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\update_joy.v" Line 63: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 87: Assignment to <arg fmt="%s" index="1">dot1_y_lb</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\update_joy.v" Line 64: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 88: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\vga640x480.v" Line 119: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">delta_x</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">4</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 88: Assignment to <arg fmt="%s" index="1">dot1_y_ub</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\vga640x480.v" Line 120: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">delta_y</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">4</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 91: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\vga640x480.v" Line 172: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 91: Assignment to <arg fmt="%s" index="1">dot2_x_lb</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\vga640x480.v" Line 181: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 92: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\vga640x480.v" Line 192: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 92: Assignment to <arg fmt="%s" index="1">dot2_x_ub</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\vga640x480.v" Line 193: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 93: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\commit 3\NERP_demo\vga640x480.v" Line 225: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 93: Assignment to <arg fmt="%s" index="1">dot2_y_lb</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\152\Desktop\commit 3\NERP_demo\NERP_demo_top.v</arg>&quot; line <arg fmt="%s" index="2">160</arg>: Output port &lt;<arg fmt="%s" index="3">dot_x_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 94: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\152\Desktop\commit 3\NERP_demo\NERP_demo_top.v</arg>&quot; line <arg fmt="%s" index="2">160</arg>: Output port &lt;<arg fmt="%s" index="3">dot_y_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 94: Assignment to <arg fmt="%s" index="1">dot2_y_ub</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\152\Desktop\commit 3\NERP_demo\NERP_demo_top.v</arg>&quot; line <arg fmt="%s" index="2">160</arg>: Output port &lt;<arg fmt="%s" index="3">dot_x_2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\update_joy1.v" Line 55: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\152\Desktop\commit 3\NERP_demo\NERP_demo_top.v</arg>&quot; line <arg fmt="%s" index="2">160</arg>: Output port &lt;<arg fmt="%s" index="3">dot_y_2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\update_joy1.v" Line 56: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\152\Desktop\commit 3\NERP_demo\NERP_demo_top.v</arg>&quot; line <arg fmt="%s" index="2">160</arg>: Output port &lt;<arg fmt="%s" index="3">puck_x</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\update_joy1.v" Line 60: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\152\Desktop\commit 3\NERP_demo\NERP_demo_top.v</arg>&quot; line <arg fmt="%s" index="2">160</arg>: Output port &lt;<arg fmt="%s" index="3">puck_y</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\update_joy1.v" Line 61: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\update_joy1.v" Line 66: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\update_joy1.v" Line 67: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\update_joy1.v" Line 71: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\update_joy1.v" Line 72: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\update_joy2.v" Line 55: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\update_joy2.v" Line 56: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\update_joy2.v" Line 60: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\update_joy2.v" Line 61: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\update_joy2.v" Line 66: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\update_joy2.v" Line 67: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\update_joy2.v" Line 71: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\update_joy2.v" Line 72: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 131: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">delta_x</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">4</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 132: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">delta_y</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">4</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 154: Assignment to <arg fmt="%s" index="1">output_data</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 183: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 192: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 199: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\152\Desktop\m152a-proj\vga640x480.v" Line 200: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\152\Desktop\m152a-proj\NERP_demo_top.v</arg>&quot; line <arg fmt="%s" index="2">154</arg>: Output port &lt;<arg fmt="%s" index="3">dot_x_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\152\Desktop\m152a-proj\NERP_demo_top.v</arg>&quot; line <arg fmt="%s" index="2">154</arg>: Output port &lt;<arg fmt="%s" index="3">dot_y_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\152\Desktop\m152a-proj\NERP_demo_top.v</arg>&quot; line <arg fmt="%s" index="2">154</arg>: Output port &lt;<arg fmt="%s" index="3">dot_x_2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\152\Desktop\m152a-proj\NERP_demo_top.v</arg>&quot; line <arg fmt="%s" index="2">154</arg>: Output port &lt;<arg fmt="%s" index="3">dot_y_2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\152\Desktop\m152a-proj\NERP_demo_top.v</arg>&quot; line <arg fmt="%s" index="2">154</arg>: Output port &lt;<arg fmt="%s" index="3">puck_x</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\152\Desktop\m152a-proj\NERP_demo_top.v</arg>&quot; line <arg fmt="%s" index="2">154</arg>: Output port &lt;<arg fmt="%s" index="3">puck_y</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U3</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="0" delta="new" >Value &quot;<arg fmt="%s" index="1">{AUTO | BLOCK |  BLOCK_POWER1 | BLOCK_POWER2}</arg>&quot; of property &quot;<arg fmt="%s" index="2">RAM_STYLE</arg>&quot; is not applicable. List of valid values is &quot;<arg fmt="%s" index="3">auto, block, block_power1, block_power2, distributed, pipe_block, pipe_distributed</arg>&quot; 
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">move_right</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">move_left</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">move_up</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">move_down</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="2999" delta="old" >Signal &apos;<arg fmt="%s" index="1">ram_name</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">vga640x480</arg>&apos;, is tied to its initial value.
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">puck</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">U3</arg>&gt;.
+It will be removed from the design.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">seg_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">U2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seg_4&gt; &lt;seg_5&gt; </arg>
@@ -293,27 +357,25 @@
 <msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_pState[1]_PWR_7_o_Mux_13_o</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 </msg>
 
-<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_ram_name</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
-
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">seg_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">segdisplay</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seg_4&gt; &lt;seg_5&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dot_y_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">update_joy1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dot_x_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">update_joy1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">dot_y_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">update_joy2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dot_x_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">update_joy2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">an_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">segdisplay</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seg_2&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">an_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">segdisplay</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seg_3&gt; </arg>
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">dot_y_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">update_joy</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dot_x_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">update_joy</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">dot_y_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">update_joy</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">dot_x_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">update_joy</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">joy1/jc/DOUT_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
@@ -436,193 +498,202 @@
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">joy2/jc/DOUT_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram_name8</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram_name12</arg>&gt; are equivalent, second RAM is removed
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_x_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2399" delta="old" >RAMs &lt;<arg fmt="%s" index="1">Mram_ram_name8</arg>&gt;, &lt;<arg fmt="%s" index="2">Mram_ram_name32</arg>&gt; are equivalent, second RAM is removed
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_x_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">R/counter_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_x_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">R/counter_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_x_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">R/counter_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_x_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">R/counter_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_x_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">R/counter_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_x_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_x_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_x_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_x_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_y_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_y_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_y_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_y_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_y_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_y_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_y_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_y_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_y_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U3/puck/dot_y_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">R/counter_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">R/counter_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">R/counter_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">R/counter_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">L/counter_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">R/counter_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">L/counter_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">R/counter_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">L/counter_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">R/counter_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">L/counter_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">R/counter_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">L/counter_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">U3/ball1/dot_x_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">L/counter_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">U3/ball1/dot_y_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">L/counter_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">U3/ball2/dot_x_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">U/counter_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">U3/ball2/dot_x_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">U/counter_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">U3/ball2/dot_y_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">U/counter_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_0&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">U/counter_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_1&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">U/counter_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_2&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">U/counter_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_3&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">U/counter_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_4&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">D/counter_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_5&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">D/counter_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_6&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">D/counter_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_7&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">D/counter_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_8&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">D/counter_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_9&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">D/counter_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_10&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">D/counter_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NERP_demo_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_11&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_10&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_12&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_11&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_13&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_12&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_14&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_13&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_15&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_14&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_20&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_15&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_16&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_20&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_21&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_16&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_17&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_21&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_22&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_17&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_18&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_22&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_23&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_18&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_19&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_23&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_24</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_24&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_19&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_25</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_25&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_24</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_24&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_30</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_30&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_25</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_25&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_26</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_26&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_30</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_30&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_31&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_26</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_26&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_27</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_27&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_31&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_28</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_28&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_27</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_27&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_28</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_28&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_29&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy1/counter_joy_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy2/counter_joy_29&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/clk_joy</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/clk_joy&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_0&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_1&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_2&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_3&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_4&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_5&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_6&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_7&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_8&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">joy2/counter_joy_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;joy1/counter_joy_9&gt; </arg>
+<msg type="info" file="Xst" num="3203" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U3/ball1/dot_x_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NERP_demo_top</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U3/ball1/dot_x_7&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
