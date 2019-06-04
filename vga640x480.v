@@ -90,6 +90,16 @@ reg [9:0] vc_jump_board;
 reg vc_nojump;
 
 
+//temp simple board params
+parameter board_x1 = 179;
+parameter board_x2 = 194;
+parameter board_x3 = 734;
+parameter board_x4 = 749;
+parameter board_y1 = 59;
+parameter board_y2 = 71;
+parameter board_y3 = 471;
+parameter board_y4 = 486;
+
 
 reg [3:0] speed_x = 4'b0111;
 reg [3:0] speed_y = 4'b0011; 
@@ -220,6 +230,7 @@ begin
     green = 0;
     blue = 0;
 	
+    //---------------------BOARD FROM RAM---------------------------
 	if ((hc >= board_start_x + hbp) && (hc < board_start_x + hbp + temo_W_board) && (vc >= board_start_y + vbp) && (vc < board_start_y + vbp + temp_H_board))
 	begin
 		red = output_data_board[2:0];
@@ -232,6 +243,16 @@ begin
 		green = green;
 		blue = blue;
 	end
+    //---------------------------------------------------------------
+
+    //---------------------BOARD BASIC-------------------------------
+    if ((hc >= board_x1 && hc <= board_x4 && vc >= board_y1 && vc <= board_y2) || (hc >= board_x1 && hc <= board_x2 && vc >= board_y1 && vc <= board_y4) || (hc >= board_x1 && hc <= board_x4 && vc >= board_y3 && vc <= board_y4) || (hc >= board_x3 && hc <= board_x4 && vc >= board_y1 && vc <= board_y4))
+    begin
+        red = 3'b010;
+        green = 3'b000;
+        blue = 2'b11;
+    end
+    //---------------------------------------------------------------
 
 //    if (((dot_x_1 - dot_x_2) * (dot_x_1 - dot_x_2) + (dot_y_1 - dot_y_2) * (dot_y_1 - dot_y_2)) < 225) 
 //    begin
