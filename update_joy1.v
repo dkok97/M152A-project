@@ -34,12 +34,12 @@ module update_joy1(
     parameter hfp = 784;
     parameter vbp = 31;
     parameter vfp = 511;
-	parameter init_x = 60+hbp;
-	parameter init_y = 140+vbp;
-	parameter x_lb = 50+hbp;
-	parameter x_ub = 210+hbp;
-	parameter y_lb = 40+vbp;
-	parameter y_ub = 440+vbp;
+	parameter init_x = 204;
+	parameter init_y = 271;
+	parameter x_lb = 194;
+	parameter x_ub = 354;
+	parameter y_lb = 71;
+	parameter y_ub = 471;
     
     always @(posedge clk or posedge clr)
 	begin

@@ -34,12 +34,12 @@ module update_joy2(
     parameter hfp = 784;
     parameter vbp = 31;
     parameter vfp = 511;
-	parameter init_x = 580+hbp;
-	parameter init_y = 140+vbp;
-	parameter x_lb = 590+hbp;
-	parameter x_ub = 430+hbp;
-	parameter y_lb = 40+vbp;
-	parameter y_ub = 440+vbp;
+	parameter init_x = 724;
+	parameter init_y = 271;
+	parameter x_lb = 574;
+	parameter x_ub = 734;
+	parameter y_lb = 71;
+	parameter y_ub = 471;
     
     always @(posedge clk or posedge clr)
 	begin
@@ -50,12 +50,12 @@ module update_joy2(
     end
 	else begin
     if (prev_clk_cursor == 0 && clk_cursor == 1) begin
-        if (dot_x<x_lb)
+        if (dot_x<x_ub)
         begin
             if (joy_x < 150) dot_x <= dot_x + 20;
             else if ( joy_x < 400) dot_x <= dot_x + 10;
         end
-        if (dot_x>x_ub)
+        if (dot_x>x_lb)
         begin
             if (joy_x > 850 && dot_x > 2) dot_x <= dot_x - 20;
             else if (joy_x > 600 && dot_x > 1) dot_x <= dot_x - 10;
