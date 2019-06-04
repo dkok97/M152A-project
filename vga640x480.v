@@ -76,8 +76,8 @@ reg [2:0] r_b2 = 3'b111;
 reg [2:0] g_b2 = 3'b111;
 reg [2:0] b_b2 = 2'b11;
 
-parameter W = 181*3;
-parameter H = 134*3;
+parameter W_board = 181*3;
+parameter H_board = 134*3;
 assign board_start_x = 50;
 assign board_start_y = 40;
 assign rom_addr_board = vc - vbp - board_start_y;
@@ -88,6 +88,8 @@ reg [9:0] hc_jump_board;
 reg hc_nojump;
 reg [9:0] vc_jump_board;
 reg vc_nojump;
+
+
 
 reg [3:0] speed_x = 4'b0111;
 reg [3:0] speed_y = 4'b0011; 
@@ -218,7 +220,7 @@ begin
     green = 0;
     blue = 0;
 	
-	if ((hc >= board_start_x + hbp) && (hc < board_start_x + hbp + W) && (vc >= board_start_y + vbp) && (vc < board_start_y + vbp + H))
+	if ((hc >= board_start_x + hbp) && (hc < board_start_x + hbp + temo_W_board) && (vc >= board_start_y + vbp) && (vc < board_start_y + vbp + temp_H_board))
 	begin
 		red = output_data_board[2:0];
 		green = output_data_board[5:3];
