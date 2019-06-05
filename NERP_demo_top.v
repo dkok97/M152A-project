@@ -21,8 +21,10 @@
 module NERP_demo_top(
     input wire clk,         //master clock = 50MHz
     input wire clr,         //right-most pushbutton for reset
-	  input wire rst,
-	  output wire out_rst,
+	input wire rst,
+	input wire btnL,
+	output wire out_btnL,
+	output wire out_rst,
     output wire [6:0] seg,  //7-segment display LEDs
     output wire [3:0] an,   //7-segment display anode enable
     output wire dp,         //7-segment display decimal point
@@ -67,7 +69,7 @@ bounce R(
 bounce L(
     .clk(clk),
     .button(btnL),
-    .button_state(bleft)
+    .button_state(out_btnL)
 );
 
 //bounce U(
@@ -82,21 +84,21 @@ bounce L(
 //    .button_state(bdown)
 //);
 
-if(bleft) begin
-  score_1 = score_1 + score_1;
-end
-else begin
-  score_1 = score_1;
-end
+//if(bleft) begin
+//  score_1 = score_1 + score_1;
+//end
+//else begin
+//  score_1 = score_1;
+//end
 
 state_machine fsm (
   .clk(clk),
   .start(out_rst),
-  .score(bleft),
+  .restart(out_btnL),
   .p1(score_1),
   .p2(score_2),
   .cur_state(cur_state_2)
-  );
+ );
 
 // generate 7-segment clock & display clock
 clockdiv U1(
