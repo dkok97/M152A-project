@@ -199,6 +199,18 @@ parameter right_cen_yub = 296;
 							s1 <= 0;
 							s2 <= 0;
 					end
+					else begin
+							dot_x <= dot_x;
+							dot_y <= dot_y;
+							delta_x <= delta_x;
+							delta_y <= delta_y;
+							reverse_x <= reverse_x;
+							reverse_y <= reverse_y;
+							collide1 <= collide1;
+							collide2 <= collide2;
+							s1 <= s1;
+							s2 <= s2;
+					end
             end
 	    end
     end
