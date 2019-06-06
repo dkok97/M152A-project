@@ -33,7 +33,7 @@ module update_joy2(
     parameter hfp = 784;
     parameter vbp = 31;
     parameter vfp = 511;
-	parameter init_x = 724;
+	parameter init_x = 694;
 	parameter init_y = 271;
 	parameter x_lb = 551+15;
 	parameter x_ub = 704-15;
