@@ -26,8 +26,7 @@ module update_joy2(
     input wire [9:0] joy_x,
     input wire [9:0] joy_y,
     output reg [9:0] dot_x,
-    output reg [9:0] dot_y,
-	input wire rst
+    output reg [9:0] dot_y
     );
     
     parameter hbp = 144;
@@ -43,7 +42,7 @@ module update_joy2(
     
     always @(posedge clk or posedge clr)
 	begin
-    if (clr==1 || rst==1) 
+    if (clr==1) 
 	begin
         dot_x <= init_x;
         dot_y <= init_y;

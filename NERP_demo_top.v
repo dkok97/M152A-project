@@ -21,8 +21,12 @@
 module NERP_demo_top(
     input wire clk,         //master clock = 50MHz
     input wire clr,         //right-most pushbutton for reset
-	  input wire rst,
-	  output wire out_rst,
+//	input wire rst,
+	input wire btnU,
+	output wire out_btnU,
+	input wire btnD,
+	output wire out_btnD,
+//	output wire out_rst,
     output wire [6:0] seg,  //7-segment display LEDs
     output wire [3:0] an,   //7-segment display anode enable
     output wire dp,         //7-segment display decimal point
@@ -41,6 +45,9 @@ module NERP_demo_top(
     output SCLK_2,
     output wire [7:0] Led,
     output wire [1:0] cur_state
+	// score
+//	output wire[2:0] score1,
+//	output wire[2:0] score2
     );
 
 // 7-segment clock interconnect
@@ -51,52 +58,51 @@ wire dclk;
 
 // disable the 7-segment decimal points
 assign dp = 1;
-
-// score
-reg[2:0] score_1 = 0;
-reg[2:0] score_2 = 0;
+//
+//assign score1 = 0;
+//assign score2 = 0;
 
 // go from splash to start game
-bounce R(
-    .clk(clk),
-    .button(rst),
-    .button_state(out_rst)
-);
+//bounce R(
+//    .clk(clk),
+//    .button(rst),
+//    .button_state(out_rst)
+//);
 
 // simulate scoring
-bounce L(
+//bounce L(
+//    .clk(clk),
+//    .button(btnL),
+//    .button_state(out_btnL)
+//);
+
+bounce U(
     .clk(clk),
-    .button(btnL),
-    .button_state(bleft)
+    .button(btnU),
+    .button_state(out_btnU)
 );
 
-//bounce U(
-//    .clk(clk),
-//    .button(btnU),
-//    .button_state(bup)
-//);
-//
-//bounce D(
-//    .clk(clk),
-//    .button(btnD),
-//    .button_state(bdown)
-//);
+bounce D(
+    .clk(clk),
+    .button(btnD),
+    .button_state(out_btnD)
+);
 
-if(bleft) begin
-  score_1 = score_1 + score_1;
-end
-else begin
-  score_1 = score_1;
-end
+//if(bleft) begin
+//  score_1 = score_1 + score_1;
+//end
+//else begin
+//  score_1 = score_1;
+//end
 
 state_machine fsm (
   .clk(clk),
-  .start(out_rst),
-  .score(bleft),
+  .start(btnU),
+  .restart(out_btnD),
   .p1(score_1),
   .p2(score_2),
   .cur_state(cur_state_2)
-  );
+ );
 
 // generate 7-segment clock & display clock
 clockdiv U1(
@@ -175,24 +181,25 @@ score_display score(
         .DOUT(jstkData_2)
     );
 
-// VGA controller
-vga640x480 U3(
-    .clk(clk),
-    .dclk(dclk),
-    .clr(clr),
-    .hsync(hsync),
-    .vsync(vsync),
-    .red(red),
-    .green(green),
-    .blue(blue),
-    .joy_x_1(joystick_x_1),
-    .joy_y_1(joystick_y_1),
-    .joy_x_2(joystick_x_2),
-    .joy_y_2(joystick_y_2),
-	   .rst(out_rst),
-     .state(cur_state)
-);
-
-
+	// VGA controller
+	vga640x480 U3(
+		 .clk(clk),
+		 .dclk(dclk),
+		 .clr(clr),
+		 .hsync(hsync),
+		 .vsync(vsync),
+		 .red(red),
+		 .green(green),
+		 .blue(blue),
+		 .joy_x_1(joystick_x_1),
+		 .joy_y_1(joystick_y_1),
+		 .joy_x_2(joystick_x_2),
+		 .joy_y_2(joystick_y_2),
+		 .state(cur_state),
+         .butUp(btnU),
+         .butDown(btnD)
+//		 .out_score1(score1),
+//		 .out_score2(score2)
+	);
 
 endmodule

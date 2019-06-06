@@ -1,0 +1,10 @@
+Command line:
+   vga_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  40131
+
+Wed Jun  5 15:06:59 2019
+
+
+ Elaboration Time: 0.01 sec

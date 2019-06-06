@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="30">
+  <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../segdisplay.v">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../sesame.v">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../sram.v">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../top.v">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../update_joy2.v">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../update_joy1.v">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../mover.v">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../joy_interface.v">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../joy_control.v">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../vga640x480.v">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../state_machine.v">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../score_display.v">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../joy.v">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../clockdiv.v">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../bounce.v">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../NERP_demo_top.v">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="NERP_demo_top"/>
+    </Config>
+  </FileSet>
+</DARoots>

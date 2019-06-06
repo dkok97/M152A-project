@@ -37,15 +37,24 @@ module vga640x480(
     output wire [9:0] dot_y_2,
     output wire [9:0] puck_x,
     output wire [9:0] puck_y,
-	input wire rst,
-    input wire [1:0] state
+	 output wire collide1,
+	 output wire collide2,
+    input wire [1:0] state,
+    input wire butUp,
+    input wire butDown
+//	 output reg [2:0] out_score1,
+//	 output reg [2:0] out_score2
     );
 
 // FSM States
 parameter s0 = 0;	// splash
 parameter s1 = 1;	// middle
-parameter s2 = 2;	// play
-parameter s3 = 3;	// end
+// parameter s2 = 2;	// play
+parameter s2 = 2;	// end
+
+// Store Scores
+reg [2:0] score1 = 0;
+reg [2:0] score2 = 0;
 
 // video structure constants
 parameter hpixels = 800;// horizontal pixels per line
@@ -75,14 +84,8 @@ reg clk_cursor = 0; // Ticks at 30 Hz
 reg prev_dclk = 0;
 reg prev_clk_cursor = 0;
 
-reg [2:0] r_b1 = 3'b111;
-reg [2:0] g_b1 = 3'b111;
-reg [2:0] b_b1 = 2'b11;
-
-reg [2:0] r_b2 = 3'b111;
-reg [2:0] g_b2 = 3'b111;
-reg [2:0] b_b2 = 2'b11;
-
+reg up = 0;
+reg down = 0;
 
 //simple board params
 parameter board_x1 = 194;
@@ -112,7 +115,6 @@ parameter right_xub = 551;
 parameter right_ylb = 101;
 parameter right_yub = 441;
 
-
 //left center rect
 parameter left_cen_xlb = 214;
 parameter left_cen_xub = 234;
@@ -134,8 +136,7 @@ update_joy1 ball1 (
     .joy_x(joy_x_1),
     .joy_y(joy_y_1),
     .dot_x(dot_x_1),
-    .dot_y(dot_y_1),
-	.rst(rst)
+    .dot_y(dot_y_1)
     );
 
 update_joy2 ball2 (
@@ -146,8 +147,7 @@ update_joy2 ball2 (
     .joy_x(joy_x_2),
     .joy_y(joy_y_2),
     .dot_x(dot_x_2),
-    .dot_y(dot_y_2),
-	.rst(rst)
+    .dot_y(dot_y_2)
     );
 
 mover puck (
@@ -155,33 +155,40 @@ mover puck (
     .clr(clr),
     .dot_x(puck_x),
     .dot_y(puck_y),
+	.ball1_x(dot_x_1),
+	.ball1_y(dot_y_1),
+	.ball2_x(dot_x_2),
+	.ball2_y(dot_y_2),
     .prev_clk_cursor(prev_clk_cursor),
-    .clk_cursor(clk_cursor)
+    .clk_cursor(clk_cursor),
+	.collide1(collide1),
+	.collide2(collide2)
+	
 );
 
 //---------------------------------------------------------------
 
-//    reg write_enable = 0;
-//    parameter RAM_WIDTH = 8;
-//    parameter RAM_ADDR_BITS = 15;
+    // reg write_enable = 0;
+    // parameter RAM_WIDTH = 8;
+    // parameter RAM_ADDR_BITS = 16;
 
-//    (* RAM_STYLE="{AUTO | BLOCK |  BLOCK_POWER1 | BLOCK_POWER2}" *)
-//    reg [RAM_WIDTH-1:0] ram_name_board [(2**RAM_ADDR_BITS)-1:0];
-//    reg [RAM_WIDTH-1:0] output_data_board;
+    // (* RAM_STYLE="{AUTO | BLOCK |  BLOCK_POWER1 | BLOCK_POWER2}" *)
+    // reg [RAM_WIDTH-1:0] ram_name_board [(2**RAM_ADDR_BITS)-1:0];
+    // reg [RAM_WIDTH-1:0] output_data_board;
 
-//    reg [RAM_ADDR_BITS-1:0] read_address_board, write_address=0;
-//    reg [RAM_WIDTH-1:0] input_data=0;
+    // reg [RAM_ADDR_BITS-1:0] read_address_board, write_address=0;
+    // reg [RAM_WIDTH-1:0] input_data=0;
 
-//    //  The forllowing code is only necessary if you wish to initialize the RAM
-//    //  contents via an external file (use $readmemb for binary data)
-//    initial
-//       $readmemh("image2.txt", ram_name_board, 0, 181*134-1);
+    // //  The forllowing code is only necessary if you wish to initialize the RAM
+    // //  contents via an external file (use $readmemb for binary data)
+    // initial
+    //    $readmemh("image2.txt", ram_name_board, 0, 256*256-1);
 
-//    always @(posedge clk) begin
-//       if (write_enable)
-//          ram_name_board[write_address] <= input_data;
-//       output_data_board <= ram_name_board[read_address_board];
-//    end
+    // always @(posedge clk) begin
+    //    if (write_enable)
+    //       ram_name_board[write_address] <= input_data;
+    //    output_data_board <= ram_name_board[read_address_board];
+    // end
 
 //-----------------------------------------------------------------
 always @(posedge clk)
@@ -190,6 +197,28 @@ begin
 	if (counter_cursor == 0) clk_cursor <= ~clk_cursor;
 	else clk_cursor <= clk_cursor;
 	prev_clk_cursor = clk_cursor;
+    
+    if (butUp)
+    begin
+    up = 1;
+    down = 0;
+    end
+    else
+    begin
+    up = up;
+    down = down;
+    end
+    
+    if (butDown) 
+    begin
+    up = 0;
+    down = 1;
+    end
+    else
+    begin
+    up = up;
+    down = down;
+    end
 end
 
 always @(posedge dclk or posedge clr)
@@ -202,7 +231,6 @@ begin
         // vc_jump_board <= 0;
         // hc_nojump <= 1;
         // vc_nojump <= 1;
-		//$readmemb("color.txt", lines);
 	end
 	else
 	begin
@@ -241,6 +269,302 @@ end
 assign hsync = (hc < hpulse) ? 0:1;
 assign vsync = (vc < vpulse) ? 0:1;
 
+// Test1
+/*
+always @(*)
+begin
+red = 0;
+green = 0;
+blue = 0;
+		if ((hc>=hbp && hc<=hfp) && (vc>=vbp && vc<=vfp)) 
+		begin
+        if(state == s0) begin
+            red = 3'b111;
+			green = 3'b000;
+			blue = 2'b00;
+		end
+		if(up) begin
+			red = 3'b000;
+			green = 3'b111;
+            blue = 2'b00;
+        end
+//			if(state == s0) begin
+//				red = 3'b111;
+//				green = 3'b000;
+//				blue = 2'b00;
+//			end
+//			else if(state == s1) begin
+//				red = 3'b000;
+//				green = 3'b111;
+//				blue = 2'b00;
+//			end
+//			else if(state == s2) begin
+//				red = 3'b000;
+//				green = 3'b000;
+//				blue = 2'b11;
+//			end
+//			else begin
+//				red = 3'b111;
+//				green = 3'b000;
+//				blue = 2'b11;
+//			end
+		end
+    
+end
+*/
+
+//Test3
+
+always @(*)
+begin
+red = 0;
+green = 0;
+blue = 0;
+		if ((hc>=hbp && hc<=hfp) && (vc>=vbp && vc<=vfp)) 
+		begin
+			if(up==0 && down==0) begin
+				red = 3'b111;
+				green = 3'b000;
+				blue = 2'b00;
+			end
+			else if(up==1) begin
+                    // read_address_board = {rom_pix_board[7:0],rom_addr_board[7:0]};
+				 // read_address_board = {temp_rom_pix_board[7:0],temp_rom_addr_board[7:0]};
+				//  red = 0;
+				//  green = 0;
+				//  blue = 0;
+
+					//---------------------BOARD BASIC-------------------------------
+					//board
+					if ((hc >= board_x1 && hc <= board_x4 && vc >= board_y1 && vc <= board_y2) || (hc >= board_x1 && hc <= board_x2 && vc >= board_y1 && vc <= board_y4) || (hc >= board_x1 && hc <= board_x4 && vc >= board_y3 && vc <= board_y4) || (hc >= board_x3 && hc <= board_x4 && vc >= board_y1 && vc <= board_y4))
+					begin
+						 red = 3'b010;
+						 green = 3'b000;
+						 blue = 2'b11;
+					end
+
+					//left line
+					if ((hc >= left_xlb && hc <= left_xub) && (vc >= left_ylb && vc <= left_yub))
+					begin
+						 red = 3'b010;
+						 green = 3'b000;
+						 blue = 2'b11;
+					end
+
+					//right line
+					if ((hc >= right_xlb && hc <= right_xub) && (vc >= right_ylb && vc <= right_yub))
+					begin
+						 red = 3'b010;
+						 green = 3'b000;
+						 blue = 2'b11;
+					end
+
+					//mid line
+					if ((hc >= mid_xlb && hc <= mid_xub) && (vc >= mid_ylb && vc <= mid_yub))
+					begin
+						 red = 3'b010;
+						 green = 3'b000;
+						 blue = 2'b11;
+					end
+
+					//left center rect
+					if ((hc >= left_cen_xlb && hc <= left_cen_xub) && (vc >= left_cen_ylb && vc <= left_cen_yub))
+					begin
+					  if (collide1) begin
+						 red = 3'b111;
+						 green = 3'b111;
+						 blue = 2'b11;
+						 //score1 = score1 + 1;
+					  end
+					  else begin
+						 red = 3'b010;
+						 green = 3'b000;
+						 blue = 2'b11;
+					  end
+					end
+
+					//right center rect
+					if ((hc >= right_cen_xlb && hc <= right_cen_xub) && (vc >= right_cen_ylb && vc <= right_cen_yub))
+					begin
+					  if (collide2) begin
+                        red = 3'b111;
+						 green = 3'b111;
+						 blue = 2'b11;
+						 //score2 = score2 + 1;
+					  end
+					  else begin
+						 red = 3'b010;
+						 green = 3'b000;
+						 blue = 2'b11;
+					  end
+					end
+					//---------------------------------------------------------------
+
+					//--------------------INIT BALLS, PUCK---------------------------
+					//puck
+					if (((hc-puck_x) * (hc-puck_x) + (vc-puck_y)*(vc-puck_y)) < 100) begin
+						 red = 3'b100;
+						 green = 3'b010;
+						 blue = 2'b11;
+					end
+
+
+					//ball1
+					if (((hc-dot_x_1) * (hc-dot_x_1) + (vc-dot_y_1)*(vc-dot_y_1)) < 225) begin
+						 red = 3'b111;
+						 green = 3'b111;
+						 blue = 2'b11;
+					end
+
+					//ball2
+					if (((hc-dot_x_2) * (hc-dot_x_2) + (vc-dot_y_2)*(vc-dot_y_2)) < 225) begin
+						 red = 3'b111;
+						 green = 3'b111;
+						 blue = 2'b11;
+					end
+					//-------------------------------------------------------------
+			end
+			else if(down) begin
+				red = 3'b000;
+				green = 3'b000;
+				blue = 2'b11;
+			end
+			else begin
+				red = 3'b111;
+				green = 3'b111;
+				blue = 2'b11;
+			end
+		end
+    
+end
+
+
+//Test2
+/*
+always @(*)
+begin
+		if ((hc>=hbp && hc<=hfp) && (vc>=vbp && vc<=vfp)) 
+		begin
+			if(state == s0) begin
+				red = 3'b111;
+				green = 3'b000;
+				blue = 2'b00;
+			end
+			else if(state == s1) begin
+				// read_address_board = {rom_pix_board[7:0],rom_addr_board[7:0]};
+				 // read_address_board = {temp_rom_pix_board[7:0],temp_rom_addr_board[7:0]};
+				 red = 0;
+				 green = 0;
+				 blue = 0;
+
+					//---------------------BOARD BASIC-------------------------------
+					//board
+					if ((hc >= board_x1 && hc <= board_x4 && vc >= board_y1 && vc <= board_y2) || (hc >= board_x1 && hc <= board_x2 && vc >= board_y1 && vc <= board_y4) || (hc >= board_x1 && hc <= board_x4 && vc >= board_y3 && vc <= board_y4) || (hc >= board_x3 && hc <= board_x4 && vc >= board_y1 && vc <= board_y4))
+					begin
+						 red = 3'b010;
+						 green = 3'b000;
+						 blue = 2'b11;
+					end
+
+					//left line
+					if ((hc >= left_xlb && hc <= left_xub) && (vc >= left_ylb && vc <= left_yub))
+					begin
+						 red = 3'b010;
+						 green = 3'b000;
+						 blue = 2'b11;
+					end
+
+					//right line
+					if ((hc >= right_xlb && hc <= right_xub) && (vc >= right_ylb && vc <= right_yub))
+					begin
+						 red = 3'b010;
+						 green = 3'b000;
+						 blue = 2'b11;
+					end
+
+					//mid line
+					if ((hc >= mid_xlb && hc <= mid_xub) && (vc >= mid_ylb && vc <= mid_yub))
+					begin
+						 red = 3'b010;
+						 green = 3'b000;
+						 blue = 2'b11;
+					end
+
+					//left center rect
+					if ((hc >= left_cen_xlb && hc <= left_cen_xub) && (vc >= left_cen_ylb && vc <= left_cen_yub))
+					begin
+					  if (collide1) begin
+						 red = 3'b111;
+						 green = 3'b111;
+						 blue = 2'b11;
+						 //score1 = score1 + 1;
+					  end
+					  else begin
+						 red = 3'b010;
+						 green = 3'b000;
+						 blue = 2'b11;
+					  end
+					end
+
+					//right center rect
+					if ((hc >= right_cen_xlb && hc <= right_cen_xub) && (vc >= right_cen_ylb && vc <= right_cen_yub))
+					begin
+					  if (collide2) begin
+                        red = 3'b111;
+						 green = 3'b111;
+						 blue = 2'b11;
+						 //score2 = score2 + 1;
+					  end
+					  else begin
+						 red = 3'b010;
+						 green = 3'b000;
+						 blue = 2'b11;
+					  end
+					end
+					//---------------------------------------------------------------
+
+					//--------------------INIT BALLS, PUCK---------------------------
+					//puck
+					if (((hc-puck_x) * (hc-puck_x) + (vc-puck_y)*(vc-puck_y)) < 100) begin
+						 red = 3'b100;
+						 green = 3'b010;
+						 blue = 2'b11;
+					end
+
+
+					//ball1
+					if (((hc-dot_x_1) * (hc-dot_x_1) + (vc-dot_y_1)*(vc-dot_y_1)) < 225) begin
+						 red = 3'b111;
+						 green = 3'b111;
+						 blue = 2'b11;
+					end
+
+					//ball2
+					if (((hc-dot_x_2) * (hc-dot_x_2) + (vc-dot_y_2)*(vc-dot_y_2)) < 225) begin
+						 red = 3'b111;
+						 green = 3'b111;
+						 blue = 2'b11;
+					end
+					//-------------------------------------------------------------
+			end
+			else if(state == s2) begin
+				red = 3'b000;
+				green = 3'b000;
+				blue = 2'b11;
+			end
+			else begin
+				red = 3'b111;
+				green = 3'b000;
+				blue = 2'b11;
+			end
+		end
+    
+end
+*/
+
+
+
+/*
 always @(*)
 begin
     // read_address_board = {rom_pix_board[7:0],rom_addr_board[7:0]};
@@ -248,13 +572,6 @@ begin
     red = 0;
     green = 0;
     blue = 0;
-
-    if(state == s0) begin
-      red = 3'b001;
-      green = 3'b010;
-      blue = 2'b11;
-    end
-    else if(state == s1) begin
 
       //---------------------BOARD BASIC-------------------------------
       //board
@@ -276,7 +593,7 @@ begin
       //right line
       if ((hc >= right_xlb && hc <= right_xub) && (vc >= right_ylb && vc <= right_yub))
       begin
-          red = 3'b010;
+			 red = 3'b010;
           green = 3'b000;
           blue = 2'b11;
       end
@@ -292,17 +609,33 @@ begin
       //left center rect
       if ((hc >= left_cen_xlb && hc <= left_cen_xub) && (vc >= left_cen_ylb && vc <= left_cen_yub))
       begin
-          red = 3'b010;
+		  if (collide1) begin
+			 red = 3'b111;
+          green = 3'b111;
+          blue = 2'b11;
+			 score1 = score1 + 1;
+		  end
+		  else begin
+			 red = 3'b010;
           green = 3'b000;
           blue = 2'b11;
+		  end
       end
 
       //right center rect
       if ((hc >= right_cen_xlb && hc <= right_cen_xub) && (vc >= right_cen_ylb && vc <= right_cen_yub))
       begin
-          red = 3'b010;
+		  if (collide2) begin
+		  red = 3'b111;
+          green = 3'b111;
+          blue = 2'b11;
+			 score2 = score2 + 1;
+		  end
+		  else begin
+			 red = 3'b010;
           green = 3'b000;
           blue = 2'b11;
+		  end
       end
       //---------------------------------------------------------------
 
@@ -329,103 +662,104 @@ begin
           blue = 2'b11;
       end
       //-------------------------------------------------------------
-
-    end
-    else if(state == s2) begin
-      //---------------------BOARD BASIC-------------------------------
-      //board
-      if ((hc >= board_x1 && hc <= board_x4 && vc >= board_y1 && vc <= board_y2) || (hc >= board_x1 && hc <= board_x2 && vc >= board_y1 && vc <= board_y4) || (hc >= board_x1 && hc <= board_x4 && vc >= board_y3 && vc <= board_y4) || (hc >= board_x3 && hc <= board_x4 && vc >= board_y1 && vc <= board_y4))
-      begin
-          red = 3'b010;
-          green = 3'b000;
-          blue = 2'b11;
-      end
-
-      //left line
-      if ((hc >= left_xlb && hc <= left_xub) && (vc >= left_ylb && vc <= left_yub))
-      begin
-          red = 3'b010;
-          green = 3'b000;
-          blue = 2'b11;
-      end
-
-      //right line
-      if ((hc >= right_xlb && hc <= right_xub) && (vc >= right_ylb && vc <= right_yub))
-      begin
-          red = 3'b010;
-          green = 3'b000;
-          blue = 2'b11;
-      end
-
-      //mid line
-      if ((hc >= mid_xlb && hc <= mid_xub) && (vc >= mid_ylb && vc <= mid_yub))
-      begin
-          red = 3'b010;
-          green = 3'b000;
-          blue = 2'b11;
-      end
-
-      //left center rect
-      if ((hc >= left_cen_xlb && hc <= left_cen_xub) && (vc >= left_cen_ylb && vc <= left_cen_yub))
-      begin
-          red = 3'b010;
-          green = 3'b000;
-          blue = 2'b11;
-      end
-
-      //right center rect
-      if ((hc >= right_cen_xlb && hc <= right_cen_xub) && (vc >= right_cen_ylb && vc <= right_cen_yub))
-      begin
-          red = 3'b010;
-          green = 3'b000;
-          blue = 2'b11;
-      end
-      //---------------------------------------------------------------
-
-  //    if (((dot_x_1 - dot_x_2) * (dot_x_1 - dot_x_2) + (dot_y_1 - dot_y_2) * (dot_y_1 - dot_y_2)) < 225)
-  //    begin
-  //        r_b1 = 3'b010;
-  //        g_b1 = 3'b101;
-  //        b_b1 = 2'b00;
-  //    end
-  //    else
-  //    begin
-  //        r_b1 = 3'b111;
-  //        g_b1 = 3'b111;
-  //        b_b1 = 2'b11;
-  //    end
-
-      //puck
-      if (((hc-puck_x) * (hc-puck_x) + (vc-puck_y)*(vc-puck_y)) < 100) begin
-          red = 3'b100;
-          green = 3'b010;
-          blue = 2'b11;
-      end
-
-
-      //ball1
-      if (((hc-dot_x_1) * (hc-dot_x_1) + (vc-dot_y_1)*(vc-dot_y_1)) < 225) begin
-          red = 3'b111;
-          green = 3'b111;
-          blue = 2'b11;
-      end
-
-      //ball2
-      if (((hc-dot_x_2) * (hc-dot_x_2) + (vc-dot_y_2)*(vc-dot_y_2)) < 225) begin
-          red = 3'b111;
-          green = 3'b111;
-          blue = 2'b11;
-      end
-    end
-    else if(state == s3) begin
-      red = 3'b101;
-      green = 3'b01;
-      blue = 2'b10;
-    end
-
-    endcase
+    
 
 
 end
+*/
+
 
 endmodule
+
+//if(state == s0) begin
+//      red = 3'b111;
+//      green = 3'b000;
+//      blue = 2'b00;
+//    end
+//    else if(state == s1) begin
+//
+//      //---------------------BOARD BASIC-------------------------------
+//      //board
+//      if ((hc >= board_x1 && hc <= board_x4 && vc >= board_y1 && vc <= board_y2) || (hc >= board_x1 && hc <= board_x2 && vc >= board_y1 && vc <= board_y4) || (hc >= board_x1 && hc <= board_x4 && vc >= board_y3 && vc <= board_y4) || (hc >= board_x3 && hc <= board_x4 && vc >= board_y1 && vc <= board_y4))
+//      begin
+//          red = 3'b010;
+//          green = 3'b000;
+//          blue = 2'b11;
+//      end
+//
+//      //left line
+//      if ((hc >= left_xlb && hc <= left_xub) && (vc >= left_ylb && vc <= left_yub))
+//      begin
+//          red = 3'b010;
+//          green = 3'b000;
+//          blue = 2'b11;
+//      end
+//
+//      //right line
+//      if ((hc >= right_xlb && hc <= right_xub) && (vc >= right_ylb && vc <= right_yub))
+//      begin
+//          red = 3'b010;
+//          green = 3'b000;
+//          blue = 2'b11;
+//      end
+//
+//      //mid line
+//      if ((hc >= mid_xlb && hc <= mid_xub) && (vc >= mid_ylb && vc <= mid_yub))
+//      begin
+//          red = 3'b010;
+//          green = 3'b000;
+//          blue = 2'b11;
+//      end
+//
+//      //left center rect
+//      if ((hc >= left_cen_xlb && hc <= left_cen_xub) && (vc >= left_cen_ylb && vc <= left_cen_yub))
+//      begin
+//          red = 3'b010;
+//          green = 3'b000;
+//          blue = 2'b11;
+//      end
+//
+//      //right center rect
+//      if ((hc >= right_cen_xlb && hc <= right_cen_xub) && (vc >= right_cen_ylb && vc <= right_cen_yub))
+//      begin
+//          red = 3'b010;
+//          green = 3'b000;
+//          blue = 2'b11;
+//      end
+//      //---------------------------------------------------------------
+//
+//      //--------------------INIT BALLS, PUCK---------------------------
+//      //puck
+//      if (((hc-puck_x) * (hc-puck_x) + (vc-puck_y)*(vc-puck_y)) < 100) begin
+//          red = 3'b100;
+//          green = 3'b010;
+//          blue = 2'b11;
+//      end
+//
+//
+//      //ball1
+//      if (((hc-dot_x_1) * (hc-dot_x_1) + (vc-dot_y_1)*(vc-dot_y_1)) < 225) begin
+//          red = 3'b111;
+//          green = 3'b111;
+//          blue = 2'b11;
+//      end
+//
+//      //ball2
+//      if (((hc-dot_x_2) * (hc-dot_x_2) + (vc-dot_y_2)*(vc-dot_y_2)) < 225) begin
+//          red = 3'b111;
+//          green = 3'b111;
+//          blue = 2'b11;
+//      end
+//      //-------------------------------------------------------------
+//
+//    end
+//    else if(state == s2) begin
+//      red = 3'b101;
+//      green = 3'b01;
+//      blue = 2'b10;
+//    end
+//	else begin 
+//		red = red;
+//		green = green;
+//		blue = blue;
+//	end
