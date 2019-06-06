@@ -87,6 +87,14 @@ reg prev_clk_cursor = 0;
 reg up = 0;
 reg down = 0;
 
+wire [10:0] pp_start_x, pp_start_y, rom_addr_pp, rom_pix_pp;
+parameter W_pp = 256;
+parameter H_pp = 256;
+assign pp_start_x = 336;
+assign pp_start_y = 143;
+assign rom_addr_pp = vc - vbp - pp_start_y;
+assign rom_pix_pp = hc - hbp - pp_start_x;
+
 //simple board params
 parameter board_x1 = 194;
 parameter board_x2 = 224;
@@ -168,27 +176,27 @@ mover puck (
 
 //---------------------------------------------------------------
 
-    // reg write_enable = 0;
-    // parameter RAM_WIDTH = 8;
-    // parameter RAM_ADDR_BITS = 16;
+    reg write_enable = 0;
+    parameter RAM_WIDTH = 8;
+    parameter RAM_ADDR_BITS = 16;
 
-    // (* RAM_STYLE="{AUTO | BLOCK |  BLOCK_POWER1 | BLOCK_POWER2}" *)
-    // reg [RAM_WIDTH-1:0] ram_name_board [(2**RAM_ADDR_BITS)-1:0];
-    // reg [RAM_WIDTH-1:0] output_data_board;
+    (* RAM_STYLE="{AUTO | BLOCK |  BLOCK_POWER1 | BLOCK_POWER2}" *)
+    reg [RAM_WIDTH-1:0] ram_name_pp [(2**RAM_ADDR_BITS)-1:0];
+    reg [RAM_WIDTH-1:0] output_data_pp;
 
-    // reg [RAM_ADDR_BITS-1:0] read_address_board, write_address=0;
-    // reg [RAM_WIDTH-1:0] input_data=0;
+    reg [RAM_ADDR_BITS-1:0] read_address_pp, write_address=0;
+    reg [RAM_WIDTH-1:0] input_data=0;
 
-    // //  The forllowing code is only necessary if you wish to initialize the RAM
-    // //  contents via an external file (use $readmemb for binary data)
-    // initial
-    //    $readmemh("image2.txt", ram_name_board, 0, 256*256-1);
+    //  The forllowing code is only necessary if you wish to initialize the RAM
+    //  contents via an external file (use $readmemb for binary data)
+    initial
+       $readmemh("image2.txt", ram_name_pp, 0, 256*256-1);
 
-    // always @(posedge clk) begin
-    //    if (write_enable)
-    //       ram_name_board[write_address] <= input_data;
-    //    output_data_board <= ram_name_board[read_address_board];
-    // end
+    always @(posedge clk) begin
+       if (write_enable)
+          ram_name_pp[write_address] <= input_data;
+       output_data_pp <= ram_name_pp[read_address_pp];
+    end
 
 //-----------------------------------------------------------------
 always @(posedge clk)
@@ -320,6 +328,7 @@ begin
 red = 0;
 green = 0;
 blue = 0;
+read_address_pp = {rom_pix_pp[7:0],rom_addr_pp[7:0]};
 		if ((hc>=hbp && hc<=hfp) && (vc>=vbp && vc<=vfp)) 
 		begin
 			if(up==0 && down==0) begin
@@ -333,6 +342,24 @@ blue = 0;
 				//  red = 0;
 				//  green = 0;
 				//  blue = 0;
+
+					//---------------------PINK PANTHER------------------------------
+					if ((hc >= pp_start_x + hbp) && (hc < pp_start_x + hbp + W_pp) && (vc >= pp_start_y + vbp) && (vc < pp_start_y + vbp + H_pp))
+					begin
+						if (output_data_pp[7:0]!=8'b11111111)
+						begin
+							red = output_data_pp[2:0];
+							green = output_data_pp[5:3];
+							blue = output_data_pp[7:6];
+						end
+					end
+					else
+					begin
+						red = red;
+						green = green;
+						blue = blue;
+					end
+					//---------------------------------------------------------------
 
 					//---------------------BOARD BASIC-------------------------------
 					//board
