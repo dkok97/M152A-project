@@ -1,0 +1,160 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jun 06 03:27:04 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "clr" LOCATE = SITE "B8" LEVEL 1;
+COMP "SS_1" LOCATE = SITE "T12" LEVEL 1;
+COMP "SS_2" LOCATE = SITE "H3" LEVEL 1;
+COMP "btnD" LOCATE = SITE "C9" LEVEL 1;
+COMP "btnU" LOCATE = SITE "A8" LEVEL 1;
+COMP "blue<0>" LOCATE = SITE "R7" LEVEL 1;
+COMP "blue<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "hsync" LOCATE = SITE "N6" LEVEL 1;
+COMP "vsync" LOCATE = SITE "P7" LEVEL 1;
+COMP "MISO_1" LOCATE = SITE "N10" LEVEL 1;
+COMP "MISO_2" LOCATE = SITE "K6" LEVEL 1;
+COMP "SCLK_1" LOCATE = SITE "P11" LEVEL 1;
+COMP "SCLK_2" LOCATE = SITE "G3" LEVEL 1;
+COMP "MOSI_1" LOCATE = SITE "V12" LEVEL 1;
+COMP "MOSI_2" LOCATE = SITE "L7" LEVEL 1;
+COMP "Led<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "Led<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "Led<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "Led<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "Led<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "Led<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "Led<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "Led<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "red<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "red<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "red<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "green<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "green<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "green<2>" LOCATE = SITE "V6" LEVEL 1;
+PIN U3_Mram_ram_name_pp30_pins<14> = BEL "U3_Mram_ram_name_pp30" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp29_pins<14> = BEL "U3_Mram_ram_name_pp29" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp31_pins<14> = BEL "U3_Mram_ram_name_pp31" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp27_pins<14> = BEL "U3_Mram_ram_name_pp27" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp26_pins<14> = BEL "U3_Mram_ram_name_pp26" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp28_pins<14> = BEL "U3_Mram_ram_name_pp28" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp24_pins<14> = BEL "U3_Mram_ram_name_pp24" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp23_pins<14> = BEL "U3_Mram_ram_name_pp23" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp25_pins<14> = BEL "U3_Mram_ram_name_pp25" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp22_pins<14> = BEL "U3_Mram_ram_name_pp22" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp21_pins<14> = BEL "U3_Mram_ram_name_pp21" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp19_pins<14> = BEL "U3_Mram_ram_name_pp19" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp18_pins<14> = BEL "U3_Mram_ram_name_pp18" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp20_pins<14> = BEL "U3_Mram_ram_name_pp20" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp16_pins<14> = BEL "U3_Mram_ram_name_pp16" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp15_pins<14> = BEL "U3_Mram_ram_name_pp15" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp17_pins<14> = BEL "U3_Mram_ram_name_pp17" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp13_pins<14> = BEL "U3_Mram_ram_name_pp13" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp14_pins<14> = BEL "U3_Mram_ram_name_pp14" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp10_pins<14> = BEL "U3_Mram_ram_name_pp10" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp9_pins<14> = BEL "U3_Mram_ram_name_pp9" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp11_pins<14> = BEL "U3_Mram_ram_name_pp11" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp7_pins<14> = BEL "U3_Mram_ram_name_pp7" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp6_pins<14> = BEL "U3_Mram_ram_name_pp6" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp8_pins<14> = BEL "U3_Mram_ram_name_pp8" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp4_pins<14> = BEL "U3_Mram_ram_name_pp4" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp3_pins<14> = BEL "U3_Mram_ram_name_pp3" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp5_pins<14> = BEL "U3_Mram_ram_name_pp5" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp1_pins<14> = BEL "U3_Mram_ram_name_pp1" PINNAME CLKA;
+PIN U3_Mram_ram_name_pp2_pins<14> = BEL "U3_Mram_ram_name_pp2" PINNAME CLKA;
+TIMEGRP sys_clk_pin = BEL "U1/q_0" BEL "U1/q_1" BEL "U1/q_2" BEL "U1/q_3" BEL
+        "U1/q_4" BEL "U1/q_5" BEL "U1/q_6" BEL "U1/q_7" BEL "U1/q_8" BEL
+        "U1/q_9" BEL "U1/q_10" BEL "U1/q_11" BEL "U1/q_12" BEL "U1/q_13" BEL
+        "U1/q_14" BEL "U1/q_15" BEL "U1/q_16" BEL "U1/q_17" BEL "D/counter_24"
+        BEL "D/counter_23" BEL "D/counter_22" BEL "D/counter_21" BEL
+        "U/counter_24" BEL "U/counter_23" BEL "U/counter_22" BEL
+        "U/counter_21" BEL "U3/prev_clk_cursor" BEL "U3/ball1/dot_x_4" BEL
+        "U3/ball1/dot_x_1" BEL "U3/ball1/dot_y_7" BEL "U3/ball1/dot_y_6" BEL
+        "U3/ball1/dot_y_4" BEL "U3/ball1/dot_y_3" BEL "U3/ball1/dot_y_5" BEL
+        "U3/ball1/dot_y_1" BEL "U3/ball1/dot_y_2" BEL "U3/ball2/dot_x_6" BEL
+        "U3/ball2/dot_x_5" BEL "U3/ball2/dot_x_7" BEL "U3/ball2/dot_x_4" BEL
+        "U3/ball2/dot_x_3" BEL "U3/ball2/dot_x_1" BEL "U3/ball2/dot_x_2" BEL
+        "U3/ball2/dot_y_7" BEL "U3/ball2/dot_y_6" BEL "U3/ball2/dot_y_4" BEL
+        "U3/ball2/dot_y_3" BEL "U3/ball2/dot_y_5" BEL "U3/ball2/dot_y_1" BEL
+        "U3/ball2/dot_y_2" BEL "joy2/clk_joy" BEL "D/button_first_press" BEL
+        "D/button_state_reg" BEL "U/button_first_press" BEL
+        "U/button_state_reg" BEL "U3/clk_cursor" BEL "U3/down" BEL "U3/up" BEL
+        "D/counter_8" BEL "D/counter_7" BEL "D/counter_6" BEL "D/counter_5"
+        BEL "D/counter_4" BEL "D/counter_3" BEL "D/counter_2" BEL
+        "D/counter_1" BEL "D/counter_0" BEL "U/counter_8" BEL "U/counter_7"
+        BEL "U/counter_6" BEL "U/counter_5" BEL "U/counter_4" BEL
+        "U/counter_3" BEL "U/counter_2" BEL "U/counter_1" BEL "U/counter_0"
+        BEL "D/counter_9" BEL "U/counter_9" BEL "D/counter_10" BEL
+        "U/counter_10" BEL "D/counter_11" BEL "U/counter_11" BEL
+        "D/counter_12" BEL "U/counter_12" BEL "D/counter_13" BEL
+        "U/counter_13" BEL "D/counter_14" BEL "U/counter_14" BEL
+        "D/counter_15" BEL "U/counter_15" BEL "D/counter_16" BEL
+        "U/counter_16" BEL "D/counter_17" BEL "U/counter_17" BEL
+        "D/counter_18" BEL "U/counter_18" BEL "D/counter_19" BEL
+        "U/counter_19" BEL "D/counter_20" BEL "U/counter_20" BEL
+        "U3/counter_cursor_0" BEL "joy2/counter_joy_0" BEL
+        "joy2/counter_joy_1" BEL "joy2/counter_joy_2" BEL "joy2/counter_joy_3"
+        BEL "joy2/counter_joy_4" BEL "joy2/counter_joy_5" BEL
+        "joy2/counter_joy_6" BEL "joy2/counter_joy_7" BEL "joy2/counter_joy_8"
+        BEL "joy2/counter_joy_9" BEL "joy2/counter_joy_10" BEL
+        "joy2/counter_joy_11" BEL "joy2/counter_joy_12" BEL
+        "joy2/counter_joy_13" BEL "joy2/counter_joy_14" BEL
+        "joy2/counter_joy_15" BEL "joy2/counter_joy_16" BEL
+        "joy2/counter_joy_17" BEL "joy2/counter_joy_18" BEL
+        "joy2/counter_joy_19" BEL "joy2/counter_joy_20" BEL
+        "joy2/counter_joy_21" BEL "joy2/counter_joy_22" BEL
+        "joy2/counter_joy_23" BEL "joy2/counter_joy_24" BEL
+        "joy2/counter_joy_25" BEL "joy2/counter_joy_26" BEL
+        "joy2/counter_joy_27" BEL "joy2/counter_joy_28" BEL
+        "joy2/counter_joy_29" BEL "joy2/counter_joy_30" BEL
+        "joy2/counter_joy_31" BEL "U3/counter_cursor_31" BEL
+        "U3/counter_cursor_30" BEL "U3/counter_cursor_29" BEL
+        "U3/counter_cursor_28" BEL "U3/counter_cursor_27" BEL
+        "U3/counter_cursor_26" BEL "U3/counter_cursor_25" BEL
+        "U3/counter_cursor_24" BEL "U3/counter_cursor_23" BEL
+        "U3/counter_cursor_22" BEL "U3/counter_cursor_21" BEL
+        "U3/counter_cursor_20" BEL "U3/counter_cursor_19" BEL
+        "U3/counter_cursor_18" BEL "U3/counter_cursor_17" BEL
+        "U3/counter_cursor_16" BEL "U3/counter_cursor_15" BEL
+        "U3/counter_cursor_14" BEL "U3/counter_cursor_13" BEL
+        "U3/counter_cursor_12" BEL "U3/counter_cursor_11" BEL
+        "U3/counter_cursor_10" BEL "U3/counter_cursor_9" BEL
+        "U3/counter_cursor_8" BEL "U3/counter_cursor_7" BEL
+        "U3/counter_cursor_6" BEL "U3/counter_cursor_5" BEL
+        "U3/counter_cursor_4" BEL "U3/counter_cursor_3" BEL
+        "U3/counter_cursor_2" BEL "U3/counter_cursor_1" BEL "clk_BUFGP/BUFG"
+        BEL "U3_inst_LPM_FF_0" BEL "U3_inst_LPM_FF_1" PIN
+        "U3_Mram_ram_name_pp30_pins<14>" PIN "U3_Mram_ram_name_pp29_pins<14>"
+        PIN "U3_Mram_ram_name_pp31_pins<14>" PIN
+        "U3_Mram_ram_name_pp27_pins<14>" PIN "U3_Mram_ram_name_pp26_pins<14>"
+        PIN "U3_Mram_ram_name_pp28_pins<14>" PIN
+        "U3_Mram_ram_name_pp24_pins<14>" PIN "U3_Mram_ram_name_pp23_pins<14>"
+        PIN "U3_Mram_ram_name_pp25_pins<14>" PIN
+        "U3_Mram_ram_name_pp22_pins<14>" PIN "U3_Mram_ram_name_pp21_pins<14>"
+        PIN "U3_Mram_ram_name_pp19_pins<14>" PIN
+        "U3_Mram_ram_name_pp18_pins<14>" PIN "U3_Mram_ram_name_pp20_pins<14>"
+        PIN "U3_Mram_ram_name_pp16_pins<14>" PIN
+        "U3_Mram_ram_name_pp15_pins<14>" PIN "U3_Mram_ram_name_pp17_pins<14>"
+        PIN "U3_Mram_ram_name_pp13_pins<14>" PIN
+        "U3_Mram_ram_name_pp14_pins<14>" PIN "U3_Mram_ram_name_pp10_pins<14>"
+        PIN "U3_Mram_ram_name_pp9_pins<14>" PIN
+        "U3_Mram_ram_name_pp11_pins<14>" PIN "U3_Mram_ram_name_pp7_pins<14>"
+        PIN "U3_Mram_ram_name_pp6_pins<14>" PIN
+        "U3_Mram_ram_name_pp8_pins<14>" PIN "U3_Mram_ram_name_pp4_pins<14>"
+        PIN "U3_Mram_ram_name_pp3_pins<14>" PIN
+        "U3_Mram_ram_name_pp5_pins<14>" PIN "U3_Mram_ram_name_pp1_pins<14>"
+        PIN "U3_Mram_ram_name_pp2_pins<14>";
+SCHEMATIC END;
+
