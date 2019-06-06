@@ -44,10 +44,10 @@ module NERP_demo_top(
     output MOSI_2,
     output SCLK_2,
     output wire [7:0] Led,
-    output wire [1:0] cur_state
+    output wire [1:0] cur_state,
 	// score
-//	output wire[2:0] score1,
-//	output wire[2:0] score2
+	output wire [2:0] score1,
+	output wire [2:0] score2
     );
 
 // 7-segment clock interconnect
@@ -112,14 +112,19 @@ clockdiv U1(
   .dclk(dclk)
 );
 
+	 
+ wire [2:0] outscore_1, outscore2;
+ assign outscore1 = score1;
+ assign outscore2 = score2;
+
 // 7-segment display controller
 score_display score(
   .segclk(segclk),
   .clr(clr),
   .seg(seg),
   .an(an),
-  .p1(score_1),
-  .p2(score_2)
+  .p1(outscore1),
+  .p2(outscore2)
 );
 
 /******************************/
@@ -197,9 +202,9 @@ score_display score(
 		 .joy_y_2(joystick_y_2),
 		 .state(cur_state),
          .butUp(btnU),
-         .butDown(btnD)
-//		 .out_score1(score1),
-//		 .out_score2(score2)
+         .butDown(btnD),
+		 .out_score1(score1),
+		 .out_score2(score2)
 	);
 
 endmodule

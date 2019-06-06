@@ -1,18 +1,21 @@
-Release 14.6 - xst P.68d (nt64)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> Reading design: NERP_demo_top.prj
+--> 
+Reading design: NERP_demo_top.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -105,142 +108,152 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\152\Desktop\M152A-project\update_joy2.v" into library work
+Analyzing Verilog file "/home/parallels/Desktop/M152A-project/update_joy2.v" into library work
 Parsing module <update_joy2>.
-Analyzing Verilog file "C:\Users\152\Desktop\M152A-project\update_joy1.v" into library work
+Analyzing Verilog file "/home/parallels/Desktop/M152A-project/update_joy1.v" into library work
 Parsing module <update_joy1>.
-Analyzing Verilog file "C:\Users\152\Desktop\M152A-project\mover.v" into library work
+Analyzing Verilog file "/home/parallels/Desktop/M152A-project/mover.v" into library work
 Parsing module <mover>.
-Analyzing Verilog file "C:\Users\152\Desktop\M152A-project\joy_interface.v" into library work
+Analyzing Verilog file "/home/parallels/Desktop/M152A-project/joy_interface.v" into library work
 Parsing module <joy_interface>.
-Analyzing Verilog file "C:\Users\152\Desktop\M152A-project\joy_control.v" into library work
+Analyzing Verilog file "/home/parallels/Desktop/M152A-project/joy_control.v" into library work
 Parsing module <joy_control>.
-WARNING:HDLCompiler:751 - "C:\Users\152\Desktop\M152A-project\joy_control.v" Line 12: Redeclaration of ansi port SS is not allowed
-Analyzing Verilog file "C:\Users\152\Desktop\M152A-project\vga640x480.v" into library work
+WARNING:HDLCompiler:751 - "/home/parallels/Desktop/M152A-project/joy_control.v" Line 12: Redeclaration of ansi port SS is not allowed
+Analyzing Verilog file "/home/parallels/Desktop/M152A-project/vga640x480.v" into library work
 Parsing module <vga640x480>.
-Analyzing Verilog file "C:\Users\152\Desktop\M152A-project\state_machine.v" into library work
+Analyzing Verilog file "/home/parallels/Desktop/M152A-project/state_machine.v" into library work
 Parsing module <state_machine>.
-Analyzing Verilog file "C:\Users\152\Desktop\M152A-project\score_display.v" into library work
+Analyzing Verilog file "/home/parallels/Desktop/M152A-project/score_display.v" into library work
 Parsing module <score_display>.
-Analyzing Verilog file "C:\Users\152\Desktop\M152A-project\joy.v" into library work
+Analyzing Verilog file "/home/parallels/Desktop/M152A-project/joy.v" into library work
 Parsing module <joy>.
-Analyzing Verilog file "C:\Users\152\Desktop\M152A-project\clockdiv.v" into library work
+Analyzing Verilog file "/home/parallels/Desktop/M152A-project/clockdiv.v" into library work
 Parsing module <clockdiv>.
-Analyzing Verilog file "C:\Users\152\Desktop\M152A-project\bounce.v" into library work
+Analyzing Verilog file "/home/parallels/Desktop/M152A-project/bounce.v" into library work
 Parsing module <bounce>.
-Analyzing Verilog file "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" into library work
+Analyzing Verilog file "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" into library work
 Parsing module <NERP_demo_top>.
-WARNING:HDLCompiler:751 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" Line 129: Redeclaration of ansi port SS_1 is not allowed
-WARNING:HDLCompiler:751 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" Line 130: Redeclaration of ansi port MOSI_1 is not allowed
-WARNING:HDLCompiler:751 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" Line 131: Redeclaration of ansi port SCLK_1 is not allowed
-WARNING:HDLCompiler:751 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" Line 159: Redeclaration of ansi port SS_2 is not allowed
-WARNING:HDLCompiler:751 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" Line 160: Redeclaration of ansi port MOSI_2 is not allowed
-WARNING:HDLCompiler:751 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" Line 161: Redeclaration of ansi port SCLK_2 is not allowed
+WARNING:HDLCompiler:751 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" Line 134: Redeclaration of ansi port SS_1 is not allowed
+WARNING:HDLCompiler:751 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" Line 135: Redeclaration of ansi port MOSI_1 is not allowed
+WARNING:HDLCompiler:751 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" Line 136: Redeclaration of ansi port SCLK_1 is not allowed
+WARNING:HDLCompiler:751 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" Line 164: Redeclaration of ansi port SS_2 is not allowed
+WARNING:HDLCompiler:751 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" Line 165: Redeclaration of ansi port MOSI_2 is not allowed
+WARNING:HDLCompiler:751 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" Line 166: Redeclaration of ansi port SCLK_2 is not allowed
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" Line 185: Port dot_x_1 is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" Line 190: Port dot_x_1 is not connected to this instance
 
 Elaborating module <NERP_demo_top>.
 
 Elaborating module <bounce>.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\bounce.v" Line 55: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/bounce.v" Line 55: Result of 2-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <state_machine>.
-WARNING:HDLCompiler:189 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" Line 102: Size mismatch in connection of port <p1>. Formal port size is 3-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" Line 103: Size mismatch in connection of port <p2>. Formal port size is 3-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" Line 104: Size mismatch in connection of port <cur_state>. Formal port size is 2-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" Line 104: Assignment to cur_state_2 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" Line 102: Size mismatch in connection of port <p1>. Formal port size is 3-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" Line 103: Size mismatch in connection of port <p2>. Formal port size is 3-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" Line 104: Size mismatch in connection of port <cur_state>. Formal port size is 2-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" Line 104: Assignment to cur_state_2 ignored, since the identifier is never used
 
 Elaborating module <clockdiv>.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\clockdiv.v" Line 41: Result of 19-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/clockdiv.v" Line 41: Result of 19-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" Line 117: Result of 3-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <score_display>.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\score_display.v" Line 51: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\score_display.v" Line 58: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\score_display.v" Line 59: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\score_display.v" Line 60: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\score_display.v" Line 61: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\score_display.v" Line 62: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\score_display.v" Line 63: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\score_display.v" Line 64: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\score_display.v" Line 71: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\score_display.v" Line 78: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\score_display.v" Line 79: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\score_display.v" Line 80: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\score_display.v" Line 81: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\score_display.v" Line 82: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\score_display.v" Line 83: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\score_display.v" Line 84: Result of 8-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:189 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" Line 121: Size mismatch in connection of port <p1>. Formal port size is 3-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" Line 122: Size mismatch in connection of port <p2>. Formal port size is 3-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/score_display.v" Line 51: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/score_display.v" Line 58: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/score_display.v" Line 59: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/score_display.v" Line 60: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/score_display.v" Line 61: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/score_display.v" Line 62: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/score_display.v" Line 63: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/score_display.v" Line 64: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/score_display.v" Line 71: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/score_display.v" Line 78: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/score_display.v" Line 79: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/score_display.v" Line 80: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/score_display.v" Line 81: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/score_display.v" Line 82: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/score_display.v" Line 83: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/score_display.v" Line 84: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:189 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" Line 126: Size mismatch in connection of port <p1>. Formal port size is 3-bit while actual signal size is 1-bit.
 
 Elaborating module <joy>.
 
 Elaborating module <joy_control>.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\joy_control.v" Line 26: Result of 32-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\joy_control.v" Line 36: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\joy_control.v" Line 47: Result of 32-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\joy_control.v" Line 55: Result of 32-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\joy_control.v" Line 63: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/joy_control.v" Line 26: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/joy_control.v" Line 36: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/joy_control.v" Line 47: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/joy_control.v" Line 55: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/joy_control.v" Line 63: Result of 32-bit expression is truncated to fit in 3-bit target.
 
 Elaborating module <joy_interface>.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\joy_interface.v" Line 36: Result of 32-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\joy_interface.v" Line 50: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\joy_interface.v" Line 52: Result of 32-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" Line 173: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/joy_interface.v" Line 36: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/joy_interface.v" Line 50: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/joy_interface.v" Line 52: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" Line 178: Result of 10-bit expression is truncated to fit in 8-bit target.
 
 Elaborating module <vga640x480>.
+WARNING:HDLCompiler:872 - "/home/parallels/Desktop/M152A-project/vga640x480.v" Line 186: Using initial value of write_enable since it is never assigned
+WARNING:HDLCompiler:872 - "/home/parallels/Desktop/M152A-project/vga640x480.v" Line 194: Using initial value of write_address since it is never assigned
+WARNING:HDLCompiler:872 - "/home/parallels/Desktop/M152A-project/vga640x480.v" Line 195: Using initial value of input_data since it is never assigned
+Reading initialization file \"image2.txt\".
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/vga640x480.v" Line 97: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/vga640x480.v" Line 98: Result of 32-bit expression is truncated to fit in 11-bit target.
 
 Elaborating module <update_joy1>.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\update_joy1.v" Line 54: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\update_joy1.v" Line 55: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\update_joy1.v" Line 59: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\update_joy1.v" Line 60: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\update_joy1.v" Line 65: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\update_joy1.v" Line 66: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\update_joy1.v" Line 70: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\update_joy1.v" Line 71: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/update_joy1.v" Line 54: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/update_joy1.v" Line 55: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/update_joy1.v" Line 59: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/update_joy1.v" Line 60: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/update_joy1.v" Line 65: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/update_joy1.v" Line 66: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/update_joy1.v" Line 70: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/update_joy1.v" Line 71: Result of 11-bit expression is truncated to fit in 10-bit target.
 
 Elaborating module <update_joy2>.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\update_joy2.v" Line 54: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\update_joy2.v" Line 55: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\update_joy2.v" Line 59: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\update_joy2.v" Line 60: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\update_joy2.v" Line 65: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\update_joy2.v" Line 66: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\update_joy2.v" Line 70: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\update_joy2.v" Line 71: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/update_joy2.v" Line 54: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/update_joy2.v" Line 55: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/update_joy2.v" Line 59: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/update_joy2.v" Line 60: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/update_joy2.v" Line 65: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/update_joy2.v" Line 66: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/update_joy2.v" Line 70: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/update_joy2.v" Line 71: Result of 11-bit expression is truncated to fit in 10-bit target.
 
 Elaborating module <mover>.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\mover.v" Line 100: Result of 10-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\mover.v" Line 101: Result of 10-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\mover.v" Line 105: Result of 10-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\mover.v" Line 106: Result of 10-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\vga640x480.v" Line 240: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\vga640x480.v" Line 255: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\vga640x480.v" Line 269: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\M152A-project\vga640x480.v" Line 270: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:634 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" Line 102: Net <score_1> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" Line 103: Net <score_2> does not have a driver.
-WARNING:Xst:2972 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" line 98. All outputs of instance <fsm> of block <state_machine> are unconnected in block <NERP_demo_top>. Underlying logic will be removed.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/mover.v" Line 102: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/mover.v" Line 115: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/mover.v" Line 125: Result of 10-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/mover.v" Line 126: Result of 10-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/mover.v" Line 131: Result of 10-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/mover.v" Line 132: Result of 10-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/vga640x480.v" Line 258: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/vga640x480.v" Line 273: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/vga640x480.v" Line 287: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/parallels/Desktop/M152A-project/vga640x480.v" Line 288: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:634 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" Line 102: Net <score_1> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" Line 103: Net <score_2> does not have a driver.
+WARNING:Xst:2972 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" line 98. All outputs of instance <fsm> of block <state_machine> are unconnected in block <NERP_demo_top>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <NERP_demo_top>.
-    Related source file is "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v".
-INFO:Xst:3210 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" line 98: Output port <cur_state> of the instance <fsm> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" line 185: Output port <dot_x_1> of the instance <U3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" line 185: Output port <dot_y_1> of the instance <U3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" line 185: Output port <dot_x_2> of the instance <U3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" line 185: Output port <dot_y_2> of the instance <U3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" line 185: Output port <puck_x> of the instance <U3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" line 185: Output port <puck_y> of the instance <U3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" line 185: Output port <collide1> of the instance <U3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\152\Desktop\M152A-project\NERP_demo_top.v" line 185: Output port <collide2> of the instance <U3> is unconnected or connected to loadless signal.
+    Related source file is "/home/parallels/Desktop/M152A-project/NERP_demo_top.v".
+INFO:Xst:3210 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" line 98: Output port <cur_state> of the instance <fsm> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" line 190: Output port <dot_x_1> of the instance <U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" line 190: Output port <dot_y_1> of the instance <U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" line 190: Output port <dot_x_2> of the instance <U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" line 190: Output port <dot_y_2> of the instance <U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" line 190: Output port <puck_x> of the instance <U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" line 190: Output port <puck_y> of the instance <U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" line 190: Output port <movescore_1> of the instance <U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" line 190: Output port <movescore_2> of the instance <U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" line 190: Output port <collide1> of the instance <U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/parallels/Desktop/M152A-project/NERP_demo_top.v" line 190: Output port <collide2> of the instance <U3> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <cur_state> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <score_1> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <score_2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -249,7 +262,7 @@ WARNING:Xst:653 - Signal <score_2> is used but never assigned. This sourceless s
 Unit <NERP_demo_top> synthesized.
 
 Synthesizing Unit <bounce>.
-    Related source file is "C:\Users\152\Desktop\M152A-project\bounce.v".
+    Related source file is "/home/parallels/Desktop/M152A-project/bounce.v".
     Found 1-bit register for signal <button_first_press>.
     Found 32-bit register for signal <counter>.
     Found 1-bit register for signal <button_state_reg<0>>.
@@ -262,7 +275,7 @@ Synthesizing Unit <bounce>.
 Unit <bounce> synthesized.
 
 Synthesizing Unit <clockdiv>.
-    Related source file is "C:\Users\152\Desktop\M152A-project\clockdiv.v".
+    Related source file is "/home/parallels/Desktop/M152A-project/clockdiv.v".
     Found 18-bit register for signal <q>.
     Found 18-bit adder for signal <q[17]_GND_4_o_add_1_OUT> created at line 41.
     Summary:
@@ -271,7 +284,7 @@ Synthesizing Unit <clockdiv>.
 Unit <clockdiv> synthesized.
 
 Synthesizing Unit <score_display>.
-    Related source file is "C:\Users\152\Desktop\M152A-project\score_display.v".
+    Related source file is "/home/parallels/Desktop/M152A-project/score_display.v".
         d0 = 8'b11000000
         d1 = 8'b11111001
         d2 = 8'b10100100
@@ -282,20 +295,15 @@ Synthesizing Unit <score_display>.
         midleft = 2'b01
         midright = 2'b10
         right = 2'b11
-    Register <seg_dummy_dummy_dummy_dummy_dummy> equivalent to <seg> has been removed
-    Register <seg_dummy_dummy_dummy_dummy> equivalent to <seg> has been removed
-    Register <seg_dummy_dummy_dummy> equivalent to <seg> has been removed
-    Register <seg_dummy_dummy> equivalent to <seg> has been removed
-    Register <seg_dummy> equivalent to <seg> has been removed
     Found 4-bit register for signal <an>.
+    Found 7-bit register for signal <seg>.
     Found 2-bit register for signal <state>.
-    Found 1-bit register for signal <seg>.
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
     | Transitions        | 4                                              |
     | Inputs             | 0                                              |
-    | Outputs            | 4                                              |
+    | Outputs            | 6                                              |
     | Clock              | segclk (rising_edge)                           |
     | Reset              | clr (positive)                                 |
     | Reset type         | asynchronous                                   |
@@ -303,14 +311,15 @@ Synthesizing Unit <score_display>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    WARNING:Xst:2404 -  FFs/Latches <seg<6:6>> (without init value) have a constant value of 1 in block <score_display>.
+    Found 7-bit 4-to-1 multiplexer for signal <state[1]_p2[2]_wide_mux_3_OUT> created at line 48.
     Summary:
-	inferred   5 D-type flip-flop(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <score_display> synthesized.
 
 Synthesizing Unit <joy>.
-    Related source file is "C:\Users\152\Desktop\M152A-project\joy.v".
+    Related source file is "/home/parallels/Desktop/M152A-project/joy.v".
     Found 1-bit register for signal <clk_joy>.
     Found 32-bit register for signal <counter_joy>.
     Found 32-bit adder for signal <counter_joy[31]_GND_7_o_add_2_OUT> created at line 20.
@@ -320,7 +329,7 @@ Synthesizing Unit <joy>.
 Unit <joy> synthesized.
 
 Synthesizing Unit <joy_control>.
-    Related source file is "C:\Users\152\Desktop\M152A-project\joy_control.v".
+    Related source file is "/home/parallels/Desktop/M152A-project/joy_control.v".
     Found 1-bit register for signal <getByte>.
     Found 40-bit register for signal <DOUT>.
     Found 3-bit register for signal <pState>.
@@ -335,7 +344,7 @@ Synthesizing Unit <joy_control>.
 Unit <joy_control> synthesized.
 
 Synthesizing Unit <joy_interface>.
-    Related source file is "C:\Users\152\Desktop\M152A-project\joy_interface.v".
+    Related source file is "/home/parallels/Desktop/M152A-project/joy_interface.v".
     Found 1-bit register for signal <CE>.
     Found 1-bit register for signal <BUSY>.
     Found 5-bit register for signal <bitCount>.
@@ -354,7 +363,7 @@ Synthesizing Unit <joy_interface>.
 Unit <joy_interface> synthesized.
 
 Synthesizing Unit <vga640x480>.
-    Related source file is "C:\Users\152\Desktop\M152A-project\vga640x480.v".
+    Related source file is "/home/parallels/Desktop/M152A-project/vga640x480.v".
         s0 = 0
         s1 = 1
         s2 = 2
@@ -366,6 +375,8 @@ Synthesizing Unit <vga640x480>.
         hfp = 784
         vbp = 31
         vfp = 511
+        W_pp = 256
+        H_pp = 256
         board_x1 = 194
         board_x2 = 224
         board_x3 = 704
@@ -394,80 +405,95 @@ Synthesizing Unit <vga640x480>.
         right_cen_xub = 714
         right_cen_ylb = 246
         right_cen_yub = 296
+        RAM_WIDTH = 8
+        RAM_ADDR_BITS = 16
+WARNING:Xst - Value "{AUTO | BLOCK |  BLOCK_POWER1 | BLOCK_POWER2}" of property "RAM_STYLE" is not applicable. List of valid values is "auto, block, block_power1, block_power2, distributed, pipe_block, pipe_distributed" 
 WARNING:Xst:647 - Input <state> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'ram_name_pp', unconnected in block 'vga640x480', is tied to its initial value.
+    Found 65536x8-bit single-port Read Only RAM <Mram_ram_name_pp> for signal <ram_name_pp>.
     Found 10-bit register for signal <hc>.
     Found 10-bit register for signal <vc>.
+    Found 32-bit register for signal <counter_cursor>.
     Found 1-bit register for signal <clk_cursor>.
     Found 1-bit register for signal <prev_clk_cursor>.
     Found 1-bit register for signal <up>.
     Found 1-bit register for signal <down>.
-    Found 32-bit register for signal <counter_cursor>.
-    Found 11-bit subtractor for signal <GND_10_o_GND_10_o_sub_82_OUT> created at line 405.
-    Found 11-bit subtractor for signal <GND_10_o_GND_10_o_sub_85_OUT> created at line 405.
-    Found 11-bit subtractor for signal <GND_10_o_GND_10_o_sub_93_OUT> created at line 413.
-    Found 11-bit subtractor for signal <GND_10_o_GND_10_o_sub_96_OUT> created at line 413.
-    Found 11-bit subtractor for signal <GND_10_o_GND_10_o_sub_104_OUT> created at line 420.
-    Found 11-bit subtractor for signal <GND_10_o_GND_10_o_sub_107_OUT> created at line 420.
-    Found 32-bit adder for signal <counter_cursor[31]_GND_10_o_add_2_OUT> created at line 196.
-    Found 10-bit adder for signal <hc[9]_GND_10_o_add_8_OUT> created at line 240.
-    Found 10-bit adder for signal <vc[9]_GND_10_o_add_10_OUT> created at line 255.
-    Found 32-bit adder for signal <GND_10_o_GND_10_o_add_87_OUT> created at line 405.
-    Found 32-bit adder for signal <GND_10_o_GND_10_o_add_98_OUT> created at line 413.
-    Found 32-bit adder for signal <GND_10_o_GND_10_o_add_109_OUT> created at line 420.
-    Found 32x32-bit multiplier for signal <n0212> created at line 405.
-    Found 32x32-bit multiplier for signal <n0214> created at line 405.
-    Found 32x32-bit multiplier for signal <n0220> created at line 413.
-    Found 32x32-bit multiplier for signal <n0222> created at line 413.
-    Found 32x32-bit multiplier for signal <n0228> created at line 420.
-    Found 32x32-bit multiplier for signal <n0230> created at line 420.
-    Found 10-bit comparator greater for signal <hc[9]_PWR_9_o_LessThan_8_o> created at line 239
-    Found 10-bit comparator greater for signal <vc[9]_PWR_9_o_LessThan_10_o> created at line 254
-    Found 10-bit comparator greater for signal <hc[9]_GND_10_o_LessThan_17_o> created at line 269
-    Found 10-bit comparator greater for signal <vc[9]_GND_10_o_LessThan_19_o> created at line 270
-    Found 10-bit comparator lessequal for signal <n0028> created at line 323
-    Found 10-bit comparator lessequal for signal <n0030> created at line 323
-    Found 10-bit comparator lessequal for signal <n0033> created at line 323
-    Found 10-bit comparator lessequal for signal <n0035> created at line 323
-    Found 10-bit comparator lessequal for signal <n0043> created at line 339
-    Found 10-bit comparator lessequal for signal <n0045> created at line 339
-    Found 10-bit comparator lessequal for signal <n0048> created at line 339
-    Found 10-bit comparator lessequal for signal <n0051> created at line 339
-    Found 10-bit comparator lessequal for signal <n0054> created at line 339
-    Found 10-bit comparator lessequal for signal <n0058> created at line 339
-    Found 10-bit comparator lessequal for signal <n0062> created at line 339
-    Found 10-bit comparator lessequal for signal <n0067> created at line 339
-    Found 10-bit comparator lessequal for signal <n0075> created at line 347
-    Found 10-bit comparator lessequal for signal <n0077> created at line 347
-    Found 10-bit comparator lessequal for signal <n0080> created at line 347
-    Found 10-bit comparator lessequal for signal <n0082> created at line 347
-    Found 10-bit comparator lessequal for signal <n0088> created at line 355
-    Found 10-bit comparator lessequal for signal <n0090> created at line 355
-    Found 10-bit comparator lessequal for signal <n0096> created at line 363
-    Found 10-bit comparator lessequal for signal <n0098> created at line 363
-    Found 10-bit comparator lessequal for signal <n0104> created at line 371
-    Found 10-bit comparator lessequal for signal <n0106> created at line 371
-    Found 10-bit comparator lessequal for signal <n0109> created at line 371
-    Found 10-bit comparator lessequal for signal <n0111> created at line 371
-    Found 10-bit comparator lessequal for signal <n0120> created at line 387
-    Found 10-bit comparator lessequal for signal <n0122> created at line 387
-    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_89_o> created at line 405
-    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_100_o> created at line 413
-    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_111_o> created at line 420
+    Found 8-bit register for signal <output_data_pp>.
+    Found 11-bit subtractor for signal <GND_10_o_GND_10_o_sub_3_OUT> created at line 97.
+    Found 11-bit subtractor for signal <GND_10_o_GND_10_o_sub_5_OUT> created at line 98.
+    Found 11-bit subtractor for signal <GND_10_o_GND_10_o_sub_114_OUT> created at line 442.
+    Found 11-bit subtractor for signal <GND_10_o_GND_10_o_sub_117_OUT> created at line 442.
+    Found 11-bit subtractor for signal <GND_10_o_GND_10_o_sub_125_OUT> created at line 450.
+    Found 11-bit subtractor for signal <GND_10_o_GND_10_o_sub_128_OUT> created at line 450.
+    Found 11-bit subtractor for signal <GND_10_o_GND_10_o_sub_136_OUT> created at line 457.
+    Found 11-bit subtractor for signal <GND_10_o_GND_10_o_sub_139_OUT> created at line 457.
+    Found 32-bit adder for signal <counter_cursor[31]_GND_10_o_add_13_OUT> created at line 211.
+    Found 10-bit adder for signal <hc[9]_GND_10_o_add_19_OUT> created at line 258.
+    Found 10-bit adder for signal <vc[9]_GND_10_o_add_21_OUT> created at line 273.
+    Found 32-bit adder for signal <GND_10_o_GND_10_o_add_119_OUT> created at line 442.
+    Found 32-bit adder for signal <GND_10_o_GND_10_o_add_130_OUT> created at line 450.
+    Found 32-bit adder for signal <GND_10_o_GND_10_o_add_141_OUT> created at line 457.
+    Found 8-bit subtractor for signal <rom_addr_pp<7:0>> created at line 92.
+    Found 8-bit subtractor for signal <rom_pix_pp<7:0>> created at line 92.
+    Found 32x32-bit multiplier for signal <n0275> created at line 442.
+    Found 32x32-bit multiplier for signal <n0277> created at line 442.
+    Found 32x32-bit multiplier for signal <n0283> created at line 450.
+    Found 32x32-bit multiplier for signal <n0285> created at line 450.
+    Found 32x32-bit multiplier for signal <n0291> created at line 457.
+    Found 32x32-bit multiplier for signal <n0293> created at line 457.
+    Found 10-bit comparator greater for signal <hc[9]_PWR_9_o_LessThan_19_o> created at line 257
+    Found 10-bit comparator greater for signal <vc[9]_PWR_9_o_LessThan_21_o> created at line 272
+    Found 10-bit comparator greater for signal <hc[9]_GND_10_o_LessThan_28_o> created at line 287
+    Found 10-bit comparator greater for signal <vc[9]_GND_10_o_LessThan_30_o> created at line 288
+    Found 10-bit comparator lessequal for signal <n0038> created at line 342
+    Found 10-bit comparator lessequal for signal <n0040> created at line 342
+    Found 10-bit comparator lessequal for signal <n0043> created at line 342
+    Found 10-bit comparator lessequal for signal <n0045> created at line 342
+    Found 12-bit comparator lessequal for signal <n0054> created at line 357
+    Found 13-bit comparator greater for signal <GND_10_o_BUS_0006_LessThan_43_o> created at line 357
+    Found 12-bit comparator lessequal for signal <n0060> created at line 357
+    Found 13-bit comparator greater for signal <GND_10_o_BUS_0009_LessThan_48_o> created at line 357
+    Found 10-bit comparator lessequal for signal <n0074> created at line 376
+    Found 10-bit comparator lessequal for signal <n0076> created at line 376
+    Found 10-bit comparator lessequal for signal <n0079> created at line 376
+    Found 10-bit comparator lessequal for signal <n0082> created at line 376
+    Found 10-bit comparator lessequal for signal <n0085> created at line 376
+    Found 10-bit comparator lessequal for signal <n0089> created at line 376
+    Found 10-bit comparator lessequal for signal <n0093> created at line 376
+    Found 10-bit comparator lessequal for signal <n0098> created at line 376
+    Found 10-bit comparator lessequal for signal <n0107> created at line 384
+    Found 10-bit comparator lessequal for signal <n0109> created at line 384
+    Found 10-bit comparator lessequal for signal <n0112> created at line 384
+    Found 10-bit comparator lessequal for signal <n0114> created at line 384
+    Found 10-bit comparator lessequal for signal <n0121> created at line 392
+    Found 10-bit comparator lessequal for signal <n0123> created at line 392
+    Found 10-bit comparator lessequal for signal <n0130> created at line 400
+    Found 10-bit comparator lessequal for signal <n0132> created at line 400
+    Found 10-bit comparator lessequal for signal <n0139> created at line 408
+    Found 10-bit comparator lessequal for signal <n0141> created at line 408
+    Found 10-bit comparator lessequal for signal <n0144> created at line 408
+    Found 10-bit comparator lessequal for signal <n0146> created at line 408
+    Found 10-bit comparator lessequal for signal <n0155> created at line 424
+    Found 10-bit comparator lessequal for signal <n0157> created at line 424
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_121_o> created at line 442
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_132_o> created at line 450
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_143_o> created at line 457
     Summary:
+	inferred   1 RAM(s).
 	inferred   6 Multiplier(s).
-	inferred  12 Adder/Subtractor(s).
-	inferred  56 D-type flip-flop(s).
-	inferred  33 Comparator(s).
-	inferred  32 Multiplexer(s).
+	inferred  16 Adder/Subtractor(s).
+	inferred  64 D-type flip-flop(s).
+	inferred  37 Comparator(s).
+	inferred  44 Multiplexer(s).
 Unit <vga640x480> synthesized.
 
 Synthesizing Unit <update_joy1>.
-    Related source file is "C:\Users\152\Desktop\M152A-project\update_joy1.v".
+    Related source file is "/home/parallels/Desktop/M152A-project/update_joy1.v".
         hbp = 144
         hfp = 784
         vbp = 31
         vfp = 511
-        init_x = 204
+        init_x = 234
         init_y = 271
         x_lb = 239
         x_ub = 362
@@ -487,16 +513,16 @@ Synthesizing Unit <update_joy1>.
     Found 10-bit comparator greater for signal <joy_x[9]_GND_11_o_LessThan_5_o> created at line 54
     Found 10-bit comparator lessequal for signal <joy_x[9]_GND_11_o_LessThan_7_o> created at line 55
     Found 10-bit comparator greater for signal <GND_11_o_dot_x[9]_LessThan_12_o> created at line 57
-    Found 10-bit comparator greater for signal <PWR_10_o_joy_x[9]_LessThan_13_o> created at line 59
+    Found 10-bit comparator greater for signal <PWR_12_o_joy_x[9]_LessThan_13_o> created at line 59
     Found 10-bit comparator greater for signal <GND_11_o_dot_x[9]_LessThan_14_o> created at line 59
-    Found 10-bit comparator greater for signal <PWR_10_o_joy_x[9]_LessThan_16_o> created at line 60
+    Found 10-bit comparator greater for signal <PWR_12_o_joy_x[9]_LessThan_16_o> created at line 60
     Found 10-bit comparator greater for signal <GND_11_o_dot_x[9]_LessThan_17_o> created at line 60
     Found 10-bit comparator greater for signal <GND_11_o_dot_y[9]_LessThan_22_o> created at line 63
     Found 10-bit comparator greater for signal <joy_y[9]_GND_11_o_LessThan_23_o> created at line 65
     Found 10-bit comparator lessequal for signal <joy_y[9]_GND_11_o_LessThan_25_o> created at line 66
     Found 10-bit comparator greater for signal <dot_y[9]_GND_11_o_LessThan_30_o> created at line 68
-    Found 10-bit comparator greater for signal <PWR_10_o_joy_y[9]_LessThan_31_o> created at line 70
-    Found 10-bit comparator greater for signal <PWR_10_o_joy_y[9]_LessThan_33_o> created at line 71
+    Found 10-bit comparator greater for signal <PWR_12_o_joy_y[9]_LessThan_31_o> created at line 70
+    Found 10-bit comparator greater for signal <PWR_12_o_joy_y[9]_LessThan_33_o> created at line 71
     Summary:
 	inferred   8 Adder/Subtractor(s).
 	inferred  20 D-type flip-flop(s).
@@ -505,12 +531,12 @@ Synthesizing Unit <update_joy1>.
 Unit <update_joy1> synthesized.
 
 Synthesizing Unit <update_joy2>.
-    Related source file is "C:\Users\152\Desktop\M152A-project\update_joy2.v".
+    Related source file is "/home/parallels/Desktop/M152A-project/update_joy2.v".
         hbp = 144
         hfp = 784
         vbp = 31
         vfp = 511
-        init_x = 724
+        init_x = 694
         init_y = 271
         x_lb = 566
         x_ub = 689
@@ -526,20 +552,20 @@ Synthesizing Unit <update_joy2>.
     Found 10-bit subtractor for signal <GND_13_o_GND_13_o_sub_18_OUT<9:0>> created at line 60.
     Found 10-bit subtractor for signal <GND_13_o_GND_13_o_sub_24_OUT<9:0>> created at line 65.
     Found 10-bit subtractor for signal <GND_13_o_GND_13_o_sub_26_OUT<9:0>> created at line 66.
-    Found 10-bit comparator greater for signal <dot_x[9]_PWR_12_o_LessThan_4_o> created at line 52
+    Found 10-bit comparator greater for signal <dot_x[9]_PWR_13_o_LessThan_4_o> created at line 52
     Found 10-bit comparator greater for signal <joy_x[9]_GND_13_o_LessThan_5_o> created at line 54
     Found 10-bit comparator lessequal for signal <joy_x[9]_GND_13_o_LessThan_7_o> created at line 55
-    Found 10-bit comparator greater for signal <PWR_12_o_dot_x[9]_LessThan_12_o> created at line 57
-    Found 10-bit comparator greater for signal <PWR_12_o_joy_x[9]_LessThan_13_o> created at line 59
+    Found 10-bit comparator greater for signal <PWR_13_o_dot_x[9]_LessThan_12_o> created at line 57
+    Found 10-bit comparator greater for signal <PWR_13_o_joy_x[9]_LessThan_13_o> created at line 59
     Found 10-bit comparator greater for signal <GND_13_o_dot_x[9]_LessThan_14_o> created at line 59
-    Found 10-bit comparator greater for signal <PWR_12_o_joy_x[9]_LessThan_16_o> created at line 60
+    Found 10-bit comparator greater for signal <PWR_13_o_joy_x[9]_LessThan_16_o> created at line 60
     Found 10-bit comparator greater for signal <GND_13_o_dot_x[9]_LessThan_17_o> created at line 60
     Found 10-bit comparator greater for signal <GND_13_o_dot_y[9]_LessThan_22_o> created at line 63
     Found 10-bit comparator greater for signal <joy_y[9]_GND_13_o_LessThan_23_o> created at line 65
     Found 10-bit comparator lessequal for signal <joy_y[9]_GND_13_o_LessThan_25_o> created at line 66
     Found 10-bit comparator greater for signal <dot_y[9]_GND_13_o_LessThan_30_o> created at line 68
-    Found 10-bit comparator greater for signal <PWR_12_o_joy_y[9]_LessThan_31_o> created at line 70
-    Found 10-bit comparator greater for signal <PWR_12_o_joy_y[9]_LessThan_33_o> created at line 71
+    Found 10-bit comparator greater for signal <PWR_13_o_joy_y[9]_LessThan_31_o> created at line 70
+    Found 10-bit comparator greater for signal <PWR_13_o_joy_y[9]_LessThan_33_o> created at line 71
     Summary:
 	inferred   8 Adder/Subtractor(s).
 	inferred  20 D-type flip-flop(s).
@@ -548,7 +574,7 @@ Synthesizing Unit <update_joy2>.
 Unit <update_joy2> synthesized.
 
 Synthesizing Unit <mover>.
-    Related source file is "C:\Users\152\Desktop\M152A-project\mover.v".
+    Related source file is "/home/parallels/Desktop/M152A-project/mover.v".
         hbp = 144
         hfp = 784
         vbp = 31
@@ -572,90 +598,100 @@ Synthesizing Unit <mover>.
     Found 10-bit register for signal <dot_y>.
     Found 4-bit register for signal <delta_x>.
     Found 4-bit register for signal <delta_y>.
+    Found 3-bit register for signal <s1>.
+    Found 3-bit register for signal <s2>.
     Found 10-bit register for signal <dot_x>.
-    Found 11-bit subtractor for signal <GND_15_o_GND_15_o_sub_19_OUT> created at line 99.
-    Found 11-bit subtractor for signal <GND_15_o_GND_15_o_sub_22_OUT> created at line 99.
-    Found 10-bit subtractor for signal <n0162> created at line 100.
-    Found 10-bit subtractor for signal <n0165> created at line 101.
-    Found 11-bit subtractor for signal <GND_15_o_GND_15_o_sub_31_OUT> created at line 104.
-    Found 11-bit subtractor for signal <GND_15_o_GND_15_o_sub_34_OUT> created at line 104.
-    Found 10-bit subtractor for signal <n0171> created at line 105.
-    Found 10-bit subtractor for signal <n0174> created at line 106.
-    Found 10-bit subtractor for signal <dot_x[9]_GND_15_o_sub_53_OUT> created at line 134.
-    Found 10-bit subtractor for signal <dot_y[9]_GND_15_o_sub_57_OUT> created at line 137.
-    Found 32-bit adder for signal <GND_15_o_GND_15_o_add_24_OUT> created at line 99.
-    Found 10-bit adder for signal <n0096> created at line 100.
-    Found 10-bit adder for signal <n0098> created at line 101.
-    Found 32-bit adder for signal <GND_15_o_GND_15_o_add_36_OUT> created at line 104.
-    Found 10-bit adder for signal <n0105> created at line 105.
-    Found 10-bit adder for signal <n0107> created at line 106.
-    Found 10-bit adder for signal <dot_x[9]_GND_15_o_add_51_OUT> created at line 133.
-    Found 10-bit adder for signal <dot_y[9]_GND_15_o_add_55_OUT> created at line 136.
-    Found 32x32-bit multiplier for signal <n0091> created at line 99.
-    Found 32x32-bit multiplier for signal <n0093> created at line 99.
-    Found 32x32-bit multiplier for signal <n0100> created at line 104.
-    Found 32x32-bit multiplier for signal <n0102> created at line 104.
-    Found 10-bit comparator lessequal for signal <n0003> created at line 80
-    Found 10-bit comparator lessequal for signal <n0005> created at line 80
-    Found 10-bit comparator lessequal for signal <n0008> created at line 80
-    Found 10-bit comparator lessequal for signal <n0010> created at line 80
-    Found 10-bit comparator lessequal for signal <n0015> created at line 90
-    Found 10-bit comparator lessequal for signal <n0017> created at line 90
-    Found 32-bit comparator greater for signal <n0027> created at line 99
-    Found 32-bit comparator greater for signal <n0038> created at line 104
-    Found 10-bit comparator greater for signal <GND_15_o_dot_y[9]_LessThan_47_o> created at line 116
-    Found 10-bit comparator greater for signal <dot_y[9]_GND_15_o_LessThan_48_o> created at line 119
-    Found 10-bit comparator greater for signal <PWR_13_o_dot_x[9]_LessThan_49_o> created at line 122
-    Found 10-bit comparator lessequal for signal <dot_x[9]_GND_15_o_LessThan_50_o> created at line 125
+    Found 11-bit subtractor for signal <GND_15_o_GND_15_o_sub_27_OUT> created at line 123.
+    Found 11-bit subtractor for signal <GND_15_o_GND_15_o_sub_30_OUT> created at line 123.
+    Found 10-bit subtractor for signal <n0230> created at line 125.
+    Found 10-bit subtractor for signal <n0233> created at line 126.
+    Found 11-bit subtractor for signal <GND_15_o_GND_15_o_sub_39_OUT> created at line 129.
+    Found 11-bit subtractor for signal <GND_15_o_GND_15_o_sub_42_OUT> created at line 129.
+    Found 10-bit subtractor for signal <n0239> created at line 131.
+    Found 10-bit subtractor for signal <n0242> created at line 132.
+    Found 10-bit subtractor for signal <dot_x[9]_GND_15_o_sub_61_OUT> created at line 168.
+    Found 10-bit subtractor for signal <dot_y[9]_GND_15_o_sub_65_OUT> created at line 171.
+    Found 3-bit adder for signal <s1[2]_GND_15_o_add_8_OUT> created at line 102.
+    Found 3-bit adder for signal <s2[2]_GND_15_o_add_18_OUT> created at line 115.
+    Found 32-bit adder for signal <GND_15_o_GND_15_o_add_32_OUT> created at line 123.
+    Found 10-bit adder for signal <n0142> created at line 125.
+    Found 10-bit adder for signal <n0144> created at line 126.
+    Found 32-bit adder for signal <GND_15_o_GND_15_o_add_44_OUT> created at line 129.
+    Found 10-bit adder for signal <n0151> created at line 131.
+    Found 10-bit adder for signal <n0153> created at line 132.
+    Found 10-bit adder for signal <dot_x[9]_GND_15_o_add_59_OUT> created at line 167.
+    Found 10-bit adder for signal <dot_y[9]_GND_15_o_add_63_OUT> created at line 170.
+    Found 32x32-bit multiplier for signal <n0137> created at line 123.
+    Found 32x32-bit multiplier for signal <n0139> created at line 123.
+    Found 32x32-bit multiplier for signal <n0146> created at line 129.
+    Found 32x32-bit multiplier for signal <n0148> created at line 129.
+    Found 10-bit comparator lessequal for signal <n0005> created at line 95
+    Found 10-bit comparator lessequal for signal <n0007> created at line 95
+    Found 10-bit comparator lessequal for signal <n0010> created at line 95
+    Found 10-bit comparator lessequal for signal <n0012> created at line 95
+    Found 10-bit comparator lessequal for signal <n0020> created at line 108
+    Found 10-bit comparator lessequal for signal <n0022> created at line 108
+    Found 32-bit comparator greater for signal <n0038> created at line 123
+    Found 32-bit comparator greater for signal <n0049> created at line 129
+    Found 10-bit comparator greater for signal <GND_15_o_dot_y[9]_LessThan_55_o> created at line 143
+    Found 10-bit comparator greater for signal <dot_y[9]_GND_15_o_LessThan_56_o> created at line 147
+    Found 10-bit comparator greater for signal <PWR_14_o_dot_x[9]_LessThan_57_o> created at line 151
+    Found 10-bit comparator lessequal for signal <dot_x[9]_GND_15_o_LessThan_58_o> created at line 155
     Summary:
 	inferred   4 Multiplier(s).
-	inferred  16 Adder/Subtractor(s).
-	inferred  32 D-type flip-flop(s).
+	inferred  18 Adder/Subtractor(s).
+	inferred  38 D-type flip-flop(s).
 	inferred  12 Comparator(s).
-	inferred   2 Multiplexer(s).
+	inferred  14 Multiplexer(s).
 Unit <mover> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
+# RAMs                                                 : 3
  4x1-bit single-port Read Only RAM                     : 2
+ 65536x8-bit single-port Read Only RAM                 : 1
 # Multipliers                                          : 10
  32x32-bit multiplier                                  : 10
-# Adders/Subtractors                                   : 53
+# Adders/Subtractors                                   : 59
  10-bit adder                                          : 14
  10-bit addsub                                         : 2
  10-bit subtractor                                     : 12
- 11-bit subtractor                                     : 10
+ 11-bit subtractor                                     : 12
  18-bit adder                                          : 1
- 3-bit adder                                           : 2
+ 3-bit adder                                           : 4
  32-bit adder                                          : 10
  5-bit adder                                           : 2
-# Registers                                            : 54
- 1-bit register                                        : 23
+ 8-bit subtractor                                      : 2
+# Registers                                            : 57
+ 1-bit register                                        : 22
  10-bit register                                       : 8
  18-bit register                                       : 1
  2-bit register                                        : 2
- 3-bit register                                        : 4
+ 3-bit register                                        : 6
  32-bit register                                       : 5
  4-bit register                                        : 3
  40-bit register                                       : 4
  5-bit register                                        : 2
- 8-bit register                                        : 2
-# Comparators                                          : 77
+ 7-bit register                                        : 1
+ 8-bit register                                        : 3
+# Comparators                                          : 81
  10-bit comparator greater                             : 31
  10-bit comparator lessequal                           : 37
+ 12-bit comparator lessequal                           : 2
+ 13-bit comparator greater                             : 2
  32-bit comparator greater                             : 7
  5-bit comparator greater                              : 2
-# Multiplexers                                         : 78
- 1-bit 2-to-1 multiplexer                              : 10
- 10-bit 2-to-1 multiplexer                             : 22
- 2-bit 2-to-1 multiplexer                              : 11
+# Multiplexers                                         : 103
+ 1-bit 2-to-1 multiplexer                              : 14
+ 10-bit 2-to-1 multiplexer                             : 24
+ 2-bit 2-to-1 multiplexer                              : 14
  2-bit 4-to-1 multiplexer                              : 2
- 3-bit 2-to-1 multiplexer                              : 29
- 4-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 40
+ 4-bit 2-to-1 multiplexer                              : 6
  40-bit 2-to-1 multiplexer                             : 2
+ 7-bit 4-to-1 multiplexer                              : 1
 # FSMs                                                 : 1
 
 =========================================================================
@@ -739,60 +775,80 @@ Unit <joy_interface> synthesized (advanced).
 Synthesizing (advanced) Unit <mover>.
 The following registers are absorbed into accumulator <dot_y>: 1 register on signal <dot_y>.
 The following registers are absorbed into accumulator <dot_x>: 1 register on signal <dot_x>.
-The following registers are absorbed into accumulator <delta_x>: 1 register on signal <delta_x>.
-The following registers are absorbed into accumulator <delta_y>: 1 register on signal <delta_y>.
-	Multiplier <Mmult_n0100> in block <mover> and adder/subtractor <Madd_GND_15_o_GND_15_o_add_36_OUT> in block <mover> are combined into a MAC<Maddsub_n0100>.
-	Multiplier <Mmult_n0091> in block <mover> and adder/subtractor <Madd_GND_15_o_GND_15_o_add_24_OUT> in block <mover> are combined into a MAC<Maddsub_n0091>.
+The following registers are absorbed into counter <s2>: 1 register on signal <s2>.
+The following registers are absorbed into counter <s1>: 1 register on signal <s1>.
+	Multiplier <Mmult_n0137> in block <mover> and adder/subtractor <Madd_GND_15_o_GND_15_o_add_32_OUT> in block <mover> are combined into a MAC<Maddsub_n0137>.
+	Multiplier <Mmult_n0146> in block <mover> and adder/subtractor <Madd_GND_15_o_GND_15_o_add_44_OUT> in block <mover> are combined into a MAC<Maddsub_n0146>.
 Unit <mover> synthesized (advanced).
 
 Synthesizing (advanced) Unit <vga640x480>.
 The following registers are absorbed into counter <counter_cursor>: 1 register on signal <counter_cursor>.
 The following registers are absorbed into counter <hc>: 1 register on signal <hc>.
 The following registers are absorbed into counter <vc>: 1 register on signal <vc>.
-	Multiplier <Mmult_n0212> in block <vga640x480> and adder/subtractor <Madd_GND_10_o_GND_10_o_add_87_OUT> in block <vga640x480> are combined into a MAC<Maddsub_n0212>.
-	Multiplier <Mmult_n0228> in block <vga640x480> and adder/subtractor <Madd_GND_10_o_GND_10_o_add_109_OUT> in block <vga640x480> are combined into a MAC<Maddsub_n0228>.
-	Multiplier <Mmult_n0220> in block <vga640x480> and adder/subtractor <Madd_GND_10_o_GND_10_o_add_98_OUT> in block <vga640x480> are combined into a MAC<Maddsub_n0220>.
+	Multiplier <Mmult_n0275> in block <vga640x480> and adder/subtractor <Madd_GND_10_o_GND_10_o_add_119_OUT> in block <vga640x480> are combined into a MAC<Maddsub_n0275>.
+	Multiplier <Mmult_n0283> in block <vga640x480> and adder/subtractor <Madd_GND_10_o_GND_10_o_add_130_OUT> in block <vga640x480> are combined into a MAC<Maddsub_n0283>.
+	Multiplier <Mmult_n0291> in block <vga640x480> and adder/subtractor <Madd_GND_10_o_GND_10_o_add_141_OUT> in block <vga640x480> are combined into a MAC<Maddsub_n0291>.
+INFO:Xst:3226 - The RAM <Mram_ram_name_pp> will be implemented as a BLOCK RAM, absorbing the following register(s): <output_data_pp>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 65536-word x 8-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(rom_pix_pp,rom_addr_pp)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <output_data_pp> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
 Unit <vga640x480> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
+# RAMs                                                 : 3
  4x1-bit single-port distributed Read Only RAM         : 2
+ 65536x8-bit single-port block Read Only RAM           : 1
 # MACs                                                 : 5
  11x11-to-32-bit MAC                                   : 5
 # Multipliers                                          : 5
  11x11-bit multiplier                                  : 5
-# Adders/Subtractors                                   : 32
+# Adders/Subtractors                                   : 38
  10-bit adder                                          : 8
  10-bit subtractor                                     : 8
  11-bit subtractor                                     : 10
- 4-bit adder                                           : 2
+ 4-bit adder                                           : 4
  4-bit subtractor                                      : 4
-# Counters                                             : 12
+ 8-bit subtractor                                      : 4
+# Counters                                             : 14
  10-bit up counter                                     : 2
  18-bit up counter                                     : 1
- 3-bit up counter                                      : 2
+ 3-bit up counter                                      : 4
  32-bit up counter                                     : 5
  5-bit up counter                                      : 2
-# Accumulators                                         : 4
- 10-bit updown accumulator                             : 2
- 4-bit up loadable accumulator                         : 2
-# Registers                                            : 253
- Flip-Flops                                            : 253
-# Comparators                                          : 77
+# Accumulators                                         : 2
+ 10-bit updown loadable accumulator                    : 2
+# Registers                                            : 267
+ Flip-Flops                                            : 267
+# Comparators                                          : 81
  10-bit comparator greater                             : 31
  10-bit comparator lessequal                           : 37
+ 12-bit comparator lessequal                           : 2
+ 13-bit comparator greater                             : 2
  32-bit comparator greater                             : 7
  5-bit comparator greater                              : 2
-# Multiplexers                                         : 72
- 1-bit 2-to-1 multiplexer                              : 10
+# Multiplexers                                         : 95
+ 1-bit 2-to-1 multiplexer                              : 14
  10-bit 2-to-1 multiplexer                             : 20
- 2-bit 2-to-1 multiplexer                              : 11
+ 2-bit 2-to-1 multiplexer                              : 14
  2-bit 4-to-1 multiplexer                              : 2
- 3-bit 2-to-1 multiplexer                              : 27
+ 3-bit 2-to-1 multiplexer                              : 36
+ 4-bit 2-to-1 multiplexer                              : 6
  40-bit 2-to-1 multiplexer                             : 2
+ 7-bit 4-to-1 multiplexer                              : 1
 # FSMs                                                 : 1
 
 =========================================================================
@@ -801,7 +857,7 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_0> on signal <state[1:4]> with one-hot encoding.
+Optimizing FSM <score/FSM_0> on signal <state[1:4]> with one-hot encoding.
 -------------------
  State | Encoding
 -------------------
@@ -814,6 +870,7 @@ WARNING:Xst:1710 - FF/Latch <dot_y_0> (without init value) has a constant value 
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_x_0> (without init value) has a constant value of 0 in block <update_joy1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <dot_y_0> (without init value) has a constant value of 1 in block <update_joy2>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_x_0> (without init value) has a constant value of 0 in block <update_joy2>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <seg_0> in Unit <score_display> is equivalent to the following FF/Latch, which will be removed : <seg_3> 
 
 Optimizing unit <NERP_demo_top> ...
 
@@ -830,6 +887,8 @@ Optimizing unit <update_joy1> ...
 Optimizing unit <update_joy2> ...
 
 Optimizing unit <mover> ...
+
+Optimizing unit <score_display> ...
 WARNING:Xst:2677 - Node <joy1/jc/DOUT_31> of sequential type is unconnected in block <NERP_demo_top>.
 WARNING:Xst:2677 - Node <joy1/jc/DOUT_30> of sequential type is unconnected in block <NERP_demo_top>.
 WARNING:Xst:2677 - Node <joy1/jc/DOUT_29> of sequential type is unconnected in block <NERP_demo_top>.
@@ -870,6 +929,8 @@ WARNING:Xst:2677 - Node <joy2/jc/DOUT_3> of sequential type is unconnected in bl
 WARNING:Xst:2677 - Node <joy2/jc/DOUT_2> of sequential type is unconnected in block <NERP_demo_top>.
 WARNING:Xst:2677 - Node <joy2/jc/DOUT_1> of sequential type is unconnected in block <NERP_demo_top>.
 WARNING:Xst:2677 - Node <joy2/jc/DOUT_0> of sequential type is unconnected in block <NERP_demo_top>.
+INFO:Xst:2399 - RAMs <Mram_ram_name_pp8>, <Mram_ram_name_pp12> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Mram_ram_name_pp8>, <Mram_ram_name_pp32> are equivalent, second RAM is removed
 WARNING:Xst:1710 - FF/Latch <U3/puck/dot_y_9> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/ball2/dot_y_9> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U3/ball2/dot_x_8> (without init value) has a constant value of 0 in block <NERP_demo_top>. This FF/Latch will be trimmed during the optimization process.
@@ -929,9 +990,8 @@ INFO:Xst:3203 - The FF/Latch <U3/ball1/dot_x_7> in Unit <NERP_demo_top> is the o
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block NERP_demo_top, actual ratio is 10.
+Found area constraint ratio of 100 (+ 5) on block NERP_demo_top, actual ratio is 11.
 FlipFlop U3/puck/dot_x_0 has been replicated 1 time(s)
-FlipFlop score/seg has been replicated 5 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
 
@@ -939,8 +999,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 405
- Flip-Flops                                            : 405
+# Registers                                            : 413
+ Flip-Flops                                            : 413
 
 =========================================================================
 
@@ -963,36 +1023,39 @@ Top Level Output File Name         : NERP_demo_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1351
+# BELS                             : 1429
 #      GND                         : 1
-#      INV                         : 27
+#      INV                         : 34
 #      LUT1                        : 131
-#      LUT2                        : 211
-#      LUT3                        : 70
-#      LUT4                        : 45
-#      LUT5                        : 115
-#      LUT6                        : 161
-#      MUXCY                       : 303
+#      LUT2                        : 228
+#      LUT3                        : 62
+#      LUT4                        : 63
+#      LUT5                        : 132
+#      LUT6                        : 190
+#      MUXCY                       : 301
 #      MUXF7                       : 6
 #      VCC                         : 1
 #      XORCY                       : 280
-# FlipFlops/Latches                : 405
-#      FD                          : 9
-#      FD_1                        : 8
-#      FDC                         : 35
-#      FDCE                        : 38
-#      FDE                         : 22
+# FlipFlops/Latches                : 413
+#      FD                          : 3
+#      FD_1                        : 6
+#      FDC                         : 31
+#      FDCE                        : 46
+#      FDE                         : 26
 #      FDE_1                       : 130
 #      FDP                         : 11
-#      FDPE                        : 28
-#      FDR                         : 74
+#      FDPE                        : 30
+#      FDR                         : 78
+#      FDR_1                       : 2
 #      FDRE                        : 50
+# RAMS                             : 30
+#      RAMB16BWER                  : 30
 # Clock Buffers                    : 3
 #      BUFG                        : 2
 #      BUFGP                       : 1
-# IO Buffers                       : 45
+# IO Buffers                       : 51
 #      IBUF                        : 5
-#      OBUF                        : 40
+#      OBUF                        : 46
 # DSPs                             : 10
 #      DSP48A1                     : 10
 
@@ -1003,23 +1066,24 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             399  out of  18224     2%  
- Number of Slice LUTs:                  760  out of   9112     8%  
-    Number used as Logic:               760  out of   9112     8%  
+ Number of Slice Registers:             413  out of  18224     2%  
+ Number of Slice LUTs:                  840  out of   9112     9%  
+    Number used as Logic:               840  out of   9112     9%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    821
-   Number with an unused Flip Flop:     422  out of    821    51%  
-   Number with an unused LUT:            61  out of    821     7%  
-   Number of fully used LUT-FF pairs:   338  out of    821    41%  
-   Number of unique control sets:        29
+ Number of LUT Flip Flop pairs used:    901
+   Number with an unused Flip Flop:     488  out of    901    54%  
+   Number with an unused LUT:            61  out of    901     6%  
+   Number of fully used LUT-FF pairs:   352  out of    901    39%  
+   Number of unique control sets:        42
 
 IO Utilization: 
- Number of IOs:                          46
- Number of bonded IOBs:                  46  out of    232    19%  
-    IOB Flip Flops/Latches:               6
+ Number of IOs:                          52
+ Number of bonded IOBs:                  52  out of    232    22%  
 
 Specific Feature Utilization:
+ Number of Block RAM/FIFO:               30  out of     32    93%  
+    Number using Block RAM only:         30
  Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
  Number of DSP48A1s:                     10  out of     32    31%  
 
@@ -1041,14 +1105,14 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-U1/q_17                            | NONE(score/an_3)       | 14    |
-clk                                | BUFGP                  | 201   |
-joy2/clk_joy                       | BUFG                   | 170   |
-U1/q_1                             | BUFG                   | 20    |
------------------------------------+------------------------+-------+
+-----------------------------------+---------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)     | Load  |
+-----------------------------------+---------------------------+-------+
+clk                                | BUFGP                     | 239   |
+joy2/clk_joy                       | BUFG                      | 170   |
+U1/q_1                             | BUFG                      | 20    |
+U1/q_17                            | NONE(score/state_FSM_FFd4)| 14    |
+-----------------------------------+---------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -1059,9 +1123,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 13.660ns (Maximum Frequency: 73.209MHz)
-   Minimum input arrival time before clock: 4.540ns
-   Maximum output required time after clock: 16.984ns
+   Minimum period: 13.684ns (Maximum Frequency: 73.077MHz)
+   Minimum input arrival time before clock: 4.555ns
+   Maximum output required time after clock: 18.092ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -1069,33 +1133,11 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'U1/q_17'
-  Clock period: 1.950ns (frequency: 512.794MHz)
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Delay:               1.950ns (Levels of Logic = 1)
-  Source:            score/state_FSM_FFd4 (FF)
-  Destination:       score/an_3 (FF)
-  Source Clock:      U1/q_17 rising
-  Destination Clock: U1/q_17 rising
-
-  Data Path: score/state_FSM_FFd4 to score/an_3
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDP:C->Q              2   0.447   0.616  score/state_FSM_FFd4 (score/state_FSM_FFd3-In)
-     INV:I->O              1   0.206   0.579  score/state_state[1]_PWR_5_o_wide_mux_4_OUT<3>1_INV_0 (score/state[1]_PWR_5_o_wide_mux_4_OUT<3>)
-     FDP:D                     0.102          score/an_3
-    ----------------------------------------
-    Total                      1.950ns (0.755ns logic, 1.195ns route)
-                                       (38.7% logic, 61.3% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 13.660ns (frequency: 73.209MHz)
-  Total number of paths / destination ports: 29870535 / 371
+  Clock period: 13.684ns (frequency: 73.077MHz)
+  Total number of paths / destination ports: 24893840 / 389
 -------------------------------------------------------------------------
-Delay:               13.660ns (Levels of Logic = 22)
+Delay:               13.684ns (Levels of Logic = 22)
   Source:            U3/puck/dot_y_1 (FF)
   Destination:       U3/puck/delta_x_3 (FF)
   Source Clock:      clk rising
@@ -1106,74 +1148,74 @@ Delay:               13.660ns (Levels of Logic = 22)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDPE:C->Q            16   0.447   1.109  U3/puck/dot_y_1 (U3/puck/dot_y_1)
-     LUT2:I0->O            1   0.203   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_lut<1> (U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_lut<1>)
-     MUXCY:S->O            1   0.172   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<1> (U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<2> (U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<3> (U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<4> (U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<5> (U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<6> (U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<7> (U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<8> (U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<8>)
-     MUXCY:CI->O           0   0.019   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<9> (U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_cy<9>)
-     XORCY:CI->O          16   0.180   1.004  U3/puck/Msub_GND_15_o_GND_15_o_sub_22_OUT_xor<10> (U3/puck/GND_15_o_GND_15_o_sub_22_OUT<10>)
-     DSP48A1:A10->PCOUT47    1   4.469   0.000  U3/puck/Mmult_n0093 (U3/puck/Mmult_n0093_PCOUT_to_Maddsub_n0091_PCIN_47)
-     DSP48A1:PCIN47->P6    2   2.264   0.961  U3/puck/Maddsub_n0091 (U3/puck/GND_15_o_GND_15_o_add_24_OUT<6>)
-     LUT5:I0->O            1   0.203   0.000  U3/puck/Mcompar_n0027_lut<1> (U3/puck/Mcompar_n0027_lut<1>)
-     MUXCY:S->O            1   0.172   0.000  U3/puck/Mcompar_n0027_cy<1> (U3/puck/Mcompar_n0027_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  U3/puck/Mcompar_n0027_cy<2> (U3/puck/Mcompar_n0027_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  U3/puck/Mcompar_n0027_cy<3> (U3/puck/Mcompar_n0027_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  U3/puck/Mcompar_n0027_cy<4> (U3/puck/Mcompar_n0027_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  U3/puck/Mcompar_n0027_cy<5> (U3/puck/Mcompar_n0027_cy<5>)
-     MUXCY:CI->O          12   0.019   0.909  U3/puck/Mcompar_n0027_cy<6> (U3/puck/Mcompar_n0027_cy<6>)
-     LUT6:I5->O            1   0.205   0.808  U3/puck/Maccum_delta_x_cy<1>11 (U3/puck/Maccum_delta_x_cy<1>)
-     LUT5:I2->O            1   0.205   0.000  U3/puck/Maccum_delta_x_xor<3>11 (U3/puck/Result<3>)
-     FDCE:D                    0.102          U3/puck/delta_x_3
+     LUT2:I0->O            1   0.203   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_lut<1> (U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<1> (U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<2> (U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<3> (U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<4> (U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<5> (U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<6> (U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<7> (U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<8> (U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<8>)
+     MUXCY:CI->O           0   0.019   0.000  U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<9> (U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_cy<9>)
+     XORCY:CI->O          16   0.180   1.004  U3/puck/Msub_GND_15_o_GND_15_o_sub_30_OUT_xor<10> (U3/puck/GND_15_o_GND_15_o_sub_30_OUT<10>)
+     DSP48A1:A10->PCOUT47    1   4.469   0.000  U3/puck/Mmult_n0139 (U3/puck/Mmult_n0139_PCOUT_to_Maddsub_n0137_PCIN_47)
+     DSP48A1:PCIN47->P6    2   2.264   0.961  U3/puck/Maddsub_n0137 (U3/puck/GND_15_o_GND_15_o_add_32_OUT<6>)
+     LUT5:I0->O            1   0.203   0.000  U3/puck/Mcompar_n0038_lut<1> (U3/puck/Mcompar_n0038_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  U3/puck/Mcompar_n0038_cy<1> (U3/puck/Mcompar_n0038_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U3/puck/Mcompar_n0038_cy<2> (U3/puck/Mcompar_n0038_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  U3/puck/Mcompar_n0038_cy<3> (U3/puck/Mcompar_n0038_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  U3/puck/Mcompar_n0038_cy<4> (U3/puck/Mcompar_n0038_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  U3/puck/Mcompar_n0038_cy<5> (U3/puck/Mcompar_n0038_cy<5>)
+     MUXCY:CI->O           8   0.213   0.803  U3/puck/Mcompar_n0038_cy<6> (U3/puck/Mcompar_n0038_cy<6>)
+     LUT5:I4->O            6   0.205   0.745  U3/puck/_n0313_inv2_rstpot (U3/puck/_n0313_inv2_rstpot)
+     LUT3:I2->O            1   0.205   0.000  U3/puck/delta_x_1_dpot (U3/puck/delta_x_1_dpot)
+     FDPE:D                    0.102          U3/puck/delta_x_1
     ----------------------------------------
-    Total                     13.660ns (8.869ns logic, 4.791ns route)
-                                       (64.9% logic, 35.1% route)
+    Total                     13.684ns (9.063ns logic, 4.621ns route)
+                                       (66.2% logic, 33.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'joy2/clk_joy'
-  Clock period: 5.245ns (frequency: 190.672MHz)
-  Total number of paths / destination ports: 822 / 330
+  Clock period: 5.242ns (frequency: 190.781MHz)
+  Total number of paths / destination ports: 822 / 332
 -------------------------------------------------------------------------
-Delay:               2.622ns (Levels of Logic = 1)
-  Source:            joy1/ji/pState_1 (FF)
+Delay:               2.621ns (Levels of Logic = 1)
+  Source:            joy1/ji/CE (FF)
   Destination:       joy1/ji/rSR_7 (FF)
   Source Clock:      joy2/clk_joy falling
   Destination Clock: joy2/clk_joy rising
 
-  Data Path: joy1/ji/pState_1 to joy1/ji/rSR_7
+  Data Path: joy1/ji/CE to joy1/ji/rSR_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD_1:C->Q             6   0.447   0.849  joy1/ji/pState_1 (joy1/ji/pState_1)
-     LUT3:I1->O            8   0.203   0.802  joy1/ji/GND_9_o_CE_AND_2_o1 (joy1/ji/GND_9_o_CE_AND_2_o)
+     FDR_1:C->Q            2   0.447   0.845  joy1/ji/CE (joy1/ji/CE)
+     LUT3:I0->O            8   0.205   0.802  joy1/ji/GND_9_o_CE_AND_2_o1 (joy1/ji/GND_9_o_CE_AND_2_o)
      FDE:CE                    0.322          joy1/ji/rSR_0
     ----------------------------------------
-    Total                      2.622ns (0.972ns logic, 1.650ns route)
-                                       (37.1% logic, 62.9% route)
+    Total                      2.621ns (0.974ns logic, 1.647ns route)
+                                       (37.2% logic, 62.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'U1/q_1'
-  Clock period: 4.805ns (frequency: 208.134MHz)
-  Total number of paths / destination ports: 1215 / 30
+  Clock period: 5.457ns (frequency: 183.249MHz)
+  Total number of paths / destination ports: 1284 / 30
 -------------------------------------------------------------------------
-Delay:               4.805ns (Levels of Logic = 13)
-  Source:            U3/hc_3 (FF)
+Delay:               5.457ns (Levels of Logic = 13)
+  Source:            U3/hc_2 (FF)
   Destination:       U3/hc_9 (FF)
   Source Clock:      U1/q_1 rising
   Destination Clock: U1/q_1 rising
 
-  Data Path: U3/hc_3 to U3/hc_9
+  Data Path: U3/hc_2 to U3/hc_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             13   0.447   1.277  U3/hc_3 (U3/hc_3)
-     LUT5:I0->O            3   0.203   0.651  U3/hc[9]_PWR_9_o_LessThan_8_o_inv1 (U3/hc[9]_PWR_9_o_LessThan_8_o_inv1)
-     LUT6:I5->O           15   0.205   1.210  U3/hc[9]_PWR_9_o_LessThan_8_o_inv2 (U3/hc[9]_PWR_9_o_LessThan_8_o_inv)
-     LUT3:I0->O            1   0.205   0.000  U3/Mcount_hc_lut<0> (U3/Mcount_hc_lut<0>)
+     FDC:C->Q             43   0.447   1.793  U3/hc_2 (U3/hc_2)
+     LUT5:I0->O            3   0.203   1.015  U3/hc[9]_PWR_9_o_LessThan_19_o_inv1_inv21 (U3/hc[9]_PWR_9_o_LessThan_19_o_inv1_inv2)
+     LUT6:I0->O           11   0.203   0.987  U3/hc[9]_PWR_9_o_LessThan_19_o_inv1_inv12 (U3/hc[9]_PWR_9_o_LessThan_19_o_inv1_inv)
+     LUT2:I0->O            1   0.203   0.000  U3/Mcount_hc_lut<0> (U3/Mcount_hc_lut<0>)
      MUXCY:S->O            1   0.172   0.000  U3/Mcount_hc_cy<0> (U3/Mcount_hc_cy<0>)
      MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<1> (U3/Mcount_hc_cy<1>)
      MUXCY:CI->O           1   0.019   0.000  U3/Mcount_hc_cy<2> (U3/Mcount_hc_cy<2>)
@@ -1186,33 +1228,36 @@ Delay:               4.805ns (Levels of Logic = 13)
      XORCY:CI->O           1   0.180   0.000  U3/Mcount_hc_xor<9> (U3/Mcount_hc9)
      FDC:D                     0.102          U3/hc_9
     ----------------------------------------
-    Total                      4.805ns (1.666ns logic, 3.139ns route)
-                                       (34.7% logic, 65.3% route)
+    Total                      5.457ns (1.662ns logic, 3.795ns route)
+                                       (30.5% logic, 69.5% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/q_17'
-  Total number of paths / destination ports: 14 / 14
+Timing constraint: Default period analysis for Clock 'U1/q_17'
+  Clock period: 2.135ns (frequency: 468.296MHz)
+  Total number of paths / destination ports: 20 / 14
 -------------------------------------------------------------------------
-Offset:              3.560ns (Levels of Logic = 1)
-  Source:            clr (PAD)
-  Destination:       score/an_3 (FF)
+Delay:               2.135ns (Levels of Logic = 1)
+  Source:            score/state_FSM_FFd1 (FF)
+  Destination:       score/an_0 (FF)
+  Source Clock:      U1/q_17 rising
   Destination Clock: U1/q_17 rising
 
-  Data Path: clr to score/an_3
+  Data Path: score/state_FSM_FFd1 to score/an_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           112   1.222   1.908  clr_IBUF (clr_IBUF)
-     FDP:PRE                   0.430          score/seg
+     FDC:C->Q              8   0.447   0.802  score/state_FSM_FFd1 (score/state_FSM_FFd1)
+     INV:I->O              1   0.206   0.579  score/state_state[1]_PWR_5_o_wide_mux_4_OUT<0>1_INV_0 (score/state[1]_PWR_5_o_wide_mux_4_OUT<0>)
+     FDP:D                     0.102          score/an_0
     ----------------------------------------
-    Total                      3.560ns (1.652ns logic, 1.908ns route)
-                                       (46.4% logic, 53.6% route)
+    Total                      2.135ns (0.755ns logic, 1.380ns route)
+                                       (35.4% logic, 64.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 186 / 184
+  Total number of paths / destination ports: 193 / 192
 -------------------------------------------------------------------------
-Offset:              4.540ns (Levels of Logic = 2)
+Offset:              4.555ns (Levels of Logic = 2)
   Source:            btnD (PAD)
   Destination:       D/counter_24 (FF)
   Destination Clock: clk rising
@@ -1221,12 +1266,12 @@ Offset:              4.540ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            30   1.222   1.492  btnD_IBUF (btnD_IBUF)
+     IBUF:I->O            31   1.222   1.506  btnD_IBUF (btnD_IBUF)
      LUT3:I0->O           25   0.205   1.192  D/_n00321 (D/_n0032)
      FDRE:R                    0.430          D/counter_0
     ----------------------------------------
-    Total                      4.540ns (1.857ns logic, 2.683ns route)
-                                       (40.9% logic, 59.1% route)
+    Total                      4.555ns (1.857ns logic, 2.698ns route)
+                                       (40.8% logic, 59.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'joy2/clk_joy'
@@ -1251,119 +1296,142 @@ Offset:              1.903ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/q_1'
   Total number of paths / destination ports: 20 / 20
 -------------------------------------------------------------------------
-Offset:              3.560ns (Levels of Logic = 1)
+Offset:              3.576ns (Levels of Logic = 1)
   Source:            clr (PAD)
-  Destination:       U3/vc_9 (FF)
+  Destination:       U3/hc_9 (FF)
   Destination Clock: U1/q_1 rising
 
-  Data Path: clr to U3/vc_9
+  Data Path: clr to U3/hc_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           112   1.222   1.908  clr_IBUF (clr_IBUF)
-     FDC:CLR                   0.430          U3/hc_0
+     IBUF:I->O           118   1.222   1.924  clr_IBUF (clr_IBUF)
+     FDCE:CLR                  0.430          U3/vc_0
     ----------------------------------------
-    Total                      3.560ns (1.652ns logic, 1.908ns route)
-                                       (46.4% logic, 53.6% route)
+    Total                      3.576ns (1.652ns logic, 1.924ns route)
+                                       (46.2% logic, 53.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/q_17'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              3.576ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       score/state_FSM_FFd4 (FF)
+  Destination Clock: U1/q_17 rising
+
+  Data Path: clr to score/state_FSM_FFd4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           118   1.222   1.924  clr_IBUF (clr_IBUF)
+     FDP:PRE                   0.430          score/an_0
+    ----------------------------------------
+    Total                      3.576ns (1.652ns logic, 1.924ns route)
+                                       (46.2% logic, 53.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/q_17'
-  Total number of paths / destination ports: 10 / 10
+  Total number of paths / destination ports: 11 / 11
 -------------------------------------------------------------------------
-Offset:              3.597ns (Levels of Logic = 1)
-  Source:            score/seg_1 (FF)
-  Destination:       seg<5> (PAD)
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            score/seg_0 (FF)
+  Destination:       seg<3> (PAD)
   Source Clock:      U1/q_17 rising
 
-  Data Path: score/seg_1 to seg<5>
+  Data Path: score/seg_0 to seg<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q              1   0.447   0.579  score/seg_1 (score/seg_1)
-     OBUF:I->O                 2.571          seg_5_OBUF (seg<5>)
+     FDP:C->Q              2   0.447   0.616  score/seg_0 (score/seg_0)
+     OBUF:I->O                 2.571          seg_3_OBUF (seg<3>)
     ----------------------------------------
-    Total                      3.597ns (3.018ns logic, 0.579ns route)
-                                       (83.9% logic, 16.1% route)
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/q_1'
-  Total number of paths / destination ports: 34653960 / 10
+  Total number of paths / destination ports: 34655520 / 10
 -------------------------------------------------------------------------
-Offset:              16.984ns (Levels of Logic = 21)
-  Source:            U3/vc_3 (FF)
-  Destination:       red<1> (PAD)
+Offset:              18.092ns (Levels of Logic = 24)
+  Source:            U3/vc_0 (FF)
+  Destination:       blue<1> (PAD)
   Source Clock:      U1/q_1 rising
 
-  Data Path: U3/vc_3 to red<1>
+  Data Path: U3/vc_0 to blue<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            17   0.447   1.132  U3/vc_3 (U3/vc_3)
-     LUT2:I0->O            1   0.203   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_lut<3> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_lut<3>)
-     MUXCY:S->O            1   0.172   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<3> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<4> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<5> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<6> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<7> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<8> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<8>)
-     MUXCY:CI->O           0   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<9> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<9>)
-     XORCY:CI->O          16   0.180   1.004  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_xor<10> (U3/GND_10_o_GND_10_o_sub_107_OUT<10>)
-     DSP48A1:A10->PCOUT47    1   4.469   0.000  U3/Mmult_n0230 (U3/Mmult_n0230_PCOUT_to_Maddsub_n0228_PCIN_47)
-     DSP48A1:PCIN47->P1    2   2.264   0.961  U3/Maddsub_n0228 (U3/GND_10_o_GND_10_o_add_109_OUT<1>)
-     LUT5:I0->O            1   0.203   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_lut<0> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<0> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<1> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<2> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<3> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<4> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<4>)
-     MUXCY:CI->O           1   0.213   0.827  U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<5> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<5>)
-     LUT6:I2->O            6   0.203   0.992  U3/Mmux_red1111 (U3/Mmux_red111)
-     LUT6:I2->O            1   0.203   0.579  U3/Mmux_red11 (red_0_OBUF)
-     OBUF:I->O                 2.571          red_0_OBUF (red<0>)
+     FDCE:C->Q            40   0.447   1.510  U3/vc_0 (U3/vc_0)
+     LUT2:I0->O            1   0.203   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_lut<0> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<0> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<1> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<2> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<3> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<4> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<5> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<6> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<7> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<8> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<8>)
+     MUXCY:CI->O           0   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<9> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<9>)
+     XORCY:CI->O          16   0.180   1.004  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_xor<10> (U3/GND_10_o_GND_10_o_sub_117_OUT<10>)
+     DSP48A1:A10->PCOUT47    1   4.469   0.000  U3/Mmult_n0277 (U3/Mmult_n0277_PCOUT_to_Maddsub_n0275_PCIN_47)
+     DSP48A1:PCIN47->P3    2   2.264   0.961  U3/Maddsub_n0275 (U3/GND_10_o_GND_10_o_add_119_OUT<3>)
+     LUT5:I0->O            1   0.203   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_lut<0> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<0> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<1> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<2> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<3> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<3>)
+     MUXCY:CI->O           1   0.213   0.580  U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<4> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<4>)
+     LUT6:I5->O            7   0.205   1.002  U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<5> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<5>)
+     LUT6:I3->O            2   0.205   0.721  U3/Mmux_blue1121 (U3/Mmux_blue112)
+     LUT6:I4->O            1   0.203   0.579  U3/Mmux_blue2 (blue_1_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
     ----------------------------------------
-    Total                     16.984ns (11.490ns logic, 5.494ns route)
-                                       (67.7% logic, 32.3% route)
+    Total                     18.092ns (11.735ns logic, 6.357ns route)
+                                       (64.9% logic, 35.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 15154811 / 12
+  Total number of paths / destination ports: 15155252 / 18
 -------------------------------------------------------------------------
-Offset:              16.920ns (Levels of Logic = 23)
-  Source:            U3/ball2/dot_y_1 (FF)
-  Destination:       red<1> (PAD)
+Offset:              17.776ns (Levels of Logic = 24)
+  Source:            U3/puck/dot_x_0 (FF)
+  Destination:       blue<1> (PAD)
   Source Clock:      clk rising
 
-  Data Path: U3/ball2/dot_y_1 to red<1>
+  Data Path: U3/puck/dot_x_0 to blue<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDPE:C->Q            17   0.447   1.028  U3/ball2/dot_y_1 (U3/ball2/dot_y_1)
-     LUT2:I1->O            1   0.205   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_lut<1> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_lut<1>)
-     MUXCY:S->O            1   0.172   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<1> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<2> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<3> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<4> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<5> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<6> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<7> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<8> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<8>)
-     MUXCY:CI->O           0   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<9> (U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_cy<9>)
-     XORCY:CI->O          16   0.180   1.004  U3/Msub_GND_10_o_GND_10_o_sub_107_OUT_xor<10> (U3/GND_10_o_GND_10_o_sub_107_OUT<10>)
-     DSP48A1:A10->PCOUT47    1   4.469   0.000  U3/Mmult_n0230 (U3/Mmult_n0230_PCOUT_to_Maddsub_n0228_PCIN_47)
-     DSP48A1:PCIN47->P1    2   2.264   0.961  U3/Maddsub_n0228 (U3/GND_10_o_GND_10_o_add_109_OUT<1>)
-     LUT5:I0->O            1   0.203   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_lut<0> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<0> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<1> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<2> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<3> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<4> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<4>)
-     MUXCY:CI->O           1   0.213   0.827  U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<5> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_111_o_cy<5>)
-     LUT6:I2->O            6   0.203   0.992  U3/Mmux_red1111 (U3/Mmux_red111)
-     LUT6:I2->O            1   0.203   0.579  U3/Mmux_red11 (red_0_OBUF)
-     OBUF:I->O                 2.571          red_0_OBUF (red<0>)
+     FDCE:C->Q            25   0.447   1.193  U3/puck/dot_x_0 (U3/puck/dot_x_0)
+     LUT2:I1->O            1   0.205   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_lut<0> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<0> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<1> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<2> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<3> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<4> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<5> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<6> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<7> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<8> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<8>)
+     MUXCY:CI->O           0   0.019   0.000  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<9> (U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_cy<9>)
+     XORCY:CI->O          16   0.180   1.004  U3/Msub_GND_10_o_GND_10_o_sub_117_OUT_xor<10> (U3/GND_10_o_GND_10_o_sub_117_OUT<10>)
+     DSP48A1:A10->PCOUT47    1   4.469   0.000  U3/Mmult_n0277 (U3/Mmult_n0277_PCOUT_to_Maddsub_n0275_PCIN_47)
+     DSP48A1:PCIN47->P3    2   2.264   0.961  U3/Maddsub_n0275 (U3/GND_10_o_GND_10_o_add_119_OUT<3>)
+     LUT5:I0->O            1   0.203   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_lut<0> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<0> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<1> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<2> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<3> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<3>)
+     MUXCY:CI->O           1   0.213   0.580  U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<4> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<4>)
+     LUT6:I5->O            7   0.205   1.002  U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<5> (U3/Mcompar_GND_10_o_GND_10_o_LessThan_121_o_cy<5>)
+     LUT6:I3->O            2   0.205   0.721  U3/Mmux_blue1121 (U3/Mmux_blue112)
+     LUT6:I4->O            1   0.203   0.579  U3/Mmux_blue2 (blue_1_OBUF)
+     OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
     ----------------------------------------
-    Total                     16.920ns (11.530ns logic, 5.390ns route)
-                                       (68.1% logic, 31.9% route)
+    Total                     17.776ns (11.737ns logic, 6.039ns route)
+                                       (66.0% logic, 34.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'joy2/clk_joy'
@@ -1378,7 +1446,7 @@ Offset:              4.521ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD_1:C->Q             2   0.447   0.721  joy1/ji/CE (joy1/ji/CE)
+     FDR_1:C->Q            2   0.447   0.721  joy1/ji/CE (joy1/ji/CE)
      LUT2:I0->O            1   0.203   0.579  joy1/ji/Mmux_SCLK11 (SCLK_1_OBUF)
      OBUF:I->O                 2.571          SCLK_1_OBUF (SCLK_1)
     ----------------------------------------
@@ -1395,7 +1463,7 @@ Clock to Setup on destination clock U1/q_1
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-U1/q_1         |    4.805|         |         |         |
+U1/q_1         |    5.457|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock U1/q_17
@@ -1403,7 +1471,8 @@ Clock to Setup on destination clock U1/q_17
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-U1/q_17        |    1.950|         |         |         |
+U1/q_17        |    2.135|         |         |         |
+clk            |    2.049|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -1411,7 +1480,8 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   13.660|         |         |         |
+U1/q_1         |    4.452|         |         |         |
+clk            |   13.684|         |         |         |
 joy2/clk_joy   |         |    7.110|         |         |
 ---------------+---------+---------+---------+---------+
 
@@ -1421,20 +1491,21 @@ Clock to Setup on destination clock joy2/clk_joy
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 clk            |         |         |    1.469|         |
-joy2/clk_joy   |    1.165|    2.622|    3.913|         |
+joy2/clk_joy   |    1.165|    2.621|    3.913|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 18.00 secs
-Total CPU time to Xst completion: 18.20 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.30 secs
  
 --> 
 
-Total memory usage is 268792 kilobytes
+
+Total memory usage is 442080 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  177 (   0 filtered)
-Number of infos    :   47 (   0 filtered)
+Number of warnings :  185 (   0 filtered)
+Number of infos    :   53 (   0 filtered)
 

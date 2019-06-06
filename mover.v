@@ -30,7 +30,9 @@ module mover(
     input wire prev_clk_cursor,
     input wire clk_cursor,
 	output reg collide1,
-	output reg collide2
+	output reg collide2,
+   output wire [2:0] input_score1,
+	output wire [2:0] input_score2
     );
 
     parameter hbp = 144;
@@ -61,6 +63,12 @@ parameter right_cen_yub = 296;
     
    reg reverse_x;
    reg reverse_y;
+	
+	reg [2:0] s1;
+	reg [2:0] s2;
+	
+	assign input_score1 = s1;
+	assign input_score2 = s2;
         
     always @(posedge clk or posedge clr)
     begin
@@ -74,6 +82,8 @@ parameter right_cen_yub = 296;
             reverse_y <= 0;
             collide1 <= 0;
             collide2 <= 0;
+				s1 <= 0;
+				s2 <= 0;
         end
 
 		else 
@@ -89,6 +99,7 @@ parameter right_cen_yub = 296;
 			        dot_y <= left_cen_ylb + 25;
 			        delta_x <= 0;
 			        delta_y <= 0;
+					  s1 <= s1 + 1;
 		        end
                 else collide1 <=0;
                 //-----------------------------------------------------------
@@ -101,6 +112,7 @@ parameter right_cen_yub = 296;
 			        dot_y <= right_cen_ylb + 25;
 			        delta_x <= 0;
 			        delta_y <= 0;
+					  s2 <= s2 + 1;
 		        end
                 else collide2 <=0;
                 //-----------------------------------------------------------
@@ -161,6 +173,18 @@ parameter right_cen_yub = 296;
 					end else begin
 						dot_x <= dot_x;
 						dot_y <= dot_y;
+					end
+					if (s1 == 5 || s2 == 5) begin
+							dot_x <= (hbp + hfp)/2;
+							dot_y <= (vbp + vfp)/2;
+							delta_x <= 0;
+							delta_y <= 0;
+							reverse_x <= 0;
+							reverse_y <= 0;
+							collide1 <= 0;
+							collide2 <= 0;
+							s1 <= 0;
+							s2 <= 0;
 					end
             end
 	    end

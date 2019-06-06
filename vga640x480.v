@@ -41,9 +41,11 @@ module vga640x480(
 	 output wire collide2,
     input wire [1:0] state,
     input wire butUp,
-    input wire butDown
-//	 output reg [2:0] out_score1,
-//	 output reg [2:0] out_score2
+    input wire butDown,
+	 output wire [2:0] out_score1,
+	 output wire [2:0] out_score2,
+	 output wire [2:0] movescore_1, 
+	 output wire [2:0]movescore_2
     );
 
 // FSM States
@@ -158,6 +160,10 @@ update_joy2 ball2 (
     .dot_y(dot_y_2)
     );
 
+assign  out_score1 = movescore_1;
+assign  out_score2 = movescore_2;
+
+
 mover puck (
     .clk(clk),
     .clr(clr),
@@ -170,8 +176,9 @@ mover puck (
     .prev_clk_cursor(prev_clk_cursor),
     .clk_cursor(clk_cursor),
 	.collide1(collide1),
-	.collide2(collide2)
-	
+	.collide2(collide2),
+	.input_score1(movescore_1),
+	.input_score2(movescore_2)
 );
 
 //---------------------------------------------------------------
@@ -235,6 +242,9 @@ begin
 	begin
 		hc <= 0;
 		vc <= 0;
+		
+		//movescore_1 <= 0;
+		//movescore_2 <= 0;
         // hc_jump_board <= 0;
         // vc_jump_board <= 0;
         // hc_nojump <= 1;
