@@ -53,22 +53,26 @@ module update_joy2(
         begin
             if (joy_x < 150) dot_x <= dot_x + 20;
             else if ( joy_x < 400) dot_x <= dot_x + 10;
+				else dot_x <= dot_x;
         end
         if (dot_x>x_lb)
         begin
             if (joy_x > 850 && dot_x > 2) dot_x <= dot_x - 20;
             else if (joy_x > 600 && dot_x > 1) dot_x <= dot_x - 10;
+				else dot_x <= dot_x;
         end
         
         if (dot_y>y_lb)
         begin
             if (joy_y < 150) dot_y <= dot_y - 20;
             else if (joy_y < 400) dot_y <= dot_y - 10;
+				else dot_y <= dot_y;
         end
         if(dot_y<y_ub)
         begin
             if (joy_y > 850) dot_y <= dot_y + 20;
             else if (joy_y > 600) dot_y <= dot_y + 10;
+				else dot_y <= dot_y;
         end
     end
     end

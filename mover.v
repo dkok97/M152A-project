@@ -76,8 +76,10 @@ parameter right_cen_yub = 296;
         begin
             dot_x <= (hbp + hfp)/2;
             dot_y <= (vbp + vfp)/2;
+            //dot_x <= 675;
             delta_x <= 4'b0111;
-            delta_y <= 4'b0011;
+            // delta_y <= 4'b0011;
+				delta_y <= 0;
             reverse_x <= 0;
             reverse_y <= 0;
             collide1 <= 0;
@@ -94,12 +96,11 @@ parameter right_cen_yub = 296;
                 //------------GOAL 1-----------------------------------------
 		        if ((dot_x >= left_cen_xlb && dot_x <= left_cen_xub) && (dot_y >= left_cen_ylb && dot_y <= left_cen_yub))
 		        begin
-                    collide1 <=1;
-			        dot_x <= left_cen_xub + 120;
-			        dot_y <= left_cen_ylb + 25;
+                 collide1 <=1;
+//			        dot_x <= 327;
+//			        dot_y <= 271;
 			        delta_x <= 0;
 			        delta_y <= 0;
-					  s1 <= s1 + 1;
 		        end
                 else collide1 <=0;
                 //-----------------------------------------------------------
@@ -107,12 +108,11 @@ parameter right_cen_yub = 296;
                 //------------GOAL 2-----------------------------------------
 		        if ((dot_x >= right_cen_xlb && dot_x <= right_cen_xub) && (dot_y >= right_cen_ylb && dot_y <= right_cen_yub))
 		        begin
-                    collide2 <=1;
-			        dot_x <= right_cen_xub - 120;
-			        dot_y <= right_cen_ylb + 25;
+                 collide2 <=1;
+//			        dot_x <= 600;
+//			        dot_y <= 271;
 			        delta_x <= 0;
 			        delta_y <= 0;
-					  s2 <= s2 + 1;
 		        end
                 else collide2 <=0;
                 //-----------------------------------------------------------
@@ -170,7 +170,20 @@ parameter right_cen_yub = 296;
 						 if (reverse_y==0) dot_y <= dot_y + delta_y;
 						 else dot_y <= dot_y - delta_y;
 						 //-----------------------------------------------------------
-					end else begin
+					end 
+					else if(collide1 == 1) begin
+						dot_x <= 327;
+						dot_y <= 271;
+						collide1 <= 0;
+						s1 <= s1 + 1;
+					end
+					else if (collide2 == 1) begin 
+						dot_x <= 600;
+						dot_y <= 271;
+						collide2 <= 0;
+						s2 <= s2 + 1;
+					end
+					else begin
 						dot_x <= dot_x;
 						dot_y <= dot_y;
 					end

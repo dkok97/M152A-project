@@ -1,6 +1,0 @@
-verilog work "update_joy2.v"
-verilog work "update_joy1.v"
-verilog work "mover.v"
-verilog work "vga640x480.v"
-verilog work "vga_tb.v"
-verilog work "/home/parallels/Desktop/14.7/ISE_DS/ISE//verilog/src/glbl.v"

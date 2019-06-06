@@ -24,7 +24,7 @@ module bounce(
     input clk
     );
 	 
-reg [1:0] button_state_reg = 0;
+reg button_state_reg = 0;
 reg button_first_press = 0;
 
 reg [31:0] counter = 0;

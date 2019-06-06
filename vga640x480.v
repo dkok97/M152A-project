@@ -137,6 +137,7 @@ parameter right_cen_xub = 714;
 parameter right_cen_ylb = 246;
 parameter right_cen_yub = 296;
 
+// TODO: Parameters
 
 update_joy1 ball1 (
     .clk(clk),
@@ -403,6 +404,8 @@ read_address_pp = {rom_pix_pp[7:0],rom_addr_pp[7:0]};
 						 green = 3'b000;
 						 blue = 2'b11;
 					end
+
+					// TODO: center circle
 
 					//left center rect
 					if ((hc >= left_cen_xlb && hc <= left_cen_xub) && (vc >= left_cen_ylb && vc <= left_cen_yub))
