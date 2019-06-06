@@ -64,7 +64,8 @@ parameter right_cen_yub = 296;
         
     always @(posedge clk or posedge clr)
     begin
-        if (clr) begin
+        if (clr) 
+        begin
             dot_x <= (hbp + hfp)/2;
             dot_y <= (vbp + vfp)/2;
             delta_x <= 4'b0111;
@@ -74,75 +75,89 @@ parameter right_cen_yub = 296;
             collide1 <= 0;
             collide2 <= 0;
         end
-		else begin
-        if (prev_clk_cursor == 0 && clk_cursor == 1) begin
-		
-		 if ((dot_x >= left_cen_xlb && dot_x <= left_cen_xub) && (dot_y >= left_cen_ylb && dot_y <= left_cen_yub))
-		begin
-            collide1 <=1;
-			 dot_x <= left_cen_xub + 20;
-			 dot_y <= left_cen_ylb + 25;
-			 delta_x <= 0;
-			 delta_y <= 0;
 
-		end
-        else collide1 <=0;
+		else 
+        begin
+            if (prev_clk_cursor == 0 && clk_cursor == 1) 
+            begin
 
-		if ((dot_x >= right_cen_xlb && dot_x <= right_cen_xub) && (dot_y >= right_cen_ylb && dot_y <= right_cen_yub))
-		begin
-            collide2 <=1;
-			 dot_x <= right_cen_xub + 60;
-			 dot_y <= right_cen_ylb + 75;
-			 delta_x <= 0;
-			 delta_y <= 0;
-		end
-        else collide2 <=0;
-		
-			if (((ball1_x - dot_x)*(ball1_x - dot_x) + (ball1_y - dot_y)*(ball1_y - dot_y)) <= 700) begin
-				delta_x <= delta_x + (dot_x - ball1_x);
-				delta_y <= delta_y + (dot_y - ball1_y);
-			end
-			
-			else if (((ball2_x - dot_x)*(ball2_x - dot_x) + (ball2_y - dot_y)*(ball2_y - dot_y)) <= 700) begin
-				delta_x <= delta_x + (dot_x - ball2_x);
-				delta_y <= delta_y + (dot_y - ball2_y);
-			end
-			
-			else
-			begin
-				delta_x <= delta_x;
-				delta_y <= delta_y;
-			end
-			
-			
-            if (dot_y > y_upper) begin
-                reverse_y <= 1;
-            end
-			else if (dot_y < y_lower) begin
-				reverse_y <= 0;
-			end
-            else if (dot_x > x_upper) begin
-                reverse_x <= 1;
-            end
-			else if (dot_x  < x_lower) begin
-				reverse_x <= 0;
-			end
-            else begin
-                reverse_x <= reverse_x;
-                reverse_y  <= reverse_y;
-            end
+                //------------GOAL 1-----------------------------------------
+		        if ((dot_x >= left_cen_xlb && dot_x <= left_cen_xub) && (dot_y >= left_cen_ylb && dot_y <= left_cen_yub))
+		        begin
+                    collide1 <=1;
+			        dot_x <= left_cen_xub + 20;
+			        dot_y <= left_cen_ylb + 25;
+			        delta_x <= 0;
+			        delta_y <= 0;
+		        end
+                else collide1 <=0;
+                //-----------------------------------------------------------
 
-			if (reverse_x==0) dot_x <= dot_x + delta_x;
-			else dot_x <= dot_x - delta_x;
+                //------------GOAL 2-----------------------------------------
+		        if ((dot_x >= right_cen_xlb && dot_x <= right_cen_xub) && (dot_y >= right_cen_ylb && dot_y <= right_cen_yub))
+		        begin
+                    collide2 <=1;
+			        dot_x <= right_cen_xub + 60;
+			        dot_y <= right_cen_ylb + 75;
+			        delta_x <= 0;
+			        delta_y <= 0;
+		        end
+                else collide2 <=0;
+                //-----------------------------------------------------------
+
+                //------------COLLISION OF BALL1/BALL2 AND PUCK--------------
+                if (((ball1_x - dot_x)*(ball1_x - dot_x) + (ball1_y - dot_y)*(ball1_y - dot_y)) <= 700) 
+                begin
+                    delta_x <= delta_x + (dot_x - ball1_x);
+                    delta_y <= delta_y + (dot_y - ball1_y);
+                end
+
+                else if (((ball2_x - dot_x)*(ball2_x - dot_x) + (ball2_y - dot_y)*(ball2_y - dot_y)) <= 700) 
+                begin
+                    delta_x <= delta_x + (dot_x - ball2_x);
+                    delta_y <= delta_y + (dot_y - ball2_y);
+                end
+        
+                else
+                begin
+                    delta_x <= delta_x;
+                    delta_y <= delta_y;
+                end
+                //-----------------------------------------------------------
+        
+                //------------------REFLECTION OFF OF WALL-------------------
+                if (dot_y > y_upper) 
+                begin
+                    reverse_y <= 1;
+                end
+                else if (dot_y < y_lower) 
+                begin
+                    reverse_y <= 0;
+                end
+                else if (dot_x > x_upper) 
+                begin
+                    reverse_x <= 1;
+                end
+                else if (dot_x  < x_lower) 
+                begin
+                    reverse_x <= 0;
+                end
+                else 
+                begin
+                    reverse_x <= reverse_x;
+                    reverse_y  <= reverse_y;
+                end
+                //-----------------------------------------------------------
+
+                //------------------MOVE BALL--------------------------------
+                if (reverse_x==0) dot_x <= dot_x + delta_x;
+                else dot_x <= dot_x - delta_x;
+    
+                if (reverse_y==0) dot_y <= dot_y + delta_y;
+                else dot_y <= dot_y - delta_y;
+                //-----------------------------------------------------------
 			
-			if (reverse_y==0) dot_y <= dot_y + delta_y;
-			else dot_y <= dot_y - delta_y;
-			
+            end
+	    end
     end
-	end
-
-end
-    
-    
-
 endmodule
