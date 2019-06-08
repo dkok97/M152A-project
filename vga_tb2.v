@@ -108,6 +108,9 @@ module vga_tb2;
 		// Add stimulus here
 		clr = 1;
 		#200
+        
+        
+        
 		clr = 0;
 	end
       

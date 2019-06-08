@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/parallels/Desktop/midnight/M152A-project/vga_tb2_isim_beh.exe" -prj "/home/parallels/Desktop/midnight/M152A-project/vga_tb2_beh.prj" "work.vga_tb2" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/152/Desktop/working_game_nt/M152A-project/vga_tb2_isim_beh.exe" -prj "C:/Users/152/Desktop/working_game_nt/M152A-project/vga_tb2_beh.prj" "work.vga_tb2" "work.glbl" 

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Jun 06 03:27:04 2019
+// Written by: Map P.68d on Thu Jun 06 10:22:57 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -74,37 +74,7 @@ PIN U3_Mram_ram_name_pp3_pins<14> = BEL "U3_Mram_ram_name_pp3" PINNAME CLKA;
 PIN U3_Mram_ram_name_pp5_pins<14> = BEL "U3_Mram_ram_name_pp5" PINNAME CLKA;
 PIN U3_Mram_ram_name_pp1_pins<14> = BEL "U3_Mram_ram_name_pp1" PINNAME CLKA;
 PIN U3_Mram_ram_name_pp2_pins<14> = BEL "U3_Mram_ram_name_pp2" PINNAME CLKA;
-TIMEGRP sys_clk_pin = BEL "U1/q_0" BEL "U1/q_1" BEL "U1/q_2" BEL "U1/q_3" BEL
-        "U1/q_4" BEL "U1/q_5" BEL "U1/q_6" BEL "U1/q_7" BEL "U1/q_8" BEL
-        "U1/q_9" BEL "U1/q_10" BEL "U1/q_11" BEL "U1/q_12" BEL "U1/q_13" BEL
-        "U1/q_14" BEL "U1/q_15" BEL "U1/q_16" BEL "U1/q_17" BEL "D/counter_24"
-        BEL "D/counter_23" BEL "D/counter_22" BEL "D/counter_21" BEL
-        "U/counter_24" BEL "U/counter_23" BEL "U/counter_22" BEL
-        "U/counter_21" BEL "U3/prev_clk_cursor" BEL "U3/ball1/dot_x_4" BEL
-        "U3/ball1/dot_x_1" BEL "U3/ball1/dot_y_7" BEL "U3/ball1/dot_y_6" BEL
-        "U3/ball1/dot_y_4" BEL "U3/ball1/dot_y_3" BEL "U3/ball1/dot_y_5" BEL
-        "U3/ball1/dot_y_1" BEL "U3/ball1/dot_y_2" BEL "U3/ball2/dot_x_6" BEL
-        "U3/ball2/dot_x_5" BEL "U3/ball2/dot_x_7" BEL "U3/ball2/dot_x_4" BEL
-        "U3/ball2/dot_x_3" BEL "U3/ball2/dot_x_1" BEL "U3/ball2/dot_x_2" BEL
-        "U3/ball2/dot_y_7" BEL "U3/ball2/dot_y_6" BEL "U3/ball2/dot_y_4" BEL
-        "U3/ball2/dot_y_3" BEL "U3/ball2/dot_y_5" BEL "U3/ball2/dot_y_1" BEL
-        "U3/ball2/dot_y_2" BEL "joy2/clk_joy" BEL "D/button_first_press" BEL
-        "D/button_state_reg" BEL "U/button_first_press" BEL
-        "U/button_state_reg" BEL "U3/clk_cursor" BEL "U3/down" BEL "U3/up" BEL
-        "D/counter_8" BEL "D/counter_7" BEL "D/counter_6" BEL "D/counter_5"
-        BEL "D/counter_4" BEL "D/counter_3" BEL "D/counter_2" BEL
-        "D/counter_1" BEL "D/counter_0" BEL "U/counter_8" BEL "U/counter_7"
-        BEL "U/counter_6" BEL "U/counter_5" BEL "U/counter_4" BEL
-        "U/counter_3" BEL "U/counter_2" BEL "U/counter_1" BEL "U/counter_0"
-        BEL "D/counter_9" BEL "U/counter_9" BEL "D/counter_10" BEL
-        "U/counter_10" BEL "D/counter_11" BEL "U/counter_11" BEL
-        "D/counter_12" BEL "U/counter_12" BEL "D/counter_13" BEL
-        "U/counter_13" BEL "D/counter_14" BEL "U/counter_14" BEL
-        "D/counter_15" BEL "U/counter_15" BEL "D/counter_16" BEL
-        "U/counter_16" BEL "D/counter_17" BEL "U/counter_17" BEL
-        "D/counter_18" BEL "U/counter_18" BEL "D/counter_19" BEL
-        "U/counter_19" BEL "D/counter_20" BEL "U/counter_20" BEL
-        "U3/counter_cursor_0" BEL "joy2/counter_joy_0" BEL
+TIMEGRP sys_clk_pin = BEL "joy2/clk_joy" BEL "joy2/counter_joy_0" BEL
         "joy2/counter_joy_1" BEL "joy2/counter_joy_2" BEL "joy2/counter_joy_3"
         BEL "joy2/counter_joy_4" BEL "joy2/counter_joy_5" BEL
         "joy2/counter_joy_6" BEL "joy2/counter_joy_7" BEL "joy2/counter_joy_8"
@@ -119,23 +89,67 @@ TIMEGRP sys_clk_pin = BEL "U1/q_0" BEL "U1/q_1" BEL "U1/q_2" BEL "U1/q_3" BEL
         "joy2/counter_joy_25" BEL "joy2/counter_joy_26" BEL
         "joy2/counter_joy_27" BEL "joy2/counter_joy_28" BEL
         "joy2/counter_joy_29" BEL "joy2/counter_joy_30" BEL
-        "joy2/counter_joy_31" BEL "U3/counter_cursor_31" BEL
-        "U3/counter_cursor_30" BEL "U3/counter_cursor_29" BEL
-        "U3/counter_cursor_28" BEL "U3/counter_cursor_27" BEL
-        "U3/counter_cursor_26" BEL "U3/counter_cursor_25" BEL
-        "U3/counter_cursor_24" BEL "U3/counter_cursor_23" BEL
-        "U3/counter_cursor_22" BEL "U3/counter_cursor_21" BEL
-        "U3/counter_cursor_20" BEL "U3/counter_cursor_19" BEL
-        "U3/counter_cursor_18" BEL "U3/counter_cursor_17" BEL
-        "U3/counter_cursor_16" BEL "U3/counter_cursor_15" BEL
-        "U3/counter_cursor_14" BEL "U3/counter_cursor_13" BEL
-        "U3/counter_cursor_12" BEL "U3/counter_cursor_11" BEL
-        "U3/counter_cursor_10" BEL "U3/counter_cursor_9" BEL
-        "U3/counter_cursor_8" BEL "U3/counter_cursor_7" BEL
-        "U3/counter_cursor_6" BEL "U3/counter_cursor_5" BEL
-        "U3/counter_cursor_4" BEL "U3/counter_cursor_3" BEL
-        "U3/counter_cursor_2" BEL "U3/counter_cursor_1" BEL "clk_BUFGP/BUFG"
-        BEL "U3_inst_LPM_FF_0" BEL "U3_inst_LPM_FF_1" PIN
+        "joy2/counter_joy_31" BEL "U1/q_0" BEL "U1/q_1" BEL "U1/q_2" BEL
+        "U1/q_3" BEL "U1/q_4" BEL "U1/q_5" BEL "U1/q_6" BEL "U1/q_7" BEL
+        "U1/q_8" BEL "U1/q_9" BEL "U1/q_10" BEL "U1/q_11" BEL "U1/q_12" BEL
+        "U1/q_13" BEL "U1/q_14" BEL "U1/q_15" BEL "U1/q_16" BEL "U1/q_17" BEL
+        "D/counter_24" BEL "D/counter_23" BEL "D/counter_22" BEL
+        "D/counter_21" BEL "D/counter_20" BEL "D/counter_19" BEL
+        "D/counter_18" BEL "D/counter_17" BEL "D/counter_16" BEL
+        "D/counter_15" BEL "D/counter_14" BEL "D/counter_13" BEL
+        "D/counter_12" BEL "D/counter_11" BEL "D/counter_10" BEL "D/counter_9"
+        BEL "D/counter_8" BEL "D/counter_7" BEL "D/counter_6" BEL
+        "D/counter_5" BEL "D/counter_4" BEL "D/counter_3" BEL "D/counter_2"
+        BEL "D/counter_1" BEL "D/counter_0" BEL "D/button_first_press" BEL
+        "D/button_state_reg" BEL "U/counter_24" BEL "U/counter_23" BEL
+        "U/counter_22" BEL "U/counter_21" BEL "U/counter_20" BEL
+        "U/counter_19" BEL "U/counter_18" BEL "U/counter_17" BEL
+        "U/counter_16" BEL "U/counter_15" BEL "U/counter_14" BEL
+        "U/counter_13" BEL "U/counter_12" BEL "U/counter_11" BEL
+        "U/counter_10" BEL "U/counter_9" BEL "U/counter_8" BEL "U/counter_7"
+        BEL "U/counter_6" BEL "U/counter_5" BEL "U/counter_4" BEL
+        "U/counter_3" BEL "U/counter_2" BEL "U/counter_1" BEL "U/counter_0"
+        BEL "U/button_first_press" BEL "U/button_state_reg" BEL
+        "U3/counter_cursor_31" BEL "U3/counter_cursor_30" BEL
+        "U3/counter_cursor_29" BEL "U3/counter_cursor_28" BEL
+        "U3/counter_cursor_27" BEL "U3/counter_cursor_26" BEL
+        "U3/counter_cursor_25" BEL "U3/counter_cursor_24" BEL
+        "U3/counter_cursor_23" BEL "U3/counter_cursor_22" BEL
+        "U3/counter_cursor_21" BEL "U3/counter_cursor_20" BEL
+        "U3/counter_cursor_19" BEL "U3/counter_cursor_18" BEL
+        "U3/counter_cursor_17" BEL "U3/counter_cursor_16" BEL
+        "U3/counter_cursor_15" BEL "U3/counter_cursor_14" BEL
+        "U3/counter_cursor_13" BEL "U3/counter_cursor_12" BEL
+        "U3/counter_cursor_11" BEL "U3/counter_cursor_10" BEL
+        "U3/counter_cursor_9" BEL "U3/counter_cursor_8" BEL
+        "U3/counter_cursor_7" BEL "U3/counter_cursor_6" BEL
+        "U3/counter_cursor_5" BEL "U3/counter_cursor_4" BEL
+        "U3/counter_cursor_3" BEL "U3/counter_cursor_2" BEL
+        "U3/counter_cursor_1" BEL "U3/counter_cursor_0" BEL
+        "U3/prev_clk_cursor" BEL "U3/clk_cursor" BEL "U3/ball1/dot_x_7" BEL
+        "U3/ball1/dot_x_6" BEL "U3/ball1/dot_x_5" BEL "U3/ball1/dot_x_4" BEL
+        "U3/ball1/dot_x_3" BEL "U3/ball1/dot_x_2" BEL "U3/ball1/dot_x_1" BEL
+        "U3/ball1/dot_y_8" BEL "U3/ball1/dot_y_7" BEL "U3/ball1/dot_y_6" BEL
+        "U3/ball1/dot_y_5" BEL "U3/ball1/dot_y_4" BEL "U3/ball1/dot_y_3" BEL
+        "U3/ball1/dot_y_2" BEL "U3/ball1/dot_y_1" BEL "U3/ball2/dot_x_7" BEL
+        "U3/ball2/dot_x_6" BEL "U3/ball2/dot_x_5" BEL "U3/ball2/dot_x_4" BEL
+        "U3/ball2/dot_x_3" BEL "U3/ball2/dot_x_2" BEL "U3/ball2/dot_x_1" BEL
+        "U3/ball2/dot_y_8" BEL "U3/ball2/dot_y_7" BEL "U3/ball2/dot_y_6" BEL
+        "U3/ball2/dot_y_5" BEL "U3/ball2/dot_y_4" BEL "U3/ball2/dot_y_3" BEL
+        "U3/ball2/dot_y_2" BEL "U3/ball2/dot_y_1" BEL "U3/puck/s1_1" BEL
+        "U3/puck/s1_0" BEL "U3/puck/s2_1" BEL "U3/puck/s2_0" BEL
+        "U3/puck/reverse_y" BEL "U3/puck/reverse_x" BEL "U3/puck/dot_x_9" BEL
+        "U3/puck/dot_x_8" BEL "U3/puck/dot_x_7" BEL "U3/puck/dot_x_6" BEL
+        "U3/puck/dot_x_5" BEL "U3/puck/dot_x_4" BEL "U3/puck/dot_x_3" BEL
+        "U3/puck/dot_x_2" BEL "U3/puck/dot_x_1" BEL "U3/puck/dot_x_0" BEL
+        "U3/puck/dot_y_9" BEL "U3/puck/dot_y_8" BEL "U3/puck/dot_y_7" BEL
+        "U3/puck/dot_y_6" BEL "U3/puck/dot_y_5" BEL "U3/puck/dot_y_4" BEL
+        "U3/puck/dot_y_3" BEL "U3/puck/dot_y_2" BEL "U3/puck/dot_y_1" BEL
+        "U3/puck/delta_y_3" BEL "U3/puck/delta_y_2" BEL "U3/puck/delta_y_1"
+        BEL "U3/puck/delta_x_3" BEL "U3/puck/delta_x_2" BEL
+        "U3/puck/delta_x_1" BEL "U3/puck/delta_x_0" BEL "U3/puck/collide2" BEL
+        "U3/puck/collide1" BEL "U3/down" BEL "U3/up" BEL "clk_BUFGP/BUFG" BEL
+        "U3_inst_LPM_FF_0" BEL "U3_inst_LPM_FF_1" PIN
         "U3_Mram_ram_name_pp30_pins<14>" PIN "U3_Mram_ram_name_pp29_pins<14>"
         PIN "U3_Mram_ram_name_pp31_pins<14>" PIN
         "U3_Mram_ram_name_pp27_pins<14>" PIN "U3_Mram_ram_name_pp26_pins<14>"

@@ -20,6 +20,9 @@ parameter d3 = 8'b10110000; // "3"
 parameter d4 = 8'b10011001; // "4"
 parameter d5 = 8'b10010010; // "5"
 
+parameter A = 7'b0001000;
+parameter B = 7'b0000000;
+
 // Finite State Machine (FSM) states
 parameter left = 2'b00;
 parameter midleft = 2'b01;
@@ -48,41 +51,59 @@ begin
 		case(state)
 			left:
 			begin
-				seg <= d0;
+                if(p1 >=5) seg <= A;
+                else if(p2 >= 5) seg <= B;
+                else seg <= d0;
+                
 				an <= 4'b0111;
 				state <= midleft;
 			end
 			midleft:
 			begin
-				case(p1)
-          0: seg <= d0;
-          1: seg <= d1;
-          2: seg <= d2;
-          3: seg <= d3;
-          4: seg <= d4;
-          5: seg <= d5;
-          default: seg <= d0;
-        endcase
+                if(p1 >=5) seg <= A;
+                else if(p2 >= 5) seg <= B;
+                else begin 
+                
+                    case(p1)
+                      0: seg <= d0;
+                      1: seg <= d1;
+                      2: seg <= d2;
+                      3: seg <= d3;
+                      4: seg <= d4;
+                      5: seg <= d5;
+                      default: seg <= d0;
+                    endcase
+                end
 				an <= 4'b1011;
 				state <= midright;
 			end
 			midright:
 			begin
-				seg <= d0;
+                if(p1 >=5) seg <= A;
+                else if(p2 >= 5) seg <= B;
+                else seg <= d0;
+                
 				an <= 4'b1101;
 				state <= right;
 			end
 			right:
 			begin
-        case(p2)
-          0: seg <= d0;
-          1: seg <= d1;
-          2: seg <= d2;
-          3: seg <= d3;
-          4: seg <= d4;
-          5: seg <= d5;
-          default: seg <= d0;
-        endcase
+                 if(p1 >=5) seg <= A;
+                else if(p2 >= 5) seg <= B;
+                else begin 
+                
+                    case(p2)
+                    
+                      0: seg <= d0;
+                      1: seg <= d1;
+                      2: seg <= d2;
+                      3: seg <= d3;
+                      4: seg <= d4;
+                      5: seg <= d5;
+                      default: seg <= d0;
+                    endcase
+                end
+                
 				an <= 4'b1110;
 				state <= left;
 			end

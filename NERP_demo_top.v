@@ -123,8 +123,8 @@ score_display score(
   .clr(clr),
   .seg(seg),
   .an(an),
-  .p1(outscore1),
-  .p2(outscore2)
+  .p1(outscore2),
+  .p2(outscore1)
 );
 
 /******************************/

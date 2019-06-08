@@ -1,7 +1,7 @@
-Release 14.7 Drc P.20131013 (lin64)
+Release 14.6 Drc P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Jun  6 03:27:31 2019
+Thu Jun 06 10:23:31 2019
 
 drc -z NERP_demo_top.ncd NERP_demo_top.pcf
 

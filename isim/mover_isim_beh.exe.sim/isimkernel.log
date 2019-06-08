@@ -1,0 +1,28 @@
+Command line:
+   mover_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50594
+
+Thu Jun 06 09:28:01 2019
+
+
+ Elaboration Time: 0.0624 sec
+
+ Current Memory Usage: 829.223 Meg
+
+ Total Signals          : 23
+ Total Nets             : 85
+ Total Signal Drivers   : 11
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 13
+ Total Traceable Variables  : 44
+ Total Scalar Nets and Variables : 715
+
+ Total Simulation Time: 0.078 sec
+
+ Current Memory Usage: 829.223 Meg
+
+Thu Jun 06 09:28:08 2019
+
